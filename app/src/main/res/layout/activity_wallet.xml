@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Wallet"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="20dp"
+            android:background="@drawable/border">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Ví Veggie"
+                android:textColor="#399346"
+                android:textSize="15sp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0đ"
+                android:textSize="15sp"/>
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="5dp"
+                android:src="@drawable/dotted"
+                android:layerType="software" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Nạp tiền để thanh toán mà không cần tiền mặt"/>
+        </LinearLayout>
+    </LinearLayout>
+    <HorizontalScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp">
+            <Button
+                android:id="@+id/btn_Nap"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Nạp tiền"
+                android:drawableLeft="@drawable/topup"
+                android:textSize="15sp"
+                android:backgroundTint="#F8ECAF"
+                android:textColor="@color/black"
+                android:layout_marginRight="5dp"/>
+            <Button
+                android:id="@+id/btn_Rut"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Rút tiền"
+                android:drawableLeft="@drawable/bank"
+                android:textSize="15sp"
+                android:backgroundTint="#F8ECAF"
+                android:textColor="@color/black"
+                android:layout_marginRight="5dp"/>
+            <Button
+                android:id="@+id/btn_LienKet"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Liên kết"
+                android:drawableLeft="@drawable/card"
+                android:textSize="15sp"
+                android:backgroundTint="#F8ECAF"
+                android:textColor="@color/black"
+                android:layout_marginRight="5dp"/>
+        </LinearLayout>
+    </HorizontalScrollView>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Giao dịch gần đây"
+            android:textStyle="bold"
+            android:textColor="#000000"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Xem tất cả"
+            android:textColor="#399346"
+            android:gravity="end"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <ListView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+    </LinearLayout>
+
+
+
+</LinearLayout>
