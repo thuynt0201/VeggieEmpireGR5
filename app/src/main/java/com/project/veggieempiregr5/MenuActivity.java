@@ -1,8 +1,11 @@
 package com.project.veggieempiregr5;
 
+import android.content.Intent;
 import android.graphics.drawable.Drawable;
 import android.os.Bundle;
 import android.view.Menu;
+import android.view.View;
+import android.widget.AdapterView;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -34,6 +37,22 @@ public class MenuActivity extends AppCompatActivity {
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
         getSupportActionBar().setHomeAsUpIndicator(drawable);
         //======THANH HEADER END======
+
+        getData();
+    }
+
+    private void getData() {
+        binding.lvMenuDish.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
+                MenuList menu = (MenuList) adapter.getItem(i);
+                Intent intent = new Intent (MenuActivity.this,MenuDetailActivity.class);
+                intent.putExtra("namedetail", menu.getName());
+                intent.putExtra("imagedetail",menu.getImage());
+                intent.putExtra("pricedetail",menu.getPrice());
+                startActivity(intent);
+            }
+        });
     }
 
 
