@@ -4,17 +4,20 @@ import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.viewpager2.widget.ViewPager2;
 
+import android.content.Intent;
 import android.graphics.drawable.Drawable;
 import android.os.Bundle;
 import android.os.Handler;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
 import android.widget.Toast;
 
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 import com.project.adapters.PhotoAdapter;
 import com.project.models.Item;
 import com.project.models.Photo;
+import com.project.veggieempiregr5.databinding.ActivityTrangChuBinding;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -23,6 +26,7 @@ import me.relex.circleindicator.CircleIndicator3;
 
 public class TrangChu extends AppCompatActivity {
 
+    ActivityTrangChuBinding binding;
     private ViewPager2 viewPager2;
     private CircleIndicator3 circleIndicator3;
     private List<Photo> photoList;
@@ -42,12 +46,18 @@ public class TrangChu extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_trang_chu);
+        //setContentView(R.layout.activity_trang_chu);
+        binding = ActivityTrangChuBinding.inflate(getLayoutInflater());
+        setContentView(binding.getRoot());
 
+
+        //======THANH HEADER======
         getSupportActionBar().setTitle("VEGGIE EMPIRE");
         Drawable drawable= getResources().getDrawable(R.drawable.ic_baseline_notifications_24);
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
         getSupportActionBar().setHomeAsUpIndicator(drawable);
+        //======THANH HEADER END======
+
 
         viewPager2 = findViewById(R.id.view_pager_2);
         circleIndicator3 = findViewById(R.id.circle_indicator_3);
@@ -92,6 +102,21 @@ public class TrangChu extends AppCompatActivity {
             }
         });
 
+
+        addEvent();
+
+    }
+
+    private void addEvent() {
+
+        //======NHẤN VÀO THANH ĐẶT MÓN ĐỂ INTENT QUA MÀN HÌNH MENUU======
+        binding.imvDatMon.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent (TrangChu.this, MenuActivity.class);
+                startActivity(intent);
+            }
+        });
     }
 
     private List<Photo> getListPhoto(){
