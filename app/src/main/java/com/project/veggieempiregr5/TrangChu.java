@@ -13,6 +13,7 @@ import android.widget.Toast;
 
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 import com.project.adapters.PhotoAdapter;
+import com.project.models.Item;
 import com.project.models.Photo;
 
 import java.util.ArrayList;
