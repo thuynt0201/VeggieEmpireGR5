@@ -1,214 +1,249 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".TrangChu"
-    android:orientation="vertical"
-    android:background="#F8ECAF">
+    android:background="#F8ECAF"
+    tools:context=".TrangChu">
 
     <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="615dp">
+        android:layout_height="615dp"
+        tools:ignore="MissingConstraints">
+
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical">
+
             <RelativeLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content">
+
                 <androidx.viewpager2.widget.ViewPager2
                     android:id="@+id/view_pager_2"
                     android:layout_width="match_parent"
-                    android:layout_height="220dp"/>
+                    android:layout_height="220dp" />
+
                 <me.relex.circleindicator.CircleIndicator3
                     android:id="@+id/circle_indicator_3"
                     android:layout_width="wrap_content"
+                    android:layout_height="40dp"
                     android:layout_alignParentEnd="true"
-                    app:ci_drawable="@drawable/bg_indicator_3"
                     android:layout_margin="5dp"
-                    android:layout_height="40dp"/>
+                    app:ci_drawable="@drawable/bg_indicator_3"
+                    tools:ignore="MissingClass" />
             </RelativeLayout>
 
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:padding="10dp"
-                android:orientation="vertical">
+                android:orientation="vertical"
+                android:padding="10dp">
+
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="Chào bạn"
                     android:textColor="#000000"
-                    android:textStyle="bold"
-                    android:textSize="30sp"/>
+                    android:textSize="30sp"
+                    android:textStyle="bold" />
+
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="Vui lòng chọn Dịch Vụ"
-                    android:textSize="20sp"/>
+                    android:textSize="20sp" />
+
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:padding="5dp"
+                    android:layout_marginTop="10dp"
                     android:background="@drawable/bogoc"
-                    android:layout_marginTop="10dp">
+                    android:padding="5dp">
+
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
+                        android:drawableLeft="@drawable/ic_baseline_food_bank_24"
                         android:text="Đặt món"
-                        android:textSize="20sp"
                         android:textColor="#000000"
-                        android:drawableLeft="@drawable/ic_baseline_food_bank_24"/>
+                        android:textSize="20sp" />
+
                     <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:gravity="right">
+
                         <ImageView
                             android:id="@+id/imv_DatMon"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:src="@drawable/ic_baseline_navigate_next_24"
-                            android:layout_gravity="center"/>
+                            android:layout_gravity="center"
+                            android:src="@drawable/ic_baseline_navigate_next_24" />
                     </LinearLayout>
                 </LinearLayout>
+
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:padding="5dp"
+                    android:layout_marginTop="10dp"
                     android:background="@drawable/bogoc"
-                    android:layout_marginTop="10dp">
+                    android:padding="5dp">
+
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
+                        android:drawableLeft="@drawable/ic_baseline_table_restaurant_24"
                         android:text="Đặt bàn"
-                        android:textSize="20sp"
                         android:textColor="#000000"
-                        android:drawableLeft="@drawable/ic_baseline_table_restaurant_24"/>
+                        android:textSize="20sp" />
+
                     <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:gravity="right">
+
                         <ImageView
                             android:id="@+id/imv_DatBan"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:src="@drawable/ic_baseline_navigate_next_24"
-                            android:layout_gravity="center"/>
+                            android:layout_gravity="center"
+                            android:src="@drawable/ic_baseline_navigate_next_24" />
                     </LinearLayout>
                 </LinearLayout>
+
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:padding="5dp"
+                    android:layout_marginTop="10dp"
                     android:background="@drawable/bogoc"
-                    android:layout_marginTop="10dp">
+                    android:padding="5dp">
+
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
+                        android:drawableLeft="@drawable/ic_baseline_delivery_dining_24"
                         android:text="Tinh trạng đơn hàng"
-                        android:textSize="20sp"
                         android:textColor="#000000"
-                        android:drawableLeft="@drawable/ic_baseline_delivery_dining_24"/>
+                        android:textSize="20sp" />
+
                     <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:gravity="right">
+
                         <ImageView
                             android:id="@+id/btn_LienKet"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:src="@drawable/ic_baseline_navigate_next_24"
-                            android:layout_gravity="center"/>
+                            android:layout_gravity="center"
+                            android:src="@drawable/ic_baseline_navigate_next_24" />
                     </LinearLayout>
                 </LinearLayout>
+
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="10dp">
+
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="Ưu đãi khủng"
-                        android:textStyle="bold"
-                        android:textColor="#F44336"/>
+                        android:textColor="#F44336"
+                        android:textStyle="bold" />
+
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
+                        android:gravity="end"
                         android:text="Xem ưu đãi"
-                        android:textColor="#000000"
-                        android:gravity="end"/>
+                        android:textColor="#000000" />
                 </LinearLayout>
+
                 <ImageView
                     android:layout_width="match_parent"
                     android:layout_height="100dp"
-                    android:src="@drawable/veganfood"
-                    android:layout_marginTop="10dp"/>
+                    android:layout_marginTop="10dp"
+                    android:src="@drawable/veganfood" />
+
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="10dp">
+
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="Thực đơn"
-                        android:textStyle="bold"
-                        android:textColor="#000000"/>
+                        android:textColor="#000000"
+                        android:textStyle="bold" />
+
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
+                        android:gravity="end"
                         android:text="Xem Thực đơn"
-                        android:textColor="#000000"
-                        android:gravity="end"/>
+                        android:textColor="#000000" />
                 </LinearLayout>
+
                 <ImageView
                     android:layout_width="match_parent"
                     android:layout_height="100dp"
-                    android:src="@drawable/veganfood"
-                    android:layout_marginTop="10dp"/>
+                    android:layout_marginTop="10dp"
+                    android:src="@drawable/veganfood" />
+
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="Liên hệ với Veggie Empire"
-                    android:textStyle="bold"
-                    android:textColor="#000000"/>
+                    android:textColor="#000000"
+                    android:textStyle="bold" />
+
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:padding="5dp"
+                    android:layout_marginTop="10dp"
                     android:background="@drawable/bogoc"
-                    android:layout_marginTop="10dp">
+                    android:padding="5dp">
+
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="Cần sự hỗ trợ?"
-                        android:textSize="20sp"
-                        android:textColor="#000000"/>
+                        android:textColor="#000000"
+                        android:textSize="20sp" />
+
                     <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:gravity="right">
+
                         <TextView
                             android:id="@+id/txt_sdt"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_gravity="center"
-                            android:text="1900 9508"/>
+                            android:text="1900 9508" />
                     </LinearLayout>
                 </LinearLayout>
+
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:padding="5dp"
+                    android:layout_marginTop="10dp"
                     android:background="@drawable/bogoc"
-                    android:layout_marginTop="10dp">
+                    android:padding="5dp">
+
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="Điều khoản và Điều kiện"
-                        android:textSize="20sp"
-                        android:textColor="#000000"/>
+                        android:textColor="#000000"
+                        android:textSize="20sp" />
                 </LinearLayout>
             </LinearLayout>
         </LinearLayout>
@@ -218,11 +253,14 @@
         android:id="@+id/bottom_nav"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        app:menu="@menu/bottom_nav_menu"
         app:itemBackground="@color/colorPrimary1"
         app:itemIconTint="@color/black"
-        app:itemTextColor="@color/black"/>
+        app:itemTextColor="@color/black"
+        app:menu="@menu/bottom_nav_menu"
+        android:layout_gravity="bottom"
+        app:fabCradleRoundedCornerRadius="50dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        tools:ignore="BottomAppBar,MissingConstraints"/>
 
 
-
-</LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
