@@ -137,4 +137,13 @@ public class TrangChu extends AppCompatActivity {
         getMenuInflater().inflate(R.menu.option_trangchu_menu, menu);
         return super.onCreateOptionsMenu(menu);
     }
+
+    @Override
+    public boolean onOptionsItemSelected(@NonNull MenuItem item) {
+        if (item.getItemId() == R.id.mn_Search){
+            Intent intent = new Intent(TrangChu.this, TimKiemMonActivity.class);
+            startActivity(intent);
+        }
+        return super.onOptionsItemSelected(item);
+    }
 }
