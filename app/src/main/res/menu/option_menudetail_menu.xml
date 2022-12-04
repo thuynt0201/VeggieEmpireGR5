@@ -2,7 +2,10 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto">
 
-
+    <item android:id="@+id/mn_Search"
+        android:title="@string/more_option"
+        android:icon="@drawable/searchmenu"
+        app:showAsAction="always"/>
     <item android:id="@+id/mn_CartOption"
         android:title="@string/more_option"
         android:icon="@drawable/ic_baseline_shopping_cart_24"
