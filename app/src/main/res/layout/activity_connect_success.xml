@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ConnectSuccessActivity"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#FFD705"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="10dp">
+        <ImageView
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:src="@drawable/connected"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Bạn đã liên kết thành công ngân hàng"
+            android:textSize="20sp"
+            android:textColor="#000000"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Agribank"
+            android:textSize="20sp"
+            android:textColor="#000000"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="10dp"
+        android:gravity="center"
+        android:layout_marginTop="80dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Hãy nạp tiền vào ví để trải nghiệm thanh toán trên Veggie Empire ngay!"
+            android:textSize="20sp"
+            android:textColor="#000000"/>
+        <Button
+            android:id="@+id/btn_Nap"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Nạp tiền vào ví"
+            android:drawableLeft="@drawable/topup"
+            android:textSize="15sp"
+            android:backgroundTint="#F8ECAF"
+            android:textColor="@color/black"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="10dp"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="10dp">
+        <Button
+            android:id="@+id/btn_BackHome"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="MÀN HÌNH CHÍNH"
+            android:layout_gravity="bottom"
+            android:backgroundTint="#FFD705"
+            android:textColor="#000000"
+            android:textSize="25sp"/>
+    </LinearLayout>
+
+</LinearLayout>

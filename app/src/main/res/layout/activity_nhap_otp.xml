@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".NhapOTPActivity"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="10dp"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Ngân hàng vừa gửi một mật khẩu OTP đến số điện thoại bạn đã đăng ký với ngân hàng"
+            android:textColor="#000000"
+            android:textSize="20sp"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Mã xác thực (OTP)"
+            android:textColor="#000000"
+            android:textSize="17sp"
+            android:layout_marginTop="10dp"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:background="@drawable/border"
+            android:layout_marginTop="10dp">
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="Nhập mã xác thực (OTP)"
+                android:textSize="20sp"
+                android:inputType="number"/>
+        </LinearLayout>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="THÔNG TIN THẺ/ TÀI KHOẢN"
+            android:textSize="20sp"
+            android:layout_marginLeft="10dp"
+            android:textColor="#000000"
+            android:layout_marginTop="10dp"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="10dp"
+            android:background="@drawable/bg_bogoc"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Số thẻ/ tài khoản"
+                android:textColor="#000000"
+                android:textSize="17sp"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Họ và tên chủ thẻ/ tài khoản"
+                android:textColor="#000000"
+                android:textSize="17sp"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="CMND/ CCCD/ Hộ chiếu"
+                android:textColor="#000000"
+                android:textSize="17sp"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="10dp">
+            <Button
+                android:id="@+id/btn_Continue"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="TIẾP TỤC"
+                android:layout_gravity="bottom"
+                android:backgroundTint="#FFD705"
+                android:textColor="#000000"
+                android:textSize="25sp"
+                android:drawableLeft="@drawable/ic_baseline_lock_24"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>
