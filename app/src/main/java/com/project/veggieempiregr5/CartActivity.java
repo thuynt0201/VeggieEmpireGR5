@@ -11,6 +11,7 @@ import android.graphics.drawable.Drawable;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
 
 import com.project.adapters.CartAdapter;
 import com.project.database.DatabaseCart;
@@ -47,13 +48,40 @@ public class CartActivity extends AppCompatActivity {
 
         getData();
 
+        getDataCoupon();
         totalPrice();
+        addEvent();
 
+
+    }
+
+    private void addEvent() {
+        binding.chooseCoupon.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent (CartActivity.this,CouponCodeOrderActivity.class);
+                startActivity(intent);
+            }
+        });
+    }
+
+
+    private void getDataCoupon() {
 
 
     }
 
     private void totalPrice(){
+        Intent intent = getIntent();
+        Bundle bundle = intent.getExtras();
+        int value = 0;
+        if(bundle !=null)
+        {
+            value = bundle.getInt("coupon",0);
+
+        }        //Bundle bundle = getIntent().getExtras();
+        binding.txtDiscountCart.setText(String.valueOf(value)+"đ");
+
         int total = 0;
         for(int i=0;i<cartArrayList.size();i++)
         {
@@ -61,7 +89,7 @@ public class CartActivity extends AppCompatActivity {
         }
         binding.txtTotalAllItemCart.setText(String.valueOf(total)+"đ");
         int totalOrder = 0;
-        totalOrder = (int)(total -20000);
+        totalOrder = (int)(total -value);
         binding.txtTotalCart.setText(String.valueOf(totalOrder)+"đ");
     }
 
