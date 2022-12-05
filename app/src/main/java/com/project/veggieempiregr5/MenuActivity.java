@@ -65,12 +65,12 @@ public class MenuActivity extends AppCompatActivity {
         menuList.add(new MenuList("Ớt nhồi cơm chiên", "Ớt chuông đỏ ngọt thanh đi kèm cơm chiên dương châu.",109000.00,R.drawable.ot_nhoi_thit_chay));
         menuList.add(new MenuList("Đậu phụ rau diếp cuộn", "Đậu phụ giã nhỏ cuộn cùng rau diếp thơm ngon.",79000.00,R.drawable.dau_hu_rau_diep));
         menuList.add(new MenuList("Soup bí ngô", "Bí đỏ xoay nhuyễn béo bùi. ",59000.00,R.drawable.soup_bi_ngo));
-        menuList.add(new MenuList("Soup rau thập cẩm", "",89000.00,R.drawable.soup_rau_thap_cam));
+        menuList.add(new MenuList("Soup rau thập cẩm", "Nóng thổi và nhiều dưỡng chất.",89000.00,R.drawable.soup_rau_thap_cam));
         menuList.add(new MenuList("Salad khoai lang nướng", "Khoai lang mật Đà Lạt cùng rau củ quả. ",79000.00,R.drawable.salad_khoai_lang_nuong));
         menuList.add(new MenuList("Gỏi rau củ", "Nhiều dinh dưỡng khi kết hợp các loại rau củ.",79000.00,R.drawable.goi_rau_cu));
         menuList.add(new MenuList("Salad khoai tây", "Khoai tây ngọt ngon.",59000.00,R.drawable.salad_khoai_tay));
         menuList.add(new MenuList("Bánh mì rau củ", "Giòn của bánh mì nóng và rau củ tươi đầy mới lạ độc đáo.",59000.00,R.drawable.banh_mi_rau_cu));
-        menuList.add(new MenuList("Mì ramen tỏi mè", "Sợi mì giòn dai,vị thơm tỏi mè",79000.00,R.drawable.mi_ramen_toi_me));
+        menuList.add(new MenuList("Mì ramen tỏi mè", "Sợi mì giòn dai, vị thơm tỏi mè",79000.00,R.drawable.mi_ramen_toi_me));
         menuList.add(new MenuList("Phô mai nướng", "Hoàn hảo",79000.00,R.drawable.pho_mai_nuong));
         menuList.add(new MenuList("Pizza chay", "",79000.00,R.drawable.pizza_chay));
         menuList.add(new MenuList("Lẩu chay shabu shabu", "",209000.00,R.drawable.lau_shabu_shabu));
