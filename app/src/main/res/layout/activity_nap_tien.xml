@@ -102,7 +102,7 @@
                 android:layout_height="wrap_content"
                 android:background="@drawable/border"
                 android:textSize="20sp"
-                android:hint="Nhập số tiền cần nạp"
+                android:hint="Chọn nguồn tiền"
                 android:padding="10dp"/>
         </LinearLayout>
         <TextView
@@ -126,22 +126,23 @@
                 android:textSize="15sp"
                 android:textColor="#000000"
                 android:textStyle="bold"
-                android:drawableLeft="@drawable/ic_baseline_add_circle_outline_24"></TextView>
+                android:drawableLeft="@drawable/ic_baseline_add_circle_outline_24"/>
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:gravity="right">
                 <ImageView
-                    android:id="@+id/btn_LienKet"
+                    android:id="@+id/imv_LienKet"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:src="@drawable/ic_baseline_navigate_next_24"
                     android:layout_gravity="center"/>
             </LinearLayout>
         </LinearLayout>
-        <ListView
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rcv_BankConnectdList"
             android:layout_width="match_parent"
-            android:layout_height="0dp" />
+            android:layout_height="150dp" />
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"

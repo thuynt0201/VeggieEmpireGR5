@@ -83,23 +83,19 @@ public class TrangChu extends AppCompatActivity {
             public boolean onNavigationItemSelected(@NonNull MenuItem item) {
                 switch (item.getItemId()){
                     case R.id.action_home:
-                        Toast.makeText(TrangChu.this, "Trang Chủ", Toast.LENGTH_SHORT).show();
+                        Toast.makeText(TrangChu.this, "Home", Toast.LENGTH_SHORT).show();
                         break;
                     case R.id.action_chat:
                         Toast.makeText(TrangChu.this, "Chat", Toast.LENGTH_SHORT).show();
                         break;
                     case R.id.action_cart:
-                        //Toast.makeText(TrangChu.this, "Cart", Toast.LENGTH_SHORT).show();
-                        Intent intent = new Intent (TrangChu.this,MenuActivity.class);
-                        startActivity(intent);
+                        Toast.makeText(TrangChu.this, "Cart", Toast.LENGTH_SHORT).show();
                         break;
                     case R.id.action_coupom:
                         Toast.makeText(TrangChu.this, "Coupon", Toast.LENGTH_SHORT).show();
                         break;
                     case R.id.action_account:
-                        //Toast.makeText(TrangChu.this, "Tài khoản", Toast.LENGTH_SHORT).show();
-                        Intent intent1 = new Intent (TrangChu.this,MenuActivity.class);
-                        startActivity(intent1);
+                        
                         break;
                 }
                 return true;
@@ -121,27 +117,12 @@ public class TrangChu extends AppCompatActivity {
                 startActivity(intent);
             }
         });
-        binding.imvDatBan.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-
-            }
-        });
-
-        binding.imvStatusOrder.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent intent = new Intent (TrangChu.this, OrderActivity.class);
-                startActivity(intent);
-            }
-        });
     }
 
     private List<Photo> getListPhoto(){
         List<Photo> list = new ArrayList<>();
-        list.add(new Photo(R.drawable.img_5796));
-        list.add(new Photo(R.drawable.dish_with_vegetables));
-        list.add(new Photo(R.drawable.roasted));
+        list.add(new Photo(R.drawable.rice));
+        list.add(new Photo(R.drawable.tofu));
         list.add(new Photo(R.drawable.noodle));
         list.add(new Photo(R.drawable.tofumushroom));
         list.add(new Photo(R.drawable.veganfood));
@@ -161,10 +142,6 @@ public class TrangChu extends AppCompatActivity {
     public boolean onOptionsItemSelected(@NonNull MenuItem item) {
         if (item.getItemId() == R.id.mn_Search){
             Intent intent = new Intent(TrangChu.this, TimKiemMonActivity.class);
-            startActivity(intent);
-        }
-        if (item.getItemId() == R.id.mn_IntoCart){
-            Intent intent = new Intent(TrangChu.this, CartActivity.class);
             startActivity(intent);
         }
         return super.onOptionsItemSelected(item);
