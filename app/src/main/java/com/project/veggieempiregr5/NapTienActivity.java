@@ -9,6 +9,7 @@ import android.database.Cursor;
 import android.graphics.drawable.Drawable;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -34,6 +35,8 @@ public class NapTienActivity extends AppCompatActivity {
 
     TextView txtChooseBank;
     String bankname;
+
+    EditText edtTienNap;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -64,6 +67,7 @@ public class NapTienActivity extends AppCompatActivity {
         recyclerView.setLayoutManager(new LinearLayoutManager(NapTienActivity.this));
 
         txtChooseBank = findViewById(R.id.txt_NguonTien);
+        edtTienNap = findViewById(R.id.edt_NhapTien);
 
         getIntentData();
 
@@ -118,6 +122,20 @@ public class NapTienActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 binding.edtNhapTien.setText("1000000");
+            }
+        });
+
+        binding.btnNapTien.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Double soTienNap = Double.parseDouble(edtTienNap.getText().toString().trim()) ;
+                BankUtil.soTienNap = soTienNap;
+
+                String tenNH = txtChooseBank.getText().toString().trim();
+                BankUtil.tenNH = tenNH;
+
+                Intent intent = new Intent(NapTienActivity.this, XacNhanNapTienActivity.class);
+                startActivity(intent);
             }
         });
     }
