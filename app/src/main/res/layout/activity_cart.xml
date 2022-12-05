@@ -87,6 +87,7 @@
                     android:layout_marginRight="10dp"/>
             </LinearLayout>
             <LinearLayout
+                android:id="@+id/startOrder"
                 android:layout_width="match_parent"
                 android:layout_height="60dp"
                 android:orientation="horizontal"

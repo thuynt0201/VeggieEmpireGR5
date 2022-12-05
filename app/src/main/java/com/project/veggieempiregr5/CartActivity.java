@@ -55,21 +55,7 @@ public class CartActivity extends AppCompatActivity {
 
     }
 
-    private void addEvent() {
-        binding.chooseCoupon.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent intent = new Intent (CartActivity.this,CouponCodeOrderActivity.class);
-                startActivity(intent);
-            }
-        });
-    }
 
-
-    private void getDataCoupon() {
-
-
-    }
 
     private void totalPrice(){
         Intent intent = getIntent();
@@ -80,18 +66,50 @@ public class CartActivity extends AppCompatActivity {
             value = bundle.getInt("coupon",0);
 
         }        //Bundle bundle = getIntent().getExtras();
-        binding.txtDiscountCart.setText(String.valueOf(value)+"đ");
+        binding.txtDiscountCart.setText(String.valueOf(value));
 
         int total = 0;
         for(int i=0;i<cartArrayList.size();i++)
         {
             total = (int) (total+cartArrayList.get(i).getTotalEachDishCart());
         }
-        binding.txtTotalAllItemCart.setText(String.valueOf(total)+"đ");
+        binding.txtTotalAllItemCart.setText(String.valueOf(total));
         int totalOrder = 0;
         totalOrder = (int)(total -value);
         binding.txtTotalCart.setText(String.valueOf(totalOrder)+"đ");
     }
+
+
+    private void addEvent() {
+        binding.chooseCoupon.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent (CartActivity.this,CouponCodeOrderActivity.class);
+                startActivity(intent);
+            }
+        });
+
+        binding.startOrder.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent (CartActivity.this,InforOrderActivity.class);
+                Bundle bundle = new Bundle();
+                bundle.putInt("totalallitemcart", Integer.parseInt((binding.txtTotalAllItemCart.getText().toString().trim())));
+                bundle.putInt("discountcart", Integer.parseInt((binding.txtDiscountCart.getText().toString().trim())));
+                intent.putExtras(bundle);
+                startActivity(intent);
+            }
+        });
+
+
+    }
+
+
+    private void getDataCoupon() {
+
+
+    }
+
 
 
     private void getData() {
