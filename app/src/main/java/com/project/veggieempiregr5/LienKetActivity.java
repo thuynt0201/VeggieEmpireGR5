@@ -7,15 +7,24 @@ import android.content.Intent;
 import android.graphics.drawable.Drawable;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.Button;
+import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.TextView;
 
+import com.project.adapters.BankConnectedAdapter;
+import com.project.database.BankDatabaseHelper;
 import com.project.models.Bank;
 import com.project.veggieempiregr5.databinding.ActivityLienKetBinding;
 
 public class LienKetActivity extends AppCompatActivity {
 
     ActivityLienKetBinding binding;
+
+    EditText edtBankNumber, edtBankHolder, edtBankHolderId;
+    TextView txtChooseBank;
+    Button btnContinue;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -39,6 +48,12 @@ public class LienKetActivity extends AppCompatActivity {
         Bank bank = (Bank) bundle.get("bank_name");
         TextView txtBankName = findViewById(R.id.txt_ChooseBank);
         txtBankName.setText(bank.getBankName());
+
+        txtChooseBank = findViewById(R.id.txt_ChooseBank);
+        edtBankNumber = findViewById(R.id.edt_BankNumber);
+        edtBankHolder = findViewById(R.id.edt_BankHolder);
+        edtBankHolderId = findViewById(R.id.edt_BankHolderId);
+
     }
 
     private void addEvents() {
@@ -97,6 +112,12 @@ public class LienKetActivity extends AppCompatActivity {
         binding.btnContinue.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                BankDatabaseHelper myDB = new BankDatabaseHelper(LienKetActivity.this);
+                myDB.addBankList(txtChooseBank.getText().toString().trim(),
+                        Integer.valueOf(edtBankNumber.getText().toString().trim()),
+                        edtBankHolder.getText().toString().trim(),
+                        Integer.valueOf(edtBankHolderId.getText().toString().trim()));
+
                 Intent intent = new Intent(LienKetActivity.this, NhapOTPActivity.class);
                 startActivity(intent);
             }
