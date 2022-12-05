@@ -95,8 +95,8 @@ public class TrangChu extends AppCompatActivity {
                         Toast.makeText(TrangChu.this, "Coupon", Toast.LENGTH_SHORT).show();
                         break;
                     case R.id.action_account:
-                        Toast.makeText(TrangChu.this, "Account", Toast.LENGTH_SHORT).show();
-                        break;
+                        Intent intent = new Intent (TrangChu.this, Wallet.class);
+                        startActivity(intent);
                 }
                 return true;
             }
