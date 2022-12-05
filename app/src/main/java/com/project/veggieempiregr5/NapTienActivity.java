@@ -10,10 +10,13 @@ import android.graphics.drawable.Drawable;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.ImageView;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import com.project.adapters.BankConnectedAdapter;
 import com.project.database.BankDatabaseHelper;
+import com.project.models.Bank;
+import com.project.models.BankConnected;
 import com.project.veggieempiregr5.databinding.ActivityNapTienBinding;
 
 import java.util.ArrayList;
@@ -28,6 +31,9 @@ public class NapTienActivity extends AppCompatActivity {
     BankDatabaseHelper myDB;
     ArrayList<String> iD, bankName;
     BankConnectedAdapter bankAdapter;
+
+    TextView txtChooseBank;
+    String bankname;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -57,6 +63,20 @@ public class NapTienActivity extends AppCompatActivity {
         recyclerView.setAdapter(bankAdapter);
         recyclerView.setLayoutManager(new LinearLayoutManager(NapTienActivity.this));
 
+        txtChooseBank = findViewById(R.id.txt_NguonTien);
+
+        getIntentData();
+
+    }
+
+    void getIntentData(){
+        if (getIntent().hasExtra("bankname")){
+            bankname = getIntent().getStringExtra("bankname");
+
+            txtChooseBank.setText(bankname);
+        }else{
+            Toast.makeText(this, "No data", Toast.LENGTH_SHORT).show();
+        }
     }
 
     void storeDataInArray(){

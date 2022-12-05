@@ -139,10 +139,16 @@
                     android:layout_gravity="center"/>
             </LinearLayout>
         </LinearLayout>
-        <androidx.recyclerview.widget.RecyclerView
-            android:id="@+id/rcv_BankConnectdList"
+        <RelativeLayout
             android:layout_width="match_parent"
-            android:layout_height="150dp" />
+            android:layout_height="wrap_content"
+            android:padding="10dp">
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rcv_BankConnectdList"
+                android:layout_width="match_parent"
+                android:layout_height="150dp" />
+        </RelativeLayout>
+
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
