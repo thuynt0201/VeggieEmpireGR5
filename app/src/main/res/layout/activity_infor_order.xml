@@ -222,11 +222,13 @@
             <TableRow
                 android:layout_marginBottom="10dp">
                 <TextView
+                    android:layout_weight="1"
                     android:layout_width="160dp"
                     android:layout_height="wrap_content"
                     android:text="Salad khoai tây (x1)"
                     android:fontFamily="@font/nunitosans_semibold"/>
                 <TextView
+                    android:layout_weight="1"
                     android:layout_width="180dp"
                     android:layout_height="wrap_content"
                     android:text="89.000"
@@ -236,11 +238,13 @@
             <TableRow
                 android:layout_marginBottom="10dp">
                 <TextView
+                    android:layout_weight="1"
                     android:layout_width="160dp"
                     android:layout_height="wrap_content"
                     android:text="Bánh mì rau cũ (x2)"
                     android:fontFamily="@font/nunitosans_semibold"/>
                 <TextView
+                    android:layout_weight="1"
                     android:layout_width="180dp"
                     android:layout_height="wrap_content"
                     android:text="118.000"
@@ -249,11 +253,13 @@
             </TableRow>
             <TableRow android:layout_marginBottom="40dp">
                 <TextView
+                    android:layout_weight="1"
                     android:layout_width="160dp"
                     android:layout_height="wrap_content"
-                    android:text="Soup bí ngô"
+                    android:text="Soup bí ngô(x1)"
                     android:fontFamily="@font/nunitosans_semibold"/>
                 <TextView
+                    android:layout_weight="1"
                     android:layout_width="180dp"
                     android:layout_height="wrap_content"
                     android:text="69.000"
@@ -263,12 +269,14 @@
 
             <TableRow android:layout_marginBottom="10dp">
                 <TextView
+                    android:layout_weight="1"
                     android:layout_width="160dp"
                     android:layout_height="wrap_content"
                     android:text="Tổng"
                     android:textColor="#000000"
                     android:fontFamily="@font/nunitosans_semibold"/>
                 <TextView
+                    android:layout_weight="1"
                     android:id="@+id/txt_Tong"
                     android:layout_width="180dp"
                     android:layout_height="wrap_content"
@@ -278,12 +286,14 @@
             </TableRow>
             <TableRow android:layout_marginBottom="10dp">
                 <TextView
+                    android:layout_weight="1"
                     android:layout_width="160dp"
                     android:layout_height="wrap_content"
                     android:text="Phí giao hàng"
                     android:textColor="#000000"
                     android:fontFamily="@font/nunitosans_semibold"/>
                 <TextView
+                    android:layout_weight="1"
                     android:layout_width="180dp"
                     android:layout_height="wrap_content"
                     android:text="20.000"
@@ -292,12 +302,14 @@
             </TableRow>
             <TableRow android:layout_marginBottom="10dp">
                 <TextView
+                    android:layout_weight="1"
                     android:layout_width="160dp"
                     android:layout_height="wrap_content"
                     android:text="Giảm giá"
                     android:textColor="#000000"
                     android:fontFamily="@font/nunitosans_semibold" />
                 <TextView
+                    android:layout_weight="1"
                     android:id="@+id/txt_Giamgia"
                     android:layout_width="180dp"
                     android:layout_height="wrap_content"
@@ -311,12 +323,14 @@
                 android:layout_marginBottom="10dp"
                 android:layout_marginTop="10dp">
                 <TextView
+                    android:layout_weight="1"
                     android:layout_width="160dp"
                     android:layout_height="wrap_content"
                     android:text="TỔNG THANH TOÁN"
                     android:textColor="#000000"
                     android:fontFamily="@font/nunitosans_bold"/>
                 <TextView
+                    android:layout_weight="1"
                     android:id="@+id/txt_TongThanhToan"
                     android:layout_width="180dp"
                     android:layout_height="wrap_content"
