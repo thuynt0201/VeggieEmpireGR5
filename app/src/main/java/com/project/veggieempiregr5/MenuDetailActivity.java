@@ -98,7 +98,6 @@ public class MenuDetailActivity extends AppCompatActivity {
     public boolean onOptionsItemSelected(@NonNull MenuItem item) {
 
         if(item.getItemId() == R.id.mn_Search){
-
             Intent intent = new Intent (MenuDetailActivity.this,TimKiemMonActivity.class);
             startActivity(intent);
         }
