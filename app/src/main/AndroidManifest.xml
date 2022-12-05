@@ -13,14 +13,7 @@
         android:theme="@style/MyAppTheme"
         tools:targetApi="31">
         <activity
-            android:name=".KhuyenMaiActivity"
-            android:exported="false">
-            <meta-data
-                android:name="android.app.lib_name"
-                android:value="" />
-        </activity>
-        <activity
-            android:name=".ThongBaoAcitivity"
+            android:name=".CouponCodeOrderActivity"
             android:exported="false">
             <meta-data
                 android:name="android.app.lib_name"
@@ -42,8 +35,7 @@
         </activity>
         <activity
             android:name=".NapTienActivity"
-            android:exported="false"
-            android:parentActivityName=".Wallet">
+            android:exported="false">
             <meta-data
                 android:name="android.app.lib_name"
                 android:value="" />
@@ -57,8 +49,7 @@
         </activity>
         <activity
             android:name=".NhapOTPActivity"
-            android:exported="false"
-            android:parentActivityName=".LienKetActivity">
+            android:exported="false">
             <meta-data
                 android:name="android.app.lib_name"
                 android:value="" />
@@ -85,16 +76,14 @@
         </activity>
         <activity
             android:name=".MenuDetailActivity"
-            android:exported="false"
-            android:parentActivityName=".MenuActivity">
+            android:exported="false">
             <meta-data
                 android:name="android.app.lib_name"
                 android:value="" />
         </activity>
         <activity
             android:name=".MenuActivity"
-            android:exported="false"
-            android:parentActivityName=".TrangChu">
+            android:exported="false">
             <meta-data
                 android:name="android.app.lib_name"
                 android:value="" />
@@ -115,8 +104,42 @@
         </activity>
         <activity
             android:name=".LienKetActivity"
-            android:exported="false"
-            android:parentActivityName=".NapTienActivity">
+            android:exported="true">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".CartActivity"
+            android:exported="true">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".OrderActivity"
+            android:exported="true">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".OrderCanceledActivity"
+            android:exported="true">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".OrderDeliveredActivity"
+            android:exported="true">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".OrderDeliveringActivity"
+            android:exported="true">
             <meta-data
                 android:name="android.app.lib_name"
                 android:value="" />
