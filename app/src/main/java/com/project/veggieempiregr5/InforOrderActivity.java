@@ -68,6 +68,26 @@ public class InforOrderActivity extends AppCompatActivity {
             }
         });
 
+        binding.btnOrderNow.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                if(binding.radViVeggiePay.isChecked() == true)
+                {
+                    Intent intent = new Intent (InforOrderActivity.this,PaymentActivity.class);
+                    Bundle bundle = new Bundle();
+                    bundle.putString("totalorder",((binding.txtTongThanhToan.getText().toString().trim())));
+                    intent.putExtras(bundle);
+                    startActivity(intent);
+                }
+                else if(binding.radTienMat.isChecked() == true){
+                    Intent intent = new Intent (InforOrderActivity.this,ResultPaymentActivity.class);
+                    Bundle bundle = new Bundle();
+                    bundle.putString("totalorder",((binding.txtTongThanhToan.getText().toString().trim())));
+                    intent.putExtras(bundle);
+                    startActivity(intent);
+                }
+            }
+        });
 
 
 

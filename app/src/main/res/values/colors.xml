@@ -18,5 +18,5 @@
     <color name="textColorPrimary1">#C51162</color>
     <color name="navigationBarColor1">#FFD705</color>
     <color name="textColorSecondary1">#B3E5FC</color>
-
+    <color name="yellow">#FFD705</color>
 </resources>

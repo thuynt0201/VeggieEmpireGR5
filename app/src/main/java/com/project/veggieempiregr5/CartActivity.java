@@ -187,6 +187,11 @@ public class CartActivity extends AppCompatActivity {
             Intent intent = new Intent (CartActivity.this,TrangChu.class);
             startActivity(intent);
         }
+        if(item.getItemId() == R.id.mn_Menu){
+
+            Intent intent = new Intent (CartActivity.this,Menu.class);
+            startActivity(intent);
+        }
         return super.onOptionsItemSelected(item);
     }
 
