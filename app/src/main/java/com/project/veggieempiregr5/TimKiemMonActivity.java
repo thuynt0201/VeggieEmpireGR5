@@ -6,6 +6,8 @@ import androidx.appcompat.widget.SearchView;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
+import android.graphics.Color;
+import android.graphics.drawable.Drawable;
 import android.os.Bundle;
 import android.view.MenuItem;
 import android.widget.Toast;
@@ -29,6 +31,8 @@ public class TimKiemMonActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_tim_kiem_mon);
 
+        getSupportActionBar().setTitle(" ");
+
         searchView = findViewById(R.id.searchView);
         searchView.clearFocus();
         searchView.setOnQueryTextListener(new SearchView.OnQueryTextListener() {
@@ -40,7 +44,7 @@ public class TimKiemMonActivity extends AppCompatActivity {
             @Override
             public boolean onQueryTextChange(String newText) {
                 filterList(newText);
-                return true;
+                return false;
             }
         });
 
@@ -51,24 +55,18 @@ public class TimKiemMonActivity extends AppCompatActivity {
 
         // add data to item List
 
-        itemList.add(new Item(R.drawable.dau_hu_la_lot, "Đậu hũ lá lốt"));
         itemList.add(new Item(R.drawable.banh_mi_rau_cu, "Bánh mì rau củ"));
         itemList.add(new Item(R.drawable.ca_chua, "Cà chua nhồi thịt chay"));
         itemList.add(new Item(R.drawable.ca_ri_sup_lo, "Cà ri súp lơ"));
-        itemList.add(new Item(R.drawable.dau_hu_rau_diep, "Đậu hũ rau diếp cuộn"));
+        itemList.add(new Item(R.drawable.dau_hu_la_lot, "Đậu phụ lá lốt cuộn"));
+        itemList.add(new Item(R.drawable.dau_hu_rau_diep, "Đậu phụ rau diếp cuộn"));
         itemList.add(new Item(R.drawable.goi_rau_cu, "Gỏi rau củ"));
-        itemList.add(new Item(R.drawable.hoa_cuc, "Trà hoa cúc"));
-        itemList.add(new Item(R.drawable.kebap_rau_cu, "Kebap rau củ"));
-        itemList.add(new Item(R.drawable.lau_shabu_shabu, "Lẩu shabu shabu"));
-        itemList.add(new Item(R.drawable.lau_thai, "Lẩu thái"));
-        itemList.add(new Item(R.drawable.lau_truyen_thong, "Lẩu truyền thống"));
+        itemList.add(new Item(R.drawable.lau_shabu_shabu, "Lẩu chay shabu shabu"));
+        itemList.add(new Item(R.drawable.lau_thai, "Lẩu thái chay"));
+        itemList.add(new Item(R.drawable.lau_truyen_thong, "Lẩu chay truyền thống"));
         itemList.add(new Item(R.drawable.mi_ramen_toi_me, "Mì ramen tỏi mè"));
-        itemList.add(new Item(R.drawable.nuoc_chanh_tuoi, "Nước chanh tươi"));
-        itemList.add(new Item(R.drawable.nuoc_ep_dua, "Nước ép dứa"));
-        itemList.add(new Item(R.drawable.nuoc_mia, "Nước mía"));
-        itemList.add(new Item(R.drawable.nuoc_sam, "Nước sâm"));
-        itemList.add(new Item(R.drawable.ot_nhoi_thit_chay, "Ớt nhồi thịt chay"));
-        itemList.add(new Item(R.drawable.pho_mai_nuong, "Phô mai nướng hoàn hảo"));
+        itemList.add(new Item(R.drawable.ot_nhoi_thit_chay, "Ớt nhồi cơm chiên"));
+        itemList.add(new Item(R.drawable.pho_mai_nuong, "Phô mai nướng"));
         itemList.add(new Item(R.drawable.pizza_chay, "Pizza chay"));
         itemList.add(new Item(R.drawable.salad_khoai_lang_nuong, "Salad khoai lang nướng"));
         itemList.add(new Item(R.drawable.salad_khoai_tay, "Salad khoai tây"));
@@ -77,8 +75,13 @@ public class TimKiemMonActivity extends AppCompatActivity {
         itemList.add(new Item(R.drawable.soup_rau_thap_cam, "Soup rau thập cẩm"));
         itemList.add(new Item(R.drawable.tra_hoa_hong, "Trà hoa hồng"));
         itemList.add(new Item(R.drawable.viet_quat, "Trà đá việt quất chanh bạc hà"));
+        itemList.add(new Item(R.drawable.hoa_cuc, "Trà hoa cúc"));
         itemList.add(new Item(R.drawable.ca_rot, "Nước ép cà rốt"));
-        itemList.add(new Item(R.drawable.cam_ep, "Cam ép"));
+        itemList.add(new Item(R.drawable.cam_ep, "Nước ép cam"));
+        itemList.add(new Item(R.drawable.nuoc_ep_dua, "Nước ép dứa"));
+        itemList.add(new Item(R.drawable.nuoc_chanh_tuoi, "Nước chanh tươi"));
+        itemList.add(new Item(R.drawable.nuoc_mia, "Nước mía"));
+        itemList.add(new Item(R.drawable.nuoc_sam, "Nước sâm"));
 
         itemAdapter = new ItemAdapter(itemList);
         rcvItem.setAdapter(itemAdapter);

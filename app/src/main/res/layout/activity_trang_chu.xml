@@ -10,7 +10,7 @@
 
     <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="615dp"
+        android:layout_height="675dp"
         tools:ignore="MissingConstraints">
 
         <LinearLayout
@@ -39,25 +39,24 @@
 
             <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
+                android:layout_height="820dp"
                 android:orientation="vertical"
                 android:padding="10dp">
 
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:fontFamily="@font/nunitosans_bold"
                     android:text="Chào bạn"
                     android:textColor="#000000"
-                    android:textSize="30sp"
-                    android:textStyle="bold"
-                    android:fontFamily="@font/nunitosans_extrabold"/>
+                    android:textSize="30sp" />
 
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:fontFamily="@font/nunitosans_regular"
                     android:text="Vui lòng chọn Dịch Vụ"
-                    android:textSize="20sp"
-                    android:fontFamily="@font/nunitosans_light"/>
+                    android:textSize="20sp" />
 
                 <LinearLayout
                     android:id="@+id/imv_DatMon"
@@ -65,17 +64,17 @@
                     android:layout_height="50dp"
                     android:layout_marginTop="10dp"
                     android:background="@drawable/bogoc"
-                    android:padding="5dp"
-                    android:gravity="center">
+                    android:gravity="center"
+                    android:padding="5dp">
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:drawableLeft="@drawable/ic_baseline_food_bank_24"
-                        android:text="Đặt món"
+                        android:fontFamily="@font/nunitosans_regular"
+                        android:text=" Đặt món"
                         android:textColor="#000000"
-                        android:textSize="20sp"
-                        android:fontFamily="@font/nunitosans_regular"/>
+                        android:textSize="20sp" />
 
                     <LinearLayout
                         android:layout_width="match_parent"
@@ -95,16 +94,17 @@
                     android:layout_height="50dp"
                     android:layout_marginTop="10dp"
                     android:background="@drawable/bogoc"
-                    android:padding="5dp"
-                    android:gravity="center">
+                    android:gravity="center"
+                    android:padding="5dp">
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:drawableLeft="@drawable/ic_baseline_table_restaurant_24"
-                        android:text="Đặt bàn"
+                        android:fontFamily="@font/nunitosans_regular"
+                        android:text=" Đặt bàn"
                         android:textColor="#000000"
-                        android:textSize="20sp"  android:fontFamily="@font/nunitosans_regular"/>
+                        android:textSize="20sp" />
 
                     <LinearLayout
                         android:layout_width="match_parent"
@@ -126,17 +126,17 @@
                     android:layout_height="50dp"
                     android:layout_marginTop="10dp"
                     android:background="@drawable/bogoc"
-                    android:padding="5dp"
-                    android:gravity="center">
+                    android:gravity="center"
+                    android:padding="5dp">
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:drawableLeft="@drawable/ic_baseline_delivery_dining_24"
-                        android:text="Tình trạng đơn hàng"
+                        android:fontFamily="@font/nunitosans_regular"
+                        android:text=" Tình trạng đơn hàng"
                         android:textColor="#000000"
-                        android:textSize="20sp"
-                        android:fontFamily="@font/nunitosans_regular"/>
+                        android:textSize="20sp" />
 
                     <LinearLayout
 
@@ -162,14 +162,15 @@
                         android:layout_height="wrap_content"
                         android:text="Ưu đãi khủng"
                         android:textColor="#F44336"
-                        android:textStyle="bold" />
+                        android:fontFamily="@font/nunitosans_bold" />
 
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:gravity="end"
                         android:text="Xem ưu đãi"
-                        android:textColor="#000000" />
+                        android:textColor="#000000"
+                        android:fontFamily="@font/nunitosans_extralight"/>
                 </LinearLayout>
 
                 <ImageView
@@ -188,14 +189,15 @@
                         android:layout_height="wrap_content"
                         android:text="Thực đơn"
                         android:textColor="#000000"
-                        android:textStyle="bold" />
+                        android:fontFamily="@font/nunitosans_bold" />
 
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:gravity="end"
-                        android:text="Xem Thực đơn"
-                        android:textColor="#000000" />
+                        android:text="Xem thực đơn"
+                        android:textColor="#000000"
+                        android:fontFamily="@font/nunitosans_extralight"/>
                 </LinearLayout>
 
                 <ImageView
@@ -207,10 +209,10 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
                     android:text="Liên hệ với Veggie Empire"
                     android:textColor="#000000"
-                    android:textStyle="bold"
-                    android:layout_marginTop="10dp"/>
+                    android:fontFamily="@font/nunitosans_bold" />
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -224,19 +226,21 @@
                         android:layout_height="wrap_content"
                         android:text="Cần sự hỗ trợ?"
                         android:textColor="#000000"
-                        android:textSize="20sp" />
+                        android:fontFamily="@font/nunitosans_regular"
+                        android:textSize="18sp" />
 
                     <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:gravity="right">
-
                         <TextView
                             android:id="@+id/txt_sdt"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_gravity="center"
-                            android:text="1900 9508" />
+                            android:paddingRight="10dp"
+                            android:text="1900 9508"
+                            android:fontFamily="@font/nunitosans_regular"/>
                     </LinearLayout>
                 </LinearLayout>
 
@@ -252,7 +256,8 @@
                         android:layout_height="wrap_content"
                         android:text="Điều khoản và Điều kiện"
                         android:textColor="#000000"
-                        android:textSize="20sp" />
+                        android:textSize="18sp"
+                        android:fontFamily="@font/nunitosans_regular"/>
                 </LinearLayout>
             </LinearLayout>
         </LinearLayout>

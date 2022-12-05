@@ -28,7 +28,7 @@ public class MenuDetailActivity extends AppCompatActivity {
         setContentView(binding.getRoot());
 
         //======THANH HEADER======
-        getSupportActionBar().setTitle("Tùy chỉnh món ăn");
+        getSupportActionBar().setTitle("Chi tiết món ăn");
         Drawable drawable= getResources().getDrawable(R.drawable.ic_baseline_arrow_back_ios_24);
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
         getSupportActionBar().setHomeAsUpIndicator(drawable);

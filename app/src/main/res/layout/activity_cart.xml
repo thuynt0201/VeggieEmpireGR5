@@ -89,7 +89,7 @@
             <LinearLayout
                 android:id="@+id/startOrder"
                 android:layout_width="match_parent"
-                android:layout_height="60dp"
+                android:layout_height="65dp"
                 android:orientation="horizontal"
                 android:gravity="center"
                 android:background="#FFD705">
