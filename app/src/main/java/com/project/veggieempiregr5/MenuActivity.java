@@ -1,12 +1,17 @@
 package com.project.veggieempiregr5;
 
+import android.app.Dialog;
 import android.content.Intent;
 import android.graphics.drawable.Drawable;
 import android.os.Bundle;
 import android.view.Menu;
+import android.view.MenuItem;
 import android.view.View;
 import android.widget.AdapterView;
+import android.widget.Button;
+import android.widget.EditText;
 
+import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
 import com.project.adapters.MenuAdapter;
@@ -65,13 +70,13 @@ public class MenuActivity extends AppCompatActivity {
         menuList.add(new MenuList("Ớt nhồi cơm chiên", "Ớt chuông đỏ ngọt thanh đi kèm cơm chiên dương châu.",109000.00,R.drawable.ot_nhoi_thit_chay));
         menuList.add(new MenuList("Đậu phụ rau diếp cuộn", "Đậu phụ giã nhỏ cuộn cùng rau diếp thơm ngon.",79000.00,R.drawable.dau_hu_rau_diep));
         menuList.add(new MenuList("Soup bí ngô", "Bí đỏ xoay nhuyễn béo bùi. ",59000.00,R.drawable.soup_bi_ngo));
-        menuList.add(new MenuList("Salad khoai lang nướng", "Khoai lang mật Đà Lạt cùng rau củ quả. ",79000.00,R.drawable.salad_khoai_lang_nuong));
+        menuList.add(new MenuList("Salad khoai lang", "Khoai lang mật Đà Lạt cùng rau củ quả. ",79000.00,R.drawable.salad_khoai_lang_nuong));
         menuList.add(new MenuList("Gỏi rau cũ", "Nhiều dinh dưỡng khi kết hợp các loại rau củ.",79000.00,R.drawable.goi_rau_cu));
         menuList.add(new MenuList("Salad khoai tây", "Khoai tây ngọt ngon.",59000.00,R.drawable.salad_khoai_tay));
         menuList.add(new MenuList("Bánh mì rau cũ", "Giòn của bánh mì nóng và rau củ tươi đầy mới lạ độc đáo.",59000.00,R.drawable.banh_mi_rau_cu));
         menuList.add(new MenuList("Mì ramen tỏi mè", "Sợi mì giòn dai,vị thơm tỏi mè",79000.00,R.drawable.mi_ramen_toi_me));
         menuList.add(new MenuList("Phô mai nướng", "Hoàn hảo",79000.00,R.drawable.pho_mai_nuong));
-        menuList.add(new MenuList("Lẩu chay shabu shabu", "",209000.00,R.drawable.lau_shabu_shabu));
+        menuList.add(new MenuList("Lẩu chay shabu", "",209000.00,R.drawable.lau_shabu_shabu));
         menuList.add(new MenuList("Trà hoa cúc", "",29000.00,R.drawable.hoa_cuc));
         menuList.add(new MenuList("Trà đá việt quất", "",29000.00,R.drawable.viet_quat));
         menuList.add(new MenuList("Nước ép cà rốt", "",29000.00,R.drawable.ca_rot));
@@ -86,7 +91,16 @@ public class MenuActivity extends AppCompatActivity {
         getMenuInflater().inflate(R.menu.option_menu_menu, menu);
         return super.onCreateOptionsMenu(menu);
     }
+    @Override
+    public boolean onOptionsItemSelected(@NonNull MenuItem item) {
 
+        if(item.getItemId() == R.id.mn_CartOption){
+
+            Intent intent = new Intent (MenuActivity.this,CartActivity.class);
+            startActivity(intent);
+        }
+        return super.onOptionsItemSelected(item);
+    }
 
 
 }
