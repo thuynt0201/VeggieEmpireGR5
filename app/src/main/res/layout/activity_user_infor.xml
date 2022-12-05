@@ -1,0 +1,248 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".UserInfor"
+    android:orientation="vertical"
+    android:background="#F6F4E9">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#F8ECAF"
+        android:orientation="vertical"
+        android:padding="5dp">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_baseline_arrow_back_ios_24"
+            android:layout_marginLeft="10dp"/>
+
+        <ImageView
+            android:id="@+id/imguser"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_gravity="center"
+            android:src="@drawable/woman"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Nguyễn Thị Ngọc A"
+            android:textColor="#000000"
+            android:textSize="20sp"
+            android:fontFamily="@font/nunitosans_regular"
+            android:layout_marginTop="5dp"
+            android:textStyle="bold"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="5dp">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_baseline_star_24"
+                android:layout_marginLeft="85dp"
+                android:layout_gravity="center"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="4.9"
+                android:textColor="#000000"
+                android:textSize="20sp"
+                android:fontFamily="@font/nunitosans_regular"
+                android:layout_gravity="center"
+                android:layout_marginLeft="5dp"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="+847472002"
+                android:textColor="#000000"
+                android:textSize="20sp"
+                android:fontFamily="@font/nunitosans_regular"
+                android:layout_gravity="center"
+                android:layout_marginLeft="40dp"
+                android:textStyle="bold"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="110dp"
+            android:background="@drawable/bogoc"
+            android:padding="5dp"
+            android:backgroundTint="#FEA905">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/ic_baseline_diamond_24"
+                android:text="Hạng kim cương"
+                android:textColor="#FFFFFF"
+                android:textSize="20sp"
+                android:layout_gravity="center"
+                android:fontFamily="@font/nunitosans_regular"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Tài khoản của tôi"
+        android:textSize="15sp"
+        android:layout_marginTop="10dp"
+        android:textColor="#000000"
+        android:fontFamily="@font/nunitosans_light"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Tài khoản và Bảo mật"
+        android:textColor="#000000"
+        android:textSize="20sp"
+        android:fontFamily="@font/nunitosans_regular"
+        android:background="#FFFFFF"
+        android:layout_marginTop="2dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Đơn hàng"
+        android:textColor="#000000"
+        android:textSize="20sp"
+        android:fontFamily="@font/nunitosans_regular"
+        android:background="#FFFFFF"
+        android:layout_marginTop="2dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Ví của tôi"
+        android:textColor="#000000"
+        android:textSize="20sp"
+        android:fontFamily="@font/nunitosans_regular"
+        android:background="#FFFFFF"
+        android:layout_marginTop="2dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Địa chỉ"
+        android:textColor="#000000"
+        android:textSize="20sp"
+        android:fontFamily="@font/nunitosans_regular"
+        android:background="#FFFFFF"
+        android:layout_marginTop="2dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Khuyến mãi"
+        android:textColor="#000000"
+        android:textSize="20sp"
+        android:fontFamily="@font/nunitosans_regular"
+        android:background="#FFFFFF"
+        android:layout_marginTop="2dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Cài đặt"
+        android:textSize="15sp"
+        android:layout_marginTop="10dp"
+        android:textColor="#000000"
+        android:fontFamily="@font/nunitosans_light"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Cài đặt thông báo"
+        android:textColor="#000000"
+        android:textSize="20sp"
+        android:fontFamily="@font/nunitosans_regular"
+        android:background="#FFFFFF"
+        android:layout_marginTop="2dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Ngôn ngữ/ Language"
+        android:textColor="#000000"
+        android:textSize="20sp"
+        android:fontFamily="@font/nunitosans_regular"
+        android:background="#FFFFFF"
+        android:layout_marginTop="2dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Hỗ trợ"
+        android:textColor="#000000"
+        android:textSize="20sp"
+        android:fontFamily="@font/nunitosans_regular"
+        android:layout_marginTop="10dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Trung tâm hỗ trợ"
+        android:textColor="#000000"
+        android:textSize="20sp"
+        android:fontFamily="@font/nunitosans_regular"
+        android:background="#FFFFFF"
+        android:layout_marginTop="2dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Liên hệ tư vấn"
+        android:textColor="#000000"
+        android:textSize="20sp"
+        android:fontFamily="@font/nunitosans_regular"
+        android:background="#FFFFFF"
+        android:layout_marginTop="2dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Hộp thư"
+        android:textColor="#000000"
+        android:textSize="20sp"
+        android:fontFamily="@font/nunitosans_regular"
+        android:background="#FFFFFF"
+        android:layout_marginTop="2dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Phiên bản 3.6.31"
+        android:textSize="15sp"
+        android:layout_marginTop="10dp"
+        android:textColor="#000000"
+        android:fontFamily="@font/nunitosans_light"/>
+
+    <Button
+        android:layout_width="380dp"
+        android:layout_height="wrap_content"
+        android:text="Đăng xuất"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        android:layout_gravity="center"
+        android:backgroundTint="#FEA905"
+        android:layout_marginTop="5dp"/>
+
+</LinearLayout>
