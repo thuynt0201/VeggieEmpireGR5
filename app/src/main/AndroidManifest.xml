@@ -13,6 +13,20 @@
         android:theme="@style/MyAppTheme"
         tools:targetApi="31">
         <activity
+            android:name=".KhuyenMaiActivity"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".ThongBaoAcitivity"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
             android:name=".TimKiemMonActivity"
             android:exported="false">
             <meta-data
@@ -57,6 +71,7 @@
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
+
             <meta-data
                 android:name="android.app.lib_name"
                 android:value="" />
@@ -95,8 +110,6 @@
             android:name=".LienKetActivity"
             android:exported="false"
             android:parentActivityName=".NapTienActivity">
-
-
             <meta-data
                 android:name="android.app.lib_name"
                 android:value="" />
