@@ -7,9 +7,13 @@ import android.content.Intent;
 import android.graphics.drawable.Drawable;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.Button;
+import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.TextView;
+import android.widget.Toast;
 
+import com.project.database.BankDatabaseHelper;
 import com.project.models.Bank;
 import com.project.veggieempiregr5.databinding.ActivityLienKetBinding;
 
@@ -18,6 +22,9 @@ public class LienKetActivity extends AppCompatActivity {
     //Phan nay cua nguyen
 
     ActivityLienKetBinding binding;
+    EditText edtBankNumber, edtBankHolder, edtBankHolderId;
+    TextView txtBankName;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -39,8 +46,12 @@ public class LienKetActivity extends AppCompatActivity {
         }
 
         Bank bank = (Bank) bundle.get("bank_name");
-        TextView txtBankName = findViewById(R.id.txt_ChooseBank);
+        txtBankName = findViewById(R.id.txt_ChooseBank);
         txtBankName.setText(bank.getBankName());
+
+        edtBankNumber = findViewById(R.id.edt_bankNumber);
+        edtBankHolder = findViewById(R.id.edt_bankHolder);
+        edtBankHolderId = findViewById(R.id.edt_bankHolderId);
     }
 
     private void addEvents() {
@@ -99,8 +110,14 @@ public class LienKetActivity extends AppCompatActivity {
         binding.btnContinue.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(LienKetActivity.this, NhapOTPActivity.class);
-                startActivity(intent);
+                BankDatabaseHelper myDB = new BankDatabaseHelper(LienKetActivity.this);
+                myDB.addBankList(txtBankName.getText().toString().trim(),
+                        Integer.valueOf(edtBankNumber.getText().toString().trim()),
+                        edtBankHolder.getText().toString().trim(),
+                        Integer.valueOf(edtBankHolderId.getText().toString().trim()));
+
+                Intent intent1 = new Intent(LienKetActivity.this, NhapOTPActivity.class);
+                startActivity(intent1);
             }
         });
 

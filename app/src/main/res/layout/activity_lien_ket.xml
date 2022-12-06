@@ -57,6 +57,7 @@
             android:padding="10dp"
             android:background="@drawable/border">
             <EditText
+                android:id="@+id/edt_bankNumber"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:hint="Nhập số thẻ/ tài khoản"
@@ -87,6 +88,7 @@
             android:padding="10dp"
             android:background="@drawable/border">
             <EditText
+                android:id="@+id/edt_bankHolder"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:hint="Nhập họ tên chủ thẻ/ tài khoản"
@@ -117,6 +119,7 @@
             android:padding="10dp"
             android:background="@drawable/border">
             <EditText
+                android:id="@+id/edt_bankHolderId"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:hint="Nhập CMND/ CCCD/ Hộ chiếu"
