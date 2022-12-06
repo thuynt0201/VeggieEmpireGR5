@@ -181,7 +181,6 @@ public class CartActivity extends AppCompatActivity {
 
     @Override
     public boolean onOptionsItemSelected(@NonNull MenuItem item) {
-
         if(item.getItemId() == R.id.mn_Hompage){
 
             Intent intent = new Intent (CartActivity.this,TrangChu.class);
