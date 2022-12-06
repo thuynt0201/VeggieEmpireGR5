@@ -61,7 +61,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Thông báo của tôi"
-        android:fontFamily="@font/nunitosans_regular"
+        android:fontFamily="@font/nunitosans_light"
         android:textColor="@color/black"
         android:textSize="15sp"
         android:layout_marginTop="10dp"/>
