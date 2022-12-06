@@ -94,14 +94,16 @@
                 android:gravity="center"
                 android:background="#FFD705">
                 <TextView
+                    android:layout_weight="1"
                     android:layout_width="280dp"
                     android:layout_height="wrap_content"
-                    android:text="Tiến hàng xác nhận đơn hàng"
+                    android:text="Xác nhận đơn hàng"
                     android:fontFamily="@font/nunitosans_bold"
                     android:textColor="#000000"
                     android:textSize="18sp"
                     android:layout_marginLeft="20dp"/>
                 <TextView
+                    android:layout_weight="2"
                     android:id="@+id/txt_totalCart"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
