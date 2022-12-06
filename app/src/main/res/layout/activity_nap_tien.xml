@@ -5,19 +5,18 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".NapTienActivity"
-    android:orientation="vertical">
+    android:orientation="vertical"
+    android:weightSum="10">
 
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:padding="10dp"
-        android:orientation="vertical">
+
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:background="@drawable/border"
             android:padding="10dp"
-            android:orientation="vertical">
+            android:orientation="vertical"
+            android:layout_margin="10dp"
+            android:layout_weight="6">
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -66,32 +65,29 @@
                     android:id="@+id/btn_200K"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:text="100.000đ"
+                    android:textSize="17sp"
+                    android:textColor="#000000"
+                    android:background="@drawable/border"
+                    android:layout_margin="5dp"/>
+                <Button
+                    android:id="@+id/btn_500K"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
                     android:text="200.000đ"
                     android:textSize="17sp"
                     android:textColor="#000000"
                     android:background="@drawable/border"
-                    android:padding="10dp"
-                    android:layout_margin="10dp"/>
+                    android:layout_margin="5dp"/>
                 <Button
-                    android:id="@+id/btn_500K"
+                    android:id="@+id/btn_1Tr"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="500.000đ"
                     android:textSize="17sp"
                     android:textColor="#000000"
                     android:background="@drawable/border"
-                    android:padding="10dp"
-                    android:layout_margin="10dp"/>
-                <Button
-                    android:id="@+id/btn_1Tr"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="1.000.000đ"
-                    android:textSize="17sp"
-                    android:textColor="#000000"
-                    android:background="@drawable/border"
-                    android:padding="10dp"
-                    android:layout_margin="10dp"/>
+                    android:layout_margin="5dp"/>
             </LinearLayout>
             <TextView
                 android:layout_width="match_parent"
@@ -117,13 +113,15 @@
             android:textSize="20sp"
             android:layout_marginLeft="10dp"
             android:textColor="#000000"
-            android:layout_marginTop="10dp"/>
+            android:layout_marginTop="10dp"
+            android:layout_weight="0.5"/>
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_margin="10dp"
             android:background="@drawable/border"
-            android:padding="10dp">
+            android:padding="10dp"
+            android:layout_weight="0.5">
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -147,7 +145,8 @@
         <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="200dp"
-            android:padding="10dp">
+            android:padding="10dp"
+            android:layout_weight="2.5">
             <androidx.recyclerview.widget.RecyclerView
                 android:id="@+id/rcv_BankConnectdList"
                 android:layout_width="match_parent"
@@ -156,8 +155,9 @@
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:padding="10dp">
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:layout_weight="0.5">
             <Button
                 android:id="@+id/btn_NapTien"
                 android:layout_width="match_parent"
@@ -168,6 +168,6 @@
                 android:textColor="#000000"
                 android:textSize="25sp"/>
         </LinearLayout>
-    </LinearLayout>
+
 
 </LinearLayout>

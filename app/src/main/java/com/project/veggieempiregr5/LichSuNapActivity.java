@@ -9,6 +9,7 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import android.content.Intent;
 import android.database.Cursor;
+import android.graphics.drawable.Drawable;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -33,6 +34,12 @@ public class LichSuNapActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_lich_su_nap);
+
+        getSupportActionBar().setTitle("Chi tiết giao dịch");
+        Drawable drawable= getResources().getDrawable(R.drawable.ic_baseline_arrow_back_ios_24);
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+        getSupportActionBar().setHomeAsUpIndicator(drawable);
+
 
         recyclerView = findViewById(R.id.rcv_NapList);
         btn_nap = findViewById(btn_NapList);

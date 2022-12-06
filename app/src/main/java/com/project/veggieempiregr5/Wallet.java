@@ -17,7 +17,7 @@ public class Wallet extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         //setContentView(R.layout.activity_main);
 
-        getSupportActionBar().setTitle("Vì của tôi");
+        getSupportActionBar().setTitle("Ví của tôi");
         Drawable drawable= getResources().getDrawable(R.drawable.ic_baseline_arrow_back_ios_24);
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
         getSupportActionBar().setHomeAsUpIndicator(drawable);
