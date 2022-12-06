@@ -89,7 +89,7 @@
             <LinearLayout
                 android:id="@+id/startOrder"
                 android:layout_width="match_parent"
-                android:layout_height="50dp"
+                android:layout_height="55dp"
                 android:orientation="horizontal"
                 android:gravity="center"
                 android:background="#FFD705">
@@ -114,6 +114,5 @@
             </LinearLayout>
         </LinearLayout>
     </com.google.android.material.bottomnavigation.BottomNavigationView>
-
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -15,6 +15,8 @@ import com.project.veggieempiregr5.databinding.ActivityLienKetBinding;
 
 public class LienKetActivity extends AppCompatActivity {
 
+    //Phan nay cua nguyen
+
     ActivityLienKetBinding binding;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
