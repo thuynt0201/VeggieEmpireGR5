@@ -17,7 +17,7 @@
         <ListView
             android:id="@+id/lv_CartDishes"
             android:layout_width="match_parent"
-            android:layout_height="450dp" />
+            android:layout_height="580dp" />
     </LinearLayout>
 
     <com.google.android.material.bottomnavigation.BottomNavigationView
