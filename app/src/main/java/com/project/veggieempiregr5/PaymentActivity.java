@@ -16,10 +16,13 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
 
+import com.project.database.DatabaseCart;
+import com.project.database.DatabasePaymentOrder;
 import com.project.veggieempiregr5.databinding.ActivityPaymentBinding;
 
 public class PaymentActivity extends AppCompatActivity {
 
+    public static DatabasePaymentOrder databasePaymentOrder;
     ActivityPaymentBinding binding;
 
 
@@ -89,8 +92,14 @@ public class PaymentActivity extends AppCompatActivity {
         btnXacnhan.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Toast.makeText(PaymentActivity.this,"Thanh toán thành công", Toast.LENGTH_SHORT).show();
                 dialog.dismiss();
+
+                //Lưu thanh toán đơn hàng vào database để push qua lịch sử giao dịch bên Ví
+                DatabasePaymentOrder myDB = new DatabasePaymentOrder(PaymentActivity.this);
+                myDB.addCart(binding.txtTotalPayment.getText().toString().trim());
+                Toast.makeText(PaymentActivity.this,"Thanh toán thành công", Toast.LENGTH_SHORT).show();
+
+                //Intent tổng tiền đơn hàng qua màn hình kết quả giao dịch
                 Intent intent = new Intent (PaymentActivity.this,ResultPaymentActivity.class);
                 Bundle bundle = new Bundle();
                 bundle.putString("totalgiaodich",((binding.txtTotalPayment.getText().toString().trim())));
