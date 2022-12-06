@@ -13,6 +13,29 @@
         android:theme="@style/MyAppTheme"
         tools:targetApi="31">
         <activity
+            android:name=".KetQuaGD"
+            android:exported="false"
+            android:parentActivityName=".TrangChu">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".LichSuNapActivity"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".LichSuGDActivity"
+            android:exported="false"
+            android:parentActivityName=".Wallet">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
             android:name=".Contact"
             android:exported="false">
             <meta-data
@@ -101,7 +124,8 @@
         </activity>
         <activity
             android:name=".XacNhanNapTienActivity"
-            android:exported="false">
+            android:exported="false"
+            android:parentActivityName=".LichSuNapActivity">
             <meta-data
                 android:name="android.app.lib_name"
                 android:value="" />

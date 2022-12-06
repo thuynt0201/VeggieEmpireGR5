@@ -65,6 +65,7 @@ public class NapTienActivity extends AppCompatActivity {
         recyclerView.setAdapter(bankAdapter);
         recyclerView.setLayoutManager(new LinearLayoutManager(NapTienActivity.this));
 
+        
         txtChooseBank = findViewById(R.id.txt_NguonTien);
         edtTienNap = findViewById(R.id.edt_NhapTien);
 
@@ -127,7 +128,7 @@ public class NapTienActivity extends AppCompatActivity {
         binding.btnNapTien.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Double soTienNap = Double.parseDouble(edtTienNap.getText().toString().trim()) ;
+                Integer soTienNap = Integer.valueOf(edtTienNap.getText().toString().trim()) ;
                 BankUtil.soTienNap = soTienNap;
 
                 String tenNH = txtChooseBank.getText().toString().trim();
