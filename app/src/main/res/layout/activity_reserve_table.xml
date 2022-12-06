@@ -4,25 +4,43 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ReserveTable">
+    tools:context=".ReserveTable"
+    android:orientation="vertical"
+    android:padding="20dp"
+    android:background="@drawable/nendatban">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_baseline_arrow_back_ios_24"
+        android:layout_marginTop="10dp" />
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical"
-        android:padding="15dp">
+        android:background="@drawable/bg_datban"
+        android:padding="15dp"
+        android:layout_marginTop="10dp">
+
+        <ImageView
+            android:layout_width="133dp"
+            android:layout_height="103dp"
+            android:src="@drawable/logo"
+            android:layout_marginLeft="100dp"/>
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:padding="10dp"
             android:background="@drawable/border"
-            android:layout_marginTop="10dp">
+            android:layout_marginTop="5dp">
             <EditText
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:hint="Họ và tên"
-                android:textSize="20sp"
+                android:fontFamily="@font/nunitosans_regular"
+                android:textSize="15sp"
                 android:inputType="text"/> //??????
         </LinearLayout>
 
@@ -31,12 +49,13 @@
             android:layout_height="wrap_content"
             android:padding="10dp"
             android:background="@drawable/border"
-            android:layout_marginTop="10dp">
+            android:layout_marginTop="5dp">
             <EditText
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:hint="Số điện thoại"
-                android:textSize="20sp"
+                android:textSize="15sp"
+                android:fontFamily="@font/nunitosans_regular"
                 android:inputType="number"/>
         </LinearLayout>
 
@@ -45,12 +64,13 @@
             android:layout_height="wrap_content"
             android:padding="10dp"
             android:background="@drawable/border"
-            android:layout_marginTop="10dp">
+            android:layout_marginTop="5dp">
             <EditText
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:hint="Số người"
-                android:textSize="20sp"
+                android:fontFamily="@font/nunitosans_regular"
+                android:textSize="15sp"
                 android:inputType="number"/>
         </LinearLayout>
 
@@ -59,12 +79,13 @@
             android:layout_height="wrap_content"
             android:padding="10dp"
             android:background="@drawable/border"
-            android:layout_marginTop="10dp">
+            android:layout_marginTop="5dp">
             <EditText
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:hint="Ngày, tháng, năm sinh"
-                android:textSize="20sp"
+                android:fontFamily="@font/nunitosans_regular"
+                android:textSize="15sp"
                 android:inputType="number"/>
         </LinearLayout>
 
@@ -73,12 +94,13 @@
             android:layout_height="wrap_content"
             android:padding="10dp"
             android:background="@drawable/border"
-            android:layout_marginTop="10dp">
+            android:layout_marginTop="5dp">
             <EditText
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:hint="Chọn khung giờ"
-                android:textSize="20sp"
+                android:fontFamily="@font/nunitosans_regular"
+                android:textSize="15sp"
                 android:inputType="number"/> \\\??????
         </LinearLayout>
 
@@ -88,12 +110,13 @@
             android:layout_height="wrap_content"
             android:padding="10dp"
             android:background="@drawable/border"
-            android:layout_marginTop="10dp">
+            android:layout_marginTop="5dp">
             <EditText
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:hint="Nhập yêu cầu của bạn"
-                android:textSize="20sp"
+                android:fontFamily="@font/nunitosans_regular"
+                android:textSize="15sp"
                 android:inputType="number"/> \\\??????
         </LinearLayout>
 
@@ -102,6 +125,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Đặt bàn ngay"
+            android:fontFamily="@font/nunitosans_regular"
             android:textSize="20sp"
             android:textStyle="bold"
             android:textColor="@color/white"

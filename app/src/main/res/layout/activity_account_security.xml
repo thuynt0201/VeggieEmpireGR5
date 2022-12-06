@@ -24,11 +24,12 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Tài khoản và Bảo mật"
+            android:textColor="#000000"
             android:textSize="24sp"
+            android:fontFamily="@font/nunitosans_bold"
             android:textStyle="bold"
-            android:textColor="@color/black"
             android:layout_marginTop="40dp"
-            android:layout_marginLeft="50dp"/>
+            android:layout_marginLeft="55dp"/>
 
     </LinearLayout>
 
@@ -36,7 +37,9 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Hồ sơ của tôi"
-        android:textSize="24sp"
+        android:textColor="#000000"
+        android:textSize="22sp"
+        android:fontFamily="@font/nunitosans_regular"
         android:background="#FFFFFF"
         android:layout_marginTop="10dp"/>
 
@@ -44,7 +47,9 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Tên người dùng"
-        android:textSize="24sp"
+        android:textColor="#000000"
+        android:textSize="22sp"
+        android:fontFamily="@font/nunitosans_regular"
         android:background="#FFFFFF"
         android:layout_marginTop="5dp"/>
 
@@ -52,7 +57,9 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Điện thoại"
-        android:textSize="24sp"
+        android:textColor="#000000"
+        android:textSize="22sp"
+        android:fontFamily="@font/nunitosans_regular"
         android:background="#FFFFFF"
         android:layout_marginTop="5dp"/>
 
@@ -60,7 +67,9 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Email xác nhận đơn"
-        android:textSize="24sp"
+        android:textColor="#000000"
+        android:textSize="22sp"
+        android:fontFamily="@font/nunitosans_regular"
         android:background="#FFFFFF"
         android:layout_marginTop="5dp"/>
 
@@ -68,7 +77,9 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Tài khoản mạng xã hội"
-        android:textSize="24sp"
+        android:textColor="#000000"
+        android:textSize="22sp"
+        android:fontFamily="@font/nunitosans_regular"
         android:background="#FFFFFF"
         android:layout_marginTop="5dp"/>
 
@@ -76,7 +87,9 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Đổi mật khẩu"
-        android:textSize="24sp"
+        android:textColor="#000000"
+        android:textSize="22sp"
+        android:fontFamily="@font/nunitosans_regular"
         android:background="#FFFFFF"
         android:layout_marginTop="5dp"/>
 
