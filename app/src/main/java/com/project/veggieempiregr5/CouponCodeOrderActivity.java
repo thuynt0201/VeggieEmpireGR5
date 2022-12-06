@@ -85,7 +85,7 @@ public class CouponCodeOrderActivity extends AppCompatActivity {
         }
         if(item.getItemId() == R.id.mn_Menu){
 
-            Intent intent = new Intent (CouponCodeOrderActivity.this,Menu.class);
+            Intent intent = new Intent (CouponCodeOrderActivity.this,MenuActivity.class);
             startActivity(intent);
         }
         return super.onOptionsItemSelected(item);
