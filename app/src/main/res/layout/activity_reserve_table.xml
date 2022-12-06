@@ -10,13 +10,14 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical"
-        android:padding="10dp">
+        android:padding="15dp">
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:padding="10dp"
-            android:background="@drawable/border">
+            android:background="@drawable/border"
+            android:layout_marginTop="10dp">
             <EditText
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -29,7 +30,8 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:padding="10dp"
-            android:background="@drawable/border">
+            android:background="@drawable/border"
+            android:layout_marginTop="10dp">
             <EditText
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -42,7 +44,8 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:padding="10dp"
-            android:background="@drawable/border">
+            android:background="@drawable/border"
+            android:layout_marginTop="10dp">
             <EditText
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -55,7 +58,8 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:padding="10dp"
-            android:background="@drawable/border">
+            android:background="@drawable/border"
+            android:layout_marginTop="10dp">
             <EditText
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -68,7 +72,8 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:padding="10dp"
-            android:background="@drawable/border">
+            android:background="@drawable/border"
+            android:layout_marginTop="10dp">
             <EditText
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -82,14 +87,27 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:padding="10dp"
-            android:background="@drawable/border">
+            android:background="@drawable/border"
+            android:layout_marginTop="10dp">
             <EditText
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:hint="Chọn khung giờ"
+                android:hint="Nhập yêu cầu của bạn"
                 android:textSize="20sp"
                 android:inputType="number"/> \\\??????
         </LinearLayout>
+
+        <Button
+            android:id="@+id/btn_ReserveTable"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Đặt bàn ngay"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:layout_gravity="center"
+            android:backgroundTint="#FEA905"
+            android:layout_marginTop="10dp"/>
 
 
     </LinearLayout>
