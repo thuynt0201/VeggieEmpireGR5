@@ -6,14 +6,19 @@ import androidx.appcompat.widget.SearchView;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
+import android.content.Intent;
 import android.graphics.Color;
 import android.graphics.drawable.Drawable;
 import android.os.Bundle;
 import android.view.MenuItem;
+import android.view.View;
+import android.widget.AdapterView;
 import android.widget.Toast;
 
 import com.project.adapters.ItemAdapter;
 import com.project.models.Item;
+import com.project.models.MenuList;
+import com.project.veggieempiregr5.databinding.ActivityTimKiemMonBinding;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -31,8 +36,12 @@ public class TimKiemMonActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_tim_kiem_mon);
 
-        getSupportActionBar().setTitle(" ");
+        //======THANH HEADER======
+        getSupportActionBar().setTitle("Tìm món ăn");
         Drawable drawable= getResources().getDrawable(R.drawable.ic_baseline_arrow_back_ios_24);
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+        getSupportActionBar().setHomeAsUpIndicator(drawable);
+        //======THANH HEADER END======
 
         searchView = findViewById(R.id.searchView);
         searchView.clearFocus();
@@ -84,8 +93,16 @@ public class TimKiemMonActivity extends AppCompatActivity {
         itemList.add(new Item(R.drawable.nuoc_mia, "Nước mía"));
         itemList.add(new Item(R.drawable.nuoc_sam, "Nước sâm"));
 
-        itemAdapter = new ItemAdapter(itemList);
+        itemAdapter = new ItemAdapter(this, itemList);
         rcvItem.setAdapter(itemAdapter);
+    }
+
+    @Override
+    protected void onDestroy() {
+        super.onDestroy();
+        if (itemAdapter != null ){
+            itemAdapter.release();
+        }
     }
 
     private void filterList(String text) {

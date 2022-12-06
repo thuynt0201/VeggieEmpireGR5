@@ -126,7 +126,8 @@
         </activity>
         <activity
             android:name=".CouponCodeOrderActivity"
-            android:exported="false">
+            android:exported="false"
+            android:parentActivityName=".CartActivity">
             <meta-data
                 android:name="android.app.lib_name"
                 android:value="" />
@@ -141,7 +142,8 @@
         </activity>
         <activity
             android:name=".TimKiemMonActivity"
-            android:exported="false">
+            android:exported="false"
+            android:parentActivityName=".TrangChu">
             <meta-data
                 android:name="android.app.lib_name"
                 android:value="" />

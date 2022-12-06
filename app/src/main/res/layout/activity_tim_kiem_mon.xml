@@ -7,10 +7,11 @@
 
     <androidx.appcompat.widget.SearchView
         android:id="@+id/searchView"
-        android:layout_width="300dp"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_margin="30dp"
-        app:queryHint="Tìm món ăn..."
+        android:layout_gravity="center"
+        app:queryHint="Search here"
         android:background="@drawable/search_view_bg"
         app:iconifiedByDefault="false">
     </androidx.appcompat.widget.SearchView>
