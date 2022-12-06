@@ -16,11 +16,12 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:background="@drawable/border"
-            android:padding="5dp"
+            android:padding="10dp"
             android:orientation="vertical">
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
                 android:background="@drawable/bg_bogoc">
                 <TextView
                     android:layout_width="wrap_content"
@@ -42,6 +43,7 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
                 android:text="Số tiền cần nạp"
                 android:textSize="17sp"
                 android:textColor="#000000"
@@ -52,6 +54,7 @@
                 android:layout_height="wrap_content"
                 android:background="@drawable/border"
                 android:textSize="20sp"
+                android:layout_marginTop="5dp"
                 android:hint="Nhập số tiền cần nạp"
                 android:padding="10dp"/>
             <LinearLayout
@@ -101,6 +104,7 @@
                 android:id="@+id/txt_NguonTien"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
                 android:background="@drawable/border"
                 android:textSize="20sp"
                 android:hint="Chọn nguồn tiền"
@@ -123,7 +127,7 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Thêm ngân hàng nội địa/ quốc tế"
+                android:text=" Thêm ngân hàng nội địa/ quốc tế"
                 android:textSize="15sp"
                 android:textColor="#000000"
                 android:textStyle="bold"
@@ -142,12 +146,12 @@
         </LinearLayout>
         <RelativeLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="200dp"
             android:padding="10dp">
             <androidx.recyclerview.widget.RecyclerView
                 android:id="@+id/rcv_BankConnectdList"
                 android:layout_width="match_parent"
-                android:layout_height="150dp" />
+                android:layout_height="250dp" />
         </RelativeLayout>
 
         <LinearLayout

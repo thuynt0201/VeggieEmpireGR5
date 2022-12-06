@@ -1,18 +1,18 @@
-package com.project.veggieempiregr5;
-
-import androidx.appcompat.app.AppCompatActivity;
-
-import android.os.Bundle;
-import android.widget.ListView;
-
+//package com.project.veggieempiregr5;
+//
+//import androidx.appcompat.app.AppCompatActivity;
+//
+//import android.os.Bundle;
+//import android.widget.ListView;
+//
 //import com.project.adapters.ThongBaoAdapter;
 //import com.project.models.ThongBao;
-
-import java.util.ArrayList;
-
-public class ThongBaoAcitivity extends AppCompatActivity {
-
-    //Phan nay cua chi Phuonng Phuong
+//
+//import java.util.ArrayList;
+//
+//public class ThongBaoAcitivity extends AppCompatActivity {
+//
+//    //Phan nay cua chi Phuonng Phuong
 //    ListView lvThongBao;
 //    ArrayList<ThongBao> arrayThongBao;
 //    ThongBaoAdapter adapterthongbao;
@@ -36,4 +36,4 @@ public class ThongBaoAcitivity extends AppCompatActivity {
 //        adapterthongbao=new ThongBaoAdapter(this, R.layout.dong_thong_bao,arrayThongBao);
 //        lvThongBao.setAdapter(adapterthongbao);
 //    }
-}
+//}

@@ -1,12 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".UserInfor"
-    android:orientation="vertical"
-    android:background="#F6F4E9">
+    tools:context=".UserInfor">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="#F6F4E9">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -20,7 +25,7 @@
             android:layout_width="100dp"
             android:layout_height="100dp"
             android:layout_gravity="center"
-            android:src="@drawable/woman"/>
+            android:src="@drawable/woman" />
 
         <TextView
             android:layout_width="wrap_content"
@@ -28,7 +33,7 @@
             android:layout_gravity="center"
             android:text="Phùng Nguyễn Kim Nguyên"
             android:textColor="#000000"
-            android:textSize="18sp"
+            android:textSize="16sp"
             android:fontFamily="@font/nunitosans_regular"
             android:layout_marginTop="5dp"
             android:textStyle="bold"/>
@@ -52,7 +57,7 @@
                 android:layout_height="wrap_content"
                 android:text="4.9"
                 android:textColor="#000000"
-                android:textSize="16sp"
+                android:textSize="14sp"
                 android:fontFamily="@font/nunitosans_regular"
                 android:layout_gravity="center"
                 android:textStyle="bold"/>
@@ -63,7 +68,7 @@
                 android:layout_height="wrap_content"
                 android:text="+847472002"
                 android:textColor="#000000"
-                android:textSize="16sp"
+                android:textSize="14sp"
                 android:fontFamily="@font/nunitosans_regular"
                 android:layout_gravity="center"
                 android:textStyle="bold"
@@ -85,162 +90,184 @@
                 android:drawableLeft="@drawable/ic_baseline_diamond_24"
                 android:text=" Hạng kim cương"
                 android:textColor="#FFFFFF"
-                android:textSize="18sp"
+                android:textSize="16sp"
                 android:layout_gravity="center"
                 android:fontFamily="@font/nunitosans_regular"/>
 
         </LinearLayout>
-
     </LinearLayout>
 
 <LinearLayout
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:orientation="vertical"
-    android:padding="10dp">
+    android:orientation="vertical">
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Tài khoản của tôi"
-        android:textSize="15sp"
+        android:textSize="14sp"
         android:layout_marginTop="10dp"
+        android:paddingLeft="10dp"
         android:textColor="#000000"
         android:fontFamily="@font/nunitosans_light" />
 
     <TextView
         android:id="@+id/txt_TaiKhoanBaoMat"
         android:layout_width="match_parent"
-        android:layout_height="30dp"
+        android:layout_height="35dp"
         android:text="Tài khoản và Bảo mật"
         android:textColor="#000000"
-        android:textSize="18sp"
+        android:textSize="15sp"
         android:fontFamily="@font/nunitosans_regular"
         android:background="#FFFFFF"
-        android:layout_marginTop="2dp"/>
+        android:layout_marginTop="7dp"
+        android:paddingLeft="10dp"
+        android:paddingTop="7dp"/>
 
     <TextView
         android:id="@+id/txt_Order"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="35dp"
         android:text="Đơn hàng"
         android:textColor="#000000"
-        android:textSize="18sp"
+        android:textSize="15sp"
         android:fontFamily="@font/nunitosans_regular"
         android:background="#FFFFFF"
-        android:layout_marginTop="2dp"/>
+        android:layout_marginTop="2dp"
+        android:paddingLeft="10dp"
+        android:paddingTop="7dp"/>
 
     <TextView
         android:id="@+id/txt_Wallet"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="35dp"
         android:text="Ví của tôi"
         android:textColor="#000000"
-        android:textSize="20sp"
+        android:textSize="15sp"
         android:fontFamily="@font/nunitosans_regular"
         android:background="#FFFFFF"
-        android:layout_marginTop="2dp"/>
+        android:layout_marginTop="2dp"
+        android:paddingLeft="10dp"
+        android:paddingTop="7dp"/>
 
     <TextView
         android:id="@+id/txt_Address"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="35dp"
         android:text="Địa chỉ"
         android:textColor="#000000"
-        android:textSize="20sp"
+        android:textSize="15sp"
         android:fontFamily="@font/nunitosans_regular"
         android:background="#FFFFFF"
-        android:layout_marginTop="2dp"/>
+        android:layout_marginTop="2dp"
+        android:paddingLeft="10dp"
+        android:paddingTop="7dp"/>
 
     <TextView
         android:id="@+id/txt_KhuyenMai"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="35dp"
         android:text="Khuyến mãi"
         android:textColor="#000000"
-        android:textSize="20sp"
+        android:textSize="15sp"
         android:fontFamily="@font/nunitosans_regular"
         android:background="#FFFFFF"
-        android:layout_marginTop="2dp"/>
+        android:layout_marginTop="2dp"
+        android:paddingLeft="10dp"
+        android:paddingTop="7dp"/>
 
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Cài đặt"
-        android:textSize="15sp"
+        android:textSize="14sp"
         android:layout_marginTop="10dp"
+        android:paddingLeft="10dp"
         android:textColor="#000000"
         android:fontFamily="@font/nunitosans_light"/>
 
     <TextView
         android:id="@+id/txt_NotiSettings"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="35dp"
         android:text="Cài đặt thông báo"
         android:textColor="#000000"
-        android:textSize="20sp"
+        android:textSize="15sp"
         android:fontFamily="@font/nunitosans_regular"
         android:background="#FFFFFF"
-        android:layout_marginTop="2dp"/>
+        android:layout_marginTop="7dp"
+        android:paddingLeft="10dp"
+        android:paddingTop="7dp"/>
 
     <TextView
         android:id="@+id/txt_Language"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="35dp"
         android:text="Ngôn ngữ/ Language"
         android:textColor="#000000"
-        android:textSize="20sp"
+        android:textSize="15sp"
         android:fontFamily="@font/nunitosans_regular"
         android:background="#FFFFFF"
-        android:layout_marginTop="2dp"/>
+        android:layout_marginTop="2dp"
+        android:paddingLeft="10dp"
+        android:paddingTop="7dp"/>
 
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Hỗ trợ"
         android:textColor="#000000"
-        android:textSize="20sp"
-        android:fontFamily="@font/nunitosans_regular"
-        android:layout_marginTop="10dp"/>
+        android:textSize="14sp"
+        android:fontFamily="@font/nunitosans_light"
+        android:layout_marginTop="10dp"
+        android:paddingLeft="10dp" />
 
     <TextView
         android:id="@+id/txt_HelpCenter"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="35dp"
         android:text="Trung tâm hỗ trợ"
         android:textColor="#000000"
-        android:textSize="20sp"
+        android:textSize="15sp"
         android:fontFamily="@font/nunitosans_regular"
         android:background="#FFFFFF"
-        android:layout_marginTop="2dp"/>
+        android:layout_marginTop="7dp"
+        android:paddingLeft="10dp"
+        android:paddingTop="7dp"/>
 
     <TextView
         android:id="@+id/txt_Contact"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="35dp"
         android:text="Liên hệ tư vấn"
         android:textColor="#000000"
-        android:textSize="20sp"
+        android:textSize="15sp"
         android:fontFamily="@font/nunitosans_regular"
         android:background="#FFFFFF"
-        android:layout_marginTop="2dp"/>
+        android:layout_marginTop="2dp"
+        android:paddingLeft="10dp"
+        android:paddingTop="7dp"/>
 
     <TextView
         android:id="@+id/txt_Mail"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="35dp"
         android:text="Hộp thư"
         android:textColor="#000000"
-        android:textSize="20sp"
+        android:textSize="15sp"
         android:fontFamily="@font/nunitosans_regular"
         android:background="#FFFFFF"
-        android:layout_marginTop="2dp"/>
+        android:layout_marginTop="2dp"
+        android:paddingLeft="10dp"
+        android:paddingTop="7dp"/>
 
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Phiên bản 3.6.31"
-        android:textSize="15sp"
+        android:textSize="14sp"
         android:layout_marginTop="10dp"
+        android:paddingLeft="10dp"
         android:textColor="#000000"
         android:fontFamily="@font/nunitosans_light"/>
 </LinearLayout>
@@ -252,10 +279,11 @@
         android:layout_height="wrap_content"
         android:text="Đăng xuất"
         android:textSize="20sp"
-        android:textStyle="bold"
         android:textColor="@color/white"
         android:layout_gravity="center"
         android:backgroundTint="#FEA905"
-        android:layout_marginTop="8dp"/>
+        android:layout_marginTop="8dp"
+        android:fontFamily="@font/nunitosans_semibold"/>
+    </LinearLayout>
 
-</LinearLayout>
+</ScrollView>
