@@ -55,8 +55,17 @@
                 android:value="" />
         </activity>
         <activity
+            android:name=".UserInfor"
+            android:exported="false"
+            android:parentActivityName=".TrangChu">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
             android:name=".PaymentActivity"
-            android:exported="false">
+            android:exported="false"
+            android:parentActivityName=".InforOrderActivity">
             <meta-data
                 android:name="android.app.lib_name"
                 android:value="" />
@@ -77,7 +86,8 @@
         </activity>
         <activity
             android:name=".InforOrderActivity"
-            android:exported="false">
+            android:exported="false"
+            android:parentActivityName=".CartActivity">
             <meta-data
                 android:name="android.app.lib_name"
                 android:value="" />
@@ -146,14 +156,16 @@
         </activity>
         <activity
             android:name=".MenuDetailActivity"
-            android:exported="false">
+            android:exported="false"
+            android:parentActivityName=".MenuActivity">
             <meta-data
                 android:name="android.app.lib_name"
                 android:value="" />
         </activity>
         <activity
             android:name=".MenuActivity"
-            android:exported="false">
+            android:exported="false"
+            android:parentActivityName=".TrangChu">
             <meta-data
                 android:name="android.app.lib_name"
                 android:value="" />
@@ -189,28 +201,32 @@
         </activity>
         <activity
             android:name=".OrderActivity"
-            android:exported="true">
+            android:exported="true"
+            android:parentActivityName=".TrangChu">
             <meta-data
                 android:name="android.app.lib_name"
                 android:value="" />
         </activity>
         <activity
             android:name=".OrderCanceledActivity"
-            android:exported="true">
+            android:exported="true"
+            android:parentActivityName=".CartActivity">
             <meta-data
                 android:name="android.app.lib_name"
                 android:value="" />
         </activity>
         <activity
             android:name=".OrderDeliveredActivity"
-            android:exported="true">
+            android:exported="true"
+            android:parentActivityName=".CartActivity">
             <meta-data
                 android:name="android.app.lib_name"
                 android:value="" />
         </activity>
         <activity
             android:name=".OrderDeliveringActivity"
-            android:exported="true">
+            android:exported="true"
+            android:parentActivityName=".CartActivity">
             <meta-data
                 android:name="android.app.lib_name"
                 android:value="" />

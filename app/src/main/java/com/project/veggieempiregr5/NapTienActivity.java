@@ -54,7 +54,6 @@ public class NapTienActivity extends AppCompatActivity {
         addEvents();
 
         recyclerView = findViewById(R.id.rcv_BankConnectdList);
-
         myDB = new BankDatabaseHelper(NapTienActivity.this);
         iD = new ArrayList<>();
         bankName = new ArrayList<>();
