@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PaymentActivity"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        android:background="#F8ECAF"
+        android:gravity="center">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Tổng thanh toán"
+            android:textSize="18sp"
+            android:fontFamily="@font/nunitosans_semibold"
+            android:textColor="#000000"
+           android:layout_marginLeft="15dp"/>
+        <TextView
+            android:id="@+id/txt_totalPayment"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="200000đ"
+            android:textSize="18sp"
+            android:fontFamily="@font/nunitosans_regular"
+            android:textColor="#000000"
+            android:textAlignment="textEnd"
+            android:layout_marginRight="10dp"/>
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="3dp"
+        android:background="#D9D9D9"
+        android:gravity="center"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        android:background="#F8ECAF"
+        android:gravity="center">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Phương thức thanh toán"
+            android:textSize="18sp"
+            android:fontFamily="@font/nunitosans_semibold"
+            android:textColor="#000000"
+            android:layout_marginLeft="15dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Ví VeggiePay"
+            android:textSize="18sp"
+            android:fontFamily="@font/nunitosans_regular"
+            android:textColor="#000000"
+            android:textAlignment="textEnd"
+            android:layout_marginRight="10dp"/>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_Payment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="15dp"
+        android:background="#FFD705"
+        android:fontFamily="@font/nunitosans_bold"
+        android:gravity="center"
+        android:text="Thanh toán"
+        android:textAlignment="center"
+        android:textColor="#000000"
+        android:textSize="18sp" />
+
+</LinearLayout>

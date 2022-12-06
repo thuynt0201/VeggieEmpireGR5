@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".OrderDeliveringActivity"
+    android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:gravity="center"
+        android:layout_gravity="center">
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/tick"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="-----------"
+            android:textColor="#000000"/>
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/prepare"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="-----------"
+            android:textColor="#000000"/>
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/motobike"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="-----------"
+            android:textColor="#000000"/>
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/hoanthanh"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="360dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="5dp">
+        <TextView
+            android:layout_width="90dp"
+            android:layout_height="wrap_content"
+            android:text="Đơn đã đặt"
+            android:textColor="#000000"
+            android:textAlignment="center"
+            android:fontFamily="@font/nunitosans_semibold"/>
+        <TextView
+            android:layout_width="90dp"
+            android:layout_height="wrap_content"
+            android:text="Chuẩn bị"
+            android:textColor="#000000"
+            android:fontFamily="@font/nunitosans_semibold"
+            android:textAlignment="center"/>
+        <TextView
+            android:layout_width="90dp"
+            android:layout_height="wrap_content"
+            android:text="Đang giao"
+            android:textColor="#000000"
+            android:textAlignment="center"
+            android:fontFamily="@font/nunitosans_semibold"/>
+        <TextView
+            android:layout_width="90dp"
+            android:layout_height="wrap_content"
+            android:text="Hoàn thành"
+            android:textColor="#000000"
+            android:textAlignment="center"
+            android:fontFamily="@font/nunitosans_semibold"/>
+    </LinearLayout>
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#F8ECAF"
+        android:padding="15dp"
+        android:layout_margin="20dp">
+        <TableRow
+            android:layout_marginBottom="10dp">
+            <TextView
+                android:layout_width="160dp"
+                android:layout_height="wrap_content"
+                android:text="Salad khoai tây (x1)"
+                android:fontFamily="@font/nunitosans_semibold"/>
+            <TextView
+                android:layout_width="180dp"
+                android:layout_height="wrap_content"
+                android:text="89.000"
+                android:fontFamily="@font/nunitosans_semibold"
+                android:gravity="end"/>
+        </TableRow>
+        <TableRow
+            android:layout_marginBottom="10dp">
+            <TextView
+                android:layout_width="160dp"
+                android:layout_height="wrap_content"
+                android:text="Bánh mì rau cũ (x2)"
+                android:fontFamily="@font/nunitosans_semibold"/>
+            <TextView
+                android:layout_width="180dp"
+                android:layout_height="wrap_content"
+                android:text="118.000"
+                android:fontFamily="@font/nunitosans_semibold"
+                android:gravity="end"/>
+        </TableRow>
+        <TableRow android:layout_marginBottom="40dp">
+            <TextView
+                android:layout_width="160dp"
+                android:layout_height="wrap_content"
+                android:text="Soup bí ngô"
+                android:fontFamily="@font/nunitosans_semibold"/>
+            <TextView
+                android:layout_width="180dp"
+                android:layout_height="wrap_content"
+                android:text="69.000"
+                android:fontFamily="@font/nunitosans_semibold"
+                android:gravity="end"/>
+        </TableRow>
+
+        <TableRow android:layout_marginBottom="10dp">
+            <TextView
+                android:layout_width="160dp"
+                android:layout_height="wrap_content"
+                android:text="Tổng"
+                android:textColor="#000000"
+                android:fontFamily="@font/nunitosans_semibold"/>
+            <TextView
+                android:id="@+id/txt_Tong"
+                android:layout_width="180dp"
+                android:layout_height="wrap_content"
+                android:text="267.000"
+                android:fontFamily="@font/nunitosans_semibold"
+                android:gravity="end"/>
+        </TableRow>
+        <TableRow android:layout_marginBottom="10dp">
+            <TextView
+                android:layout_width="160dp"
+                android:layout_height="wrap_content"
+                android:text="Phí giao hàng"
+                android:textColor="#000000"
+                android:fontFamily="@font/nunitosans_semibold"/>
+            <TextView
+                android:layout_width="180dp"
+                android:layout_height="wrap_content"
+                android:text="20.000"
+                android:fontFamily="@font/nunitosans_semibold"
+                android:gravity="end"/>
+        </TableRow>
+        <TableRow android:layout_marginBottom="10dp">
+            <TextView
+                android:layout_width="160dp"
+                android:layout_height="wrap_content"
+                android:text="Giảm giá"
+                android:textColor="#000000"
+                android:fontFamily="@font/nunitosans_semibold" />
+            <TextView
+                android:layout_width="180dp"
+                android:layout_height="wrap_content"
+                android:text="-20.000"
+                android:fontFamily="@font/nunitosans_semibold"
+                android:gravity="end"/>
+        </TableRow>
+        <ImageView
+            android:src="@drawable/line3"/>
+        <TableRow
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp">
+            <TextView
+                android:layout_width="160dp"
+                android:layout_height="wrap_content"
+                android:text="TỔNG THANH TOÁN"
+                android:textColor="#000000"
+                android:fontFamily="@font/nunitosans_bold"/>
+            <TextView
+                android:layout_width="180dp"
+                android:layout_height="wrap_content"
+                android:text="267.000"
+                android:textColor="#000000"
+                android:fontFamily="@font/nunitosans_bold"
+                android:gravity="end"/>
+        </TableRow>
+    </TableLayout>
+    <Button
+        android:id="@+id/btn_Contact"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:text="Liên hệ"
+        android:textSize="14dp"
+        android:textColor="#000000"
+        android:fontFamily="@font/nunitosans_extrabold"
+        android:backgroundTint="#FFD705"
+        android:drawableRight="@drawable/ic_baseline_message_24"
+        android:gravity="center"/>
+    <Button
+        android:id="@+id/btn_Cancel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:text="Xác nhận hủy"
+        android:textColor="#000000"
+        android:textSize="14dp"
+        android:fontFamily="@font/nunitosans_extrabold"
+        android:backgroundTint="#FFD705"
+        android:drawableRight="@drawable/ic_baseline_cancel_schedule_send_24"/>
+</LinearLayout>

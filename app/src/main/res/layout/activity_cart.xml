@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CartActivity"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:ignore="MissingConstraints">
+
+        <ListView
+            android:id="@+id/lv_CartDishes"
+            android:layout_width="match_parent"
+            android:layout_height="580dp" />
+    </LinearLayout>
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_gravity="bottom"
+        android:background="#f6f6f6"
+        app:fabCradleRoundedCornerRadius="50dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        tools:ignore="BottomAppBar,MissingConstraints">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:orientation="horizontal"
+                android:gravity="center">
+                <TextView
+                    android:layout_width="280dp"
+                    android:layout_height="wrap_content"
+                    android:text="Tổng:"
+                    android:fontFamily="@font/nunitosans_semibold"
+                    android:textColor="#000000"
+                    android:textSize="16sp"
+                    android:layout_marginLeft="20dp"/>
+                <TextView
+                    android:id="@+id/txt_totalAllItemCart"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="267000"
+                    android:fontFamily="@font/nunitosans_bold"
+                    android:textColor="#000000"
+                    android:textSize="16sp"
+                    android:gravity="end"
+                    android:layout_marginRight="10dp"/>
+            </LinearLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="3dp"
+                android:background="#ffffff"
+                android:layout_marginTop="5dp"/>
+            <LinearLayout
+                android:id="@+id/chooseCoupon"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:orientation="horizontal"
+                android:gravity="center">
+                <TextView
+                    android:layout_width="280dp"
+                    android:layout_height="wrap_content"
+                    android:text="Chọn mã khuyến mãi"
+                    android:fontFamily="@font/nunitosans_regular"
+                    android:textColor="#000000"
+                    android:textSize="16sp"
+                    android:layout_marginLeft="20dp"/>
+                <TextView
+                    android:id="@+id/txt_discountCart"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:fontFamily="@font/nunitosans_bold"
+                    android:textColor="#000000"
+                    android:textSize="16sp"
+                    android:gravity="end"
+                    android:layout_marginRight="10dp"/>
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/startOrder"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:background="#FFD705">
+                <TextView
+                    android:layout_width="280dp"
+                    android:layout_height="wrap_content"
+                    android:text="Tiến hàng xác nhận đơn hàng"
+                    android:fontFamily="@font/nunitosans_bold"
+                    android:textColor="#000000"
+                    android:textSize="18sp"
+                    android:layout_marginLeft="20dp"/>
+                <TextView
+                    android:id="@+id/txt_totalCart"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="267000"
+                    android:fontFamily="@font/nunitosans_bold"
+                    android:textColor="#000000"
+                    android:textSize="18sp"
+                    android:gravity="end"
+                    android:layout_marginRight="10dp"/>
+            </LinearLayout>
+        </LinearLayout>
+    </com.google.android.material.bottomnavigation.BottomNavigationView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
