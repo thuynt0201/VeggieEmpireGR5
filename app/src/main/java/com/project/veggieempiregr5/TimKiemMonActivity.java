@@ -32,6 +32,7 @@ public class TimKiemMonActivity extends AppCompatActivity {
         setContentView(R.layout.activity_tim_kiem_mon);
 
         getSupportActionBar().setTitle(" ");
+        Drawable drawable= getResources().getDrawable(R.drawable.ic_baseline_arrow_back_ios_24);
 
         searchView = findViewById(R.id.searchView);
         searchView.clearFocus();
