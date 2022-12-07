@@ -58,7 +58,7 @@
             android:layout_height="wrap_content"
             android:text="Danh mục"
             android:textStyle="bold"
-            android:textSize="24sp"
+            android:textSize="20sp"
             android:textColor="@color/black" />
 
         <LinearLayout
@@ -203,7 +203,7 @@
             android:text="Câu hỏi thường gặp"
             android:fontFamily="@font/nunitosans_bold"
             android:textStyle="bold"
-            android:textSize="24sp"
+            android:textSize="20sp"
             android:textColor="@color/black" />
 
         <TextView

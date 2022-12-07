@@ -41,10 +41,12 @@
         android:text="Thông báo"
         android:fontFamily="@font/nunitosans_regular"
         android:textColor="@color/black"
-        android:textSize="24sp"
+        android:textSize="15sp"
         android:drawableRight="@drawable/ic_baseline_toggle_on_24"
         android:background="#FFFFFF"
-        android:layout_marginTop="10dp"/>
+        android:layout_marginTop="10dp"
+        android:paddingLeft="10dp"
+        android:paddingTop="7dp"/>
 
     <TextView
         android:layout_width="match_parent"
@@ -52,10 +54,12 @@
         android:text="Chuông thông báo"
         android:fontFamily="@font/nunitosans_regular"
         android:textColor="@color/black"
-        android:textSize="24sp"
+        android:textSize="15sp"
         android:drawableEnd="@drawable/ic_baseline_toggle_on_24"
         android:background="#FFFFFF"
-        android:layout_marginTop="5dp"/>
+        android:layout_marginTop="2dp"
+        android:paddingLeft="10dp"
+        android:paddingTop="7dp"/>
 
     <TextView
         android:layout_width="match_parent"
@@ -63,7 +67,8 @@
         android:text="Thông báo của tôi"
         android:fontFamily="@font/nunitosans_light"
         android:textColor="@color/black"
-        android:textSize="15sp"
+        android:textSize="14sp"
+        android:paddingLeft="10dp"
         android:layout_marginTop="10dp"/>
 
     <TextView
@@ -72,10 +77,12 @@
         android:text="Cập nhật đơn hàng"
         android:fontFamily="@font/nunitosans_regular"
         android:textColor="@color/black"
-        android:textSize="24sp"
+        android:textSize="15sp"
         android:drawableEnd="@drawable/ic_baseline_toggle_on_24"
         android:background="#FFFFFF"
-        android:layout_marginTop="10dp"/>
+        android:layout_marginTop="10dp"
+        android:paddingLeft="10dp"
+        android:paddingTop="7dp"/>
 
     <TextView
         android:layout_width="match_parent"
@@ -84,9 +91,11 @@
         android:drawableEnd="@drawable/ic_baseline_toggle_on_24"
         android:fontFamily="@font/nunitosans_regular"
         android:textColor="@color/black"
-        android:textSize="24sp"
+        android:textSize="15sp"
         android:background="#FFFFFF"
-        android:layout_marginTop="5dp"/>
+        android:layout_marginTop="2dp"
+        android:paddingLeft="10dp"
+        android:paddingTop="7dp"/>
 
 
 
@@ -97,9 +106,11 @@
         android:drawableEnd="@drawable/ic_baseline_toggle_on_24"
         android:fontFamily="@font/nunitosans_regular"
         android:textColor="@color/black"
-        android:textSize="24sp"
+        android:textSize="15sp"
         android:background="#FFFFFF"
-        android:layout_marginTop="5dp"/>
+        android:layout_marginTop="2dp"
+        android:paddingLeft="10dp"
+        android:paddingTop="7dp"/>
 
     <TextView
         android:layout_width="match_parent"
@@ -108,9 +119,11 @@
         android:drawableEnd="@drawable/ic_baseline_toggle_on_24"
         android:fontFamily="@font/nunitosans_regular"
         android:textColor="@color/black"
-        android:textSize="24sp"
+        android:textSize="15sp"
         android:background="#FFFFFF"
-        android:layout_marginTop="5dp"/>
+        android:layout_marginTop="2dp"
+        android:paddingLeft="10dp"
+        android:paddingTop="7dp"/>
 
     <TextView
         android:layout_width="match_parent"
@@ -119,8 +132,10 @@
         android:text="Cập nhật ví"
         android:fontFamily="@font/nunitosans_regular"
         android:textColor="@color/black"
-        android:textSize="24sp"
+        android:textSize="15sp"
         android:background="#FFFFFF"
-        android:layout_marginTop="5dp"/>
+        android:layout_marginTop="2dp"
+        android:paddingLeft="10dp"
+        android:paddingTop="7dp"/>
 
 </LinearLayout>

@@ -278,7 +278,7 @@
         android:layout_width="380dp"
         android:layout_height="wrap_content"
         android:text="Đăng xuất"
-        android:textSize="20sp"
+        android:textSize="18sp"
         android:textColor="@color/white"
         android:layout_gravity="center"
         android:backgroundTint="#FEA905"

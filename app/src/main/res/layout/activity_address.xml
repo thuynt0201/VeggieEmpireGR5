@@ -41,16 +41,17 @@
         android:text="Địa chỉ đã lưu"
         android:fontFamily="@font/nunitosans_light"
         android:textColor="#000000"
-        android:textSize="15sp"
+        android:textSize="14sp"
         android:layout_marginTop="10dp"/>
 
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Thêm địa chỉ nhà"
+        android:drawableLeft="@drawable/ic_baseline_home_24"
         android:textColor="#000000"
-        android:fontFamily="@font/nunitosans_regular"
-        android:textSize="24sp"
+        android:fontFamily="@font/nunitosans_bold"
+        android:textSize="15sp"
         android:background="#FFFFFF"
         android:layout_marginTop="10dp"/>
 
@@ -58,40 +59,108 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Thêm địa chỉ công ty"
+        android:drawableLeft="@drawable/ic_baseline_work_24"
         android:textColor="@color/black"
-        android:fontFamily="@font/nunitosans_regular"
-        android:textSize="24sp"
+        android:fontFamily="@font/nunitosans_bold"
+        android:textSize="15sp"
         android:background="#FFFFFF"
         android:layout_marginTop="5dp"/>
 
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Điện thoại"
+        android:text="2 Hẻm 26 Đường số 17"
         android:textColor="#000000"
-        android:fontFamily="@font/nunitosans_regular"
-        android:textSize="24sp"
+        android:fontFamily="@font/nunitosans_bold"
+        android:textSize="15sp"
+        android:drawableLeft="@drawable/ic_baseline_library_add_24"
         android:background="#FFFFFF"
         android:layout_marginTop="5dp"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="2 Hẻm 26 Đường số 17, P. Linh Trung, TP. Thủ Đức, Thành phố Hồ Chí Minh, Việt Nam"
+        android:textColor="#000000"
+        android:fontFamily="@font/nunitosans_regular"
+        android:textSize="14sp"
+        android:background="#FFFFFF"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="My      0847472002"
+        android:textColor="#000000"
+        android:fontFamily="@font/nunitosans_regular"
+        android:textSize="14sp"
+        android:background="#FFFFFF"/>
 
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Email xác nhận đơn"
+        android:text="9 Đường Hòa Bình"
         android:textColor="#000000"
-        android:fontFamily="@font/nunitosans_regular"
-        android:textSize="24sp"
+        android:fontFamily="@font/nunitosans_bold"
+        android:textSize="15sp"
+        android:drawableLeft="@drawable/ic_baseline_library_add_24"
         android:background="#FFFFFF"
         android:layout_marginTop="5dp"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="9 Đường Hòa Bình, P. Bình Thọ, TP. Thủ Đức, Thành phố Hồ Chí Minh, Việt Nam "
+        android:textColor="#000000"
+        android:fontFamily="@font/nunitosans_regular"
+        android:textSize="14sp"
+        android:background="#FFFFFF"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="VP      0779591212"
+        android:textColor="#000000"
+        android:fontFamily="@font/nunitosans_regular"
+        android:textSize="14sp"
+        android:background="#FFFFFF"/>
 
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Tài khoản mạng xã hội"
+        android:text="12 Đường Hồng Đức"
         android:textColor="#000000"
-        android:fontFamily="@font/nunitosans_regular"
-        android:textSize="24sp"
+        android:fontFamily="@font/nunitosans_bold"
+        android:textSize="15sp"
+        android:drawableLeft="@drawable/ic_baseline_library_add_24"
         android:background="#FFFFFF"
         android:layout_marginTop="5dp"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="12 Đường Hồng Đức, P. Bình Thọ, TP. Thủ Đức, Thành phố Hồ Chí Minh, Việt Nam "
+        android:textColor="#000000"
+        android:fontFamily="@font/nunitosans_regular"
+        android:textSize="14sp"
+        android:background="#FFFFFF"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="My      0857399087"
+        android:textColor="#000000"
+        android:fontFamily="@font/nunitosans_regular"
+        android:textSize="14sp"
+        android:background="#FFFFFF"/>
+
+    <Button
+        android:id="@+id/btn_LogOut"
+        android:layout_width="380dp"
+        android:layout_height="wrap_content"
+        android:text="Thêm địa chỉ mới"
+        android:textSize="18sp"
+        android:textColor="@color/white"
+        android:layout_gravity="center"
+        android:backgroundTint="#FEA905"
+        android:layout_marginTop="220dp"
+        android:fontFamily="@font/nunitosans_semibold"/>
+
+
+
+
 
 </LinearLayout>
