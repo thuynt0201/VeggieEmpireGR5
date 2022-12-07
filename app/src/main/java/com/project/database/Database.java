@@ -9,7 +9,7 @@ import android.database.sqlite.SQLiteOpenHelper;
 public class Database extends SQLiteOpenHelper {
 
     public static final String DBNAME = "login.db";
-    public Database(Context context) {
+    public Database( Context context) {
         super(context, "login.db", null, 1);
     }
 
@@ -26,7 +26,7 @@ public class Database extends SQLiteOpenHelper {
         db.execSQL("drop Table if exists users");
     }
 
-    public Boolean insertData(Double phone, String password){
+    public Boolean insertData(String phone, String password){
         SQLiteDatabase db = this.getWritableDatabase();
         ContentValues values = new ContentValues();
 
@@ -40,9 +40,9 @@ public class Database extends SQLiteOpenHelper {
             return  true;
     }
 
-    public Boolean checkphone (Double phone){
+    public Boolean checkphone (String phone){
         SQLiteDatabase db = this.getWritableDatabase();
-        Cursor cursor = db.rawQuery("Select * from users where phone = ?", new String[] {String.valueOf(phone)});
+        Cursor cursor = db.rawQuery("Select * from users where phone = ?", new String[] {phone});
 
         if(cursor.getCount() > 0 )
             return true;
@@ -50,9 +50,9 @@ public class Database extends SQLiteOpenHelper {
             return  false;
     }
 
-    public Boolean checkpassword (Double phone, String password){
+    public Boolean checkpassword (String phone, String password){
         SQLiteDatabase db = this.getWritableDatabase();
-        Cursor cursor = db.rawQuery("Select * from users where phone = ? and password = ?",  new String[] {String.valueOf(phone), password});
+        Cursor cursor = db.rawQuery("Select * from users where phone = ? and password = ?",  new String[] {phone, password});
 
         if(cursor.getCount() > 0 )
             return true;

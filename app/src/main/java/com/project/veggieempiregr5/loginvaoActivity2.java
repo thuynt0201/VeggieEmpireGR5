@@ -36,7 +36,8 @@ ActivityLoginvao2Binding binding;
         binding.btnkvl.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-
+                Intent intent=new Intent(loginvaoActivity2.this,TrangChu.class);
+                startActivity(intent);
            }
         });
     }

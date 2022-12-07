@@ -103,7 +103,7 @@ public class registerActivity2 extends AppCompatActivity {
         binding.btnlogin.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-               Double user = Double.valueOf(phone.getText().toString());
+                String user = phone.getText().toString();
                 String pass = password.getText().toString();
                 String confirm = confirmpass.getText().toString();
 
@@ -112,9 +112,9 @@ public class registerActivity2 extends AppCompatActivity {
                     Toast.makeText(registerActivity2.this, "Vui lòng hãy điền tất cả thông tin" , Toast.LENGTH_SHORT).show();
                 else{
                     if (pass.equals(confirm)) {
-                        Boolean checkuser = DB.checkphone(Double.valueOf(user));
+                        Boolean checkuser = DB.checkphone(user);
                         if (checkuser == false) {
-                            Boolean insert = DB.insertData ((Double.valueOf(user)), pass);
+                            Boolean insert = DB.insertData (user, pass);
                             if (insert == true) {
                                 Toast.makeText(registerActivity2.this, "Đăng ký thành công", Toast.LENGTH_SHORT).show();
                                 Intent intent = new Intent(getApplicationContext(), loginActivity2.class);
@@ -131,7 +131,6 @@ public class registerActivity2 extends AppCompatActivity {
                 }
             }
         });
-
 
 
 

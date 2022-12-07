@@ -104,14 +104,14 @@ public class loginActivity2 extends AppCompatActivity {
             @Override
             public void onClick(View view) {
 
-                Double user = Double.valueOf(phone.getText().toString());
+                String user = phone.getText().toString();
                 String pass = password.getText().toString();
 
                 if(user.equals("") || pass.equals(""))
                     Toast.makeText(loginActivity2.this, "Vui lòng điền hết tất cả thông tin", Toast.LENGTH_SHORT).show();
                 else {
-                    Boolean checkuserpassword = DB.checkpassword(Double.valueOf(user), pass);
-                    if (checkuserpassword == false) {
+                    Boolean checkuserpassword = DB.checkpassword(user, pass);
+                    if (checkuserpassword == true) {
                         Toast.makeText(loginActivity2.this, "Đăng nhập thành công", Toast.LENGTH_SHORT).show();
                         Intent intent = new Intent(getApplicationContext(), TrangChu.class);
                         startActivity(intent);

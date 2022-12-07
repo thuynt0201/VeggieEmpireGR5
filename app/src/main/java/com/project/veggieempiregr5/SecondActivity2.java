@@ -55,7 +55,7 @@ public class SecondActivity2 extends AppCompatActivity {
             @Override
             public void onComplete(@NonNull Task<Void> task) {
                 finish();
-                startActivity(new Intent(SecondActivity2.this,MainActivity.class));
+                startActivity(new Intent(SecondActivity2.this,TrangChu.class));
             }
         });
     }
