@@ -9,12 +9,14 @@ import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import com.project.database.DatabaseCart;
 import com.project.veggieempiregr5.databinding.ActivityMenuDetailBinding;
 
 public class MenuDetailActivity extends AppCompatActivity {
+
 
     ActivityMenuDetailBinding binding;
     public static DatabaseCart databaseCart;
@@ -26,6 +28,7 @@ public class MenuDetailActivity extends AppCompatActivity {
         //setContentView(R.layout.activity_menu_detail);
         binding = ActivityMenuDetailBinding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());
+
 
         //======THANH HEADER======
         getSupportActionBar().setTitle("Chi tiết món ăn");
