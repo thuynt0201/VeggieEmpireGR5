@@ -1,141 +1,120 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".NotiSettings"
-    android:orientation="vertical"
-    android:background="#F6F4E9">
+    tools:context=".NotiSettings">
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="90dp"
-        android:background="#FFD705">
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="#F6F4E9">
 
-        <ImageView
-            android:layout_width="wrap_content"
+        <TextView
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:src="@drawable/ic_baseline_arrow_back_ios_24"
-            android:layout_marginTop="45dp"
-            android:layout_marginLeft="10dp"/>
+            android:text="Thông báo"
+            android:fontFamily="@font/nunitosans_regular"
+            android:textColor="@color/black"
+            android:textSize="15sp"
+            android:drawableRight="@drawable/ic_baseline_toggle_on_24"
+            android:background="#FFFFFF"
+            android:layout_marginTop="10dp"
+            android:paddingLeft="10dp"
+            android:paddingTop="7dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Chuông thông báo"
+            android:fontFamily="@font/nunitosans_regular"
+            android:textColor="@color/black"
+            android:textSize="15sp"
+            android:drawableEnd="@drawable/ic_baseline_toggle_on_24"
+            android:background="#FFFFFF"
+            android:layout_marginTop="2dp"
+            android:paddingLeft="10dp"
+            android:paddingTop="7dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Thông báo của tôi"
+            android:fontFamily="@font/nunitosans_light"
+            android:textColor="@color/black"
+            android:textSize="14sp"
+            android:paddingLeft="10dp"
+            android:layout_marginTop="10dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Cập nhật đơn hàng"
+            android:fontFamily="@font/nunitosans_regular"
+            android:textColor="@color/black"
+            android:textSize="15sp"
+            android:drawableEnd="@drawable/ic_baseline_toggle_on_24"
+            android:background="#FFFFFF"
+            android:layout_marginTop="10dp"
+            android:paddingLeft="10dp"
+            android:paddingTop="7dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Chat"
+            android:drawableEnd="@drawable/ic_baseline_toggle_on_24"
+            android:fontFamily="@font/nunitosans_regular"
+            android:textColor="@color/black"
+            android:textSize="15sp"
+            android:background="#FFFFFF"
+            android:layout_marginTop="2dp"
+            android:paddingLeft="10dp"
+            android:paddingTop="7dp"/>
 
 
 
         <TextView
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Cài đặt thông báo"
-            android:fontFamily="@font/nunitosans_bold"
-            android:textSize="24sp"
-            android:textStyle="bold"
+            android:text="Khuyến mãi"
+            android:drawableEnd="@drawable/ic_baseline_toggle_on_24"
+            android:fontFamily="@font/nunitosans_regular"
             android:textColor="@color/black"
-            android:layout_marginTop="40dp"
-            android:layout_marginLeft="70dp" />
+            android:textSize="15sp"
+            android:background="#FFFFFF"
+            android:layout_marginTop="2dp"
+            android:paddingLeft="10dp"
+            android:paddingTop="7dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Hoạt động"
+            android:drawableEnd="@drawable/ic_baseline_toggle_on_24"
+            android:fontFamily="@font/nunitosans_regular"
+            android:textColor="@color/black"
+            android:textSize="15sp"
+            android:background="#FFFFFF"
+            android:layout_marginTop="2dp"
+            android:paddingLeft="10dp"
+            android:paddingTop="7dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableEnd="@drawable/ic_baseline_toggle_on_24"
+            android:text="Cập nhật ví"
+            android:fontFamily="@font/nunitosans_regular"
+            android:textColor="@color/black"
+            android:textSize="15sp"
+            android:background="#FFFFFF"
+            android:layout_marginTop="2dp"
+            android:paddingLeft="10dp"
+            android:paddingTop="7dp"/>
 
     </LinearLayout>
 
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Thông báo"
-        android:fontFamily="@font/nunitosans_regular"
-        android:textColor="@color/black"
-        android:textSize="15sp"
-        android:drawableRight="@drawable/ic_baseline_toggle_on_24"
-        android:background="#FFFFFF"
-        android:layout_marginTop="10dp"
-        android:paddingLeft="10dp"
-        android:paddingTop="7dp"/>
-
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Chuông thông báo"
-        android:fontFamily="@font/nunitosans_regular"
-        android:textColor="@color/black"
-        android:textSize="15sp"
-        android:drawableEnd="@drawable/ic_baseline_toggle_on_24"
-        android:background="#FFFFFF"
-        android:layout_marginTop="2dp"
-        android:paddingLeft="10dp"
-        android:paddingTop="7dp"/>
-
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Thông báo của tôi"
-        android:fontFamily="@font/nunitosans_light"
-        android:textColor="@color/black"
-        android:textSize="14sp"
-        android:paddingLeft="10dp"
-        android:layout_marginTop="10dp"/>
-
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Cập nhật đơn hàng"
-        android:fontFamily="@font/nunitosans_regular"
-        android:textColor="@color/black"
-        android:textSize="15sp"
-        android:drawableEnd="@drawable/ic_baseline_toggle_on_24"
-        android:background="#FFFFFF"
-        android:layout_marginTop="10dp"
-        android:paddingLeft="10dp"
-        android:paddingTop="7dp"/>
-
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Chat"
-        android:drawableEnd="@drawable/ic_baseline_toggle_on_24"
-        android:fontFamily="@font/nunitosans_regular"
-        android:textColor="@color/black"
-        android:textSize="15sp"
-        android:background="#FFFFFF"
-        android:layout_marginTop="2dp"
-        android:paddingLeft="10dp"
-        android:paddingTop="7dp"/>
-
-
-
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Khuyến mãi"
-        android:drawableEnd="@drawable/ic_baseline_toggle_on_24"
-        android:fontFamily="@font/nunitosans_regular"
-        android:textColor="@color/black"
-        android:textSize="15sp"
-        android:background="#FFFFFF"
-        android:layout_marginTop="2dp"
-        android:paddingLeft="10dp"
-        android:paddingTop="7dp"/>
-
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Hoạt động"
-        android:drawableEnd="@drawable/ic_baseline_toggle_on_24"
-        android:fontFamily="@font/nunitosans_regular"
-        android:textColor="@color/black"
-        android:textSize="15sp"
-        android:background="#FFFFFF"
-        android:layout_marginTop="2dp"
-        android:paddingLeft="10dp"
-        android:paddingTop="7dp"/>
-
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:drawableEnd="@drawable/ic_baseline_toggle_on_24"
-        android:text="Cập nhật ví"
-        android:fontFamily="@font/nunitosans_regular"
-        android:textColor="@color/black"
-        android:textSize="15sp"
-        android:background="#FFFFFF"
-        android:layout_marginTop="2dp"
-        android:paddingLeft="10dp"
-        android:paddingTop="7dp"/>
-
-</LinearLayout>
+</ScrollView>

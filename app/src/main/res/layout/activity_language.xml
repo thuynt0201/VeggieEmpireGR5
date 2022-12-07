@@ -1,93 +1,76 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Language"
-    android:orientation="vertical"
-    android:background="#F6F4E9">
+    tools:context=".Language">
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="90dp"
-        android:background="#FFD705">
+        android:layout_height="wrap_content"
 
-        <ImageView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:src="@drawable/ic_baseline_arrow_back_ios_24"
-            android:layout_marginTop="45dp"
-            android:layout_marginLeft="10dp"/>
+        android:orientation="vertical"
+        android:background="#F6F4E9">
 
-        <TextView
-            android:layout_width="wrap_content"
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:orientation="horizontal"
+            android:background="#FFFFFF"
+            android:weightSum="10"
+            android:layout_marginTop="7dp"
+            android:paddingLeft="10dp">
+
+            <TextView
+                android:layout_weight="9.5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="English"
+                android:textColor="#000000"
+                android:textSize="15sp"
+                android:fontFamily="@font/nunitosans_regular" />
+
+            <RadioButton
+                android:layout_weight="0.5"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:orientation="horizontal"
+            android:background="#FFFFFF"
+            android:weightSum="10"
+            android:layout_marginTop="2dp"
+            android:paddingLeft="10dp">
+
+            <TextView
+                android:layout_weight="9.5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Tiếng Việt"
+                android:textColor="#000000"
+                android:textSize="15sp"
+                android:fontFamily="@font/nunitosans_regular" />
+
+            <RadioButton
+                android:layout_weight="0.5"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent" />
+        </LinearLayout>
+
+        <Button
+            android:layout_width="380dp"
             android:layout_height="wrap_content"
-            android:text="Ngôn ngữ"
-            android:fontFamily="@font/nunitosans_bold"
-            android:textSize="24sp"
-            android:textStyle="bold"
-            android:textColor="@color/black"
+            android:text="Lưu"
+            android:textSize="20sp"
+            android:layout_gravity="center"
+            android:textColor="@color/white"
+            android:backgroundTint="#FEA905"
             android:layout_marginTop="40dp"
-            android:layout_marginLeft="120dp"/>
+            android:fontFamily="@font/nunitosans_semibold"/>
 
     </LinearLayout>
 
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="35dp"
-        android:orientation="horizontal"
-        android:background="#FFFFFF"
-        android:weightSum="10"
-        android:layout_marginTop="7dp"
-        android:paddingLeft="10dp">
-
-        <TextView
-            android:layout_weight="9.5"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="English"
-            android:textColor="#000000"
-            android:textSize="15sp"
-            android:fontFamily="@font/nunitosans_regular" />
-
-        <RadioButton
-            android:layout_weight="0.5"
-            android:layout_width="wrap_content"
-            android:layout_height="match_parent" />
-    </LinearLayout>
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="35dp"
-        android:orientation="horizontal"
-        android:background="#FFFFFF"
-        android:weightSum="10"
-        android:layout_marginTop="2dp"
-        android:paddingLeft="10dp">
-
-    <TextView
-        android:layout_weight="9.5"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Tiếng Việt"
-        android:textColor="#000000"
-        android:textSize="15sp"
-        android:fontFamily="@font/nunitosans_regular" />
-
-        <RadioButton
-            android:layout_weight="0.5"
-            android:layout_width="wrap_content"
-            android:layout_height="match_parent" />
-    </LinearLayout>
-
-    <Button
-        android:layout_width="380dp"
-        android:layout_height="wrap_content"
-        android:text="Lưu"
-        android:textSize="20sp"
-        android:layout_gravity="center"
-        android:textColor="@color/white"
-        android:backgroundTint="#FEA905"
-        android:layout_marginTop="40dp"
-        android:fontFamily="@font/nunitosans_semibold"/>
-</LinearLayout>
+</ScrollView>

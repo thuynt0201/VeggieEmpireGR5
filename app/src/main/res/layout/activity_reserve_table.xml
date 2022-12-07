@@ -1,139 +1,139 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".ReserveTable"
-    android:orientation="vertical"
-    android:padding="20dp"
     android:background="@drawable/nendatban">
-
-    <ImageView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:src="@drawable/ic_baseline_arrow_back_ios_24"
-        android:layout_marginTop="10dp" />
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical"
-        android:background="@drawable/bg_datban"
-        android:padding="15dp"
-        android:layout_marginTop="10dp">
-
-        <ImageView
-            android:layout_width="133dp"
-            android:layout_height="103dp"
-            android:src="@drawable/logo"
-            android:layout_marginLeft="100dp"/>
+        android:padding="20dp">
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:padding="10dp"
-            android:background="@drawable/border"
-            android:layout_marginTop="5dp">
-            <EditText
+            android:orientation="vertical"
+            android:background="@drawable/bg_datban"
+            android:padding="15dp"
+            android:layout_marginTop="60dp">
+
+            <ImageView
+                android:layout_width="133dp"
+                android:layout_height="103dp"
+                android:src="@drawable/logo"
+                android:layout_marginLeft="100dp"/>
+
+            <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:hint="Họ và tên"
-                android:fontFamily="@font/nunitosans_regular"
-                android:textSize="15sp"
-                android:inputType="text"/> //??????
-        </LinearLayout>
+                android:padding="10dp"
+                android:background="@drawable/border"
+                android:layout_marginTop="5dp">
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Họ và tên"
+                    android:fontFamily="@font/nunitosans_regular"
+                    android:textSize="15sp"
+                    android:inputType="text"/> //??????
+            </LinearLayout>
 
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:padding="10dp"
-            android:background="@drawable/border"
-            android:layout_marginTop="5dp">
-            <EditText
+            <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:hint="Số điện thoại"
-                android:textSize="15sp"
-                android:fontFamily="@font/nunitosans_regular"
-                android:inputType="number"/>
-        </LinearLayout>
+                android:padding="10dp"
+                android:background="@drawable/border"
+                android:layout_marginTop="5dp">
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Số điện thoại"
+                    android:textSize="15sp"
+                    android:fontFamily="@font/nunitosans_regular"
+                    android:inputType="number"/>
+            </LinearLayout>
 
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:padding="10dp"
-            android:background="@drawable/border"
-            android:layout_marginTop="5dp">
-            <EditText
+            <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:hint="Số người"
-                android:fontFamily="@font/nunitosans_regular"
-                android:textSize="15sp"
-                android:inputType="number"/>
-        </LinearLayout>
+                android:padding="10dp"
+                android:background="@drawable/border"
+                android:layout_marginTop="5dp">
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Số người"
+                    android:fontFamily="@font/nunitosans_regular"
+                    android:textSize="15sp"
+                    android:inputType="number"/>
+            </LinearLayout>
 
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:padding="10dp"
-            android:background="@drawable/border"
-            android:layout_marginTop="5dp">
-            <EditText
+            <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:hint="Ngày, tháng, năm sinh"
-                android:fontFamily="@font/nunitosans_regular"
-                android:textSize="15sp"
-                android:inputType="number"/>
-        </LinearLayout>
+                android:padding="10dp"
+                android:background="@drawable/border"
+                android:layout_marginTop="5dp">
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Ngày, tháng, năm sinh"
+                    android:fontFamily="@font/nunitosans_regular"
+                    android:textSize="15sp"
+                    android:inputType="number"/>
+            </LinearLayout>
 
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:padding="10dp"
-            android:background="@drawable/border"
-            android:layout_marginTop="5dp">
-            <EditText
+            <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:hint="Chọn khung giờ"
-                android:fontFamily="@font/nunitosans_regular"
-                android:textSize="15sp"
-                android:inputType="number"/> \\\??????
-        </LinearLayout>
+                android:padding="10dp"
+                android:background="@drawable/border"
+                android:layout_marginTop="5dp">
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Chọn khung giờ"
+                    android:fontFamily="@font/nunitosans_regular"
+                    android:textSize="15sp"
+                    android:inputType="number"/> \\\??????
+            </LinearLayout>
 
 
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:padding="10dp"
-            android:background="@drawable/border"
-            android:layout_marginTop="5dp">
-            <EditText
+            <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:hint="Nhập yêu cầu của bạn"
-                android:fontFamily="@font/nunitosans_regular"
-                android:textSize="15sp"
-                android:inputType="number"/> \\\??????
+                android:padding="10dp"
+                android:background="@drawable/border"
+                android:layout_marginTop="5dp">
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Nhập yêu cầu của bạn"
+                    android:fontFamily="@font/nunitosans_regular"
+                    android:textSize="15sp"
+                    android:inputType="number"/> \\\??????
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/btn_ReserveTable"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Đặt bàn ngay"
+                android:fontFamily="@font/nunitosans_bold"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:textColor="@color/white"
+                android:layout_gravity="center"
+                android:backgroundTint="#FEA905"
+                android:layout_marginTop="10dp"/>
+
+
         </LinearLayout>
-
-        <Button
-            android:id="@+id/btn_ReserveTable"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Đặt bàn ngay"
-            android:fontFamily="@font/nunitosans_bold"
-            android:textSize="20sp"
-            android:textStyle="bold"
-            android:textColor="@color/white"
-            android:layout_gravity="center"
-            android:backgroundTint="#FEA905"
-            android:layout_marginTop="10dp"/>
-
 
     </LinearLayout>
 
-</LinearLayout>
+</ScrollView>
