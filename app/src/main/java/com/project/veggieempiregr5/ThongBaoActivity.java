@@ -34,12 +34,9 @@ public class ThongBaoActivity extends AppCompatActivity {
         arrayThongBao.add(new Thongbao("ĐƠN HÀNG ĐÃ ĐẾN RỒI BẠN ƠI","Mã đơn hàng AGV18511","20 phút nữa bác tài sẽ tới!!!!","20:13","24/12/2022"));
         arrayThongBao.add(new Thongbao("ĐƠN HÀNG ĐÃ ĐẾN RỒI BẠN ƠI","Mã đơn hàng AGV18511","20 phút nữa bác tài sẽ tới!!!!","20:13","24/12/2022"));
         rcvThongBao=findViewById(R.id.rcvthongbao);
-        //dsticket = new ArrayList<>();
         ThongBaoAdapter adapter = new ThongBaoAdapter(arrayThongBao);
         rcvThongBao.setLayoutManager(new LinearLayoutManager(this));
         rcvThongBao.setAdapter(adapter);
-
-        //List ticket
 
 
 

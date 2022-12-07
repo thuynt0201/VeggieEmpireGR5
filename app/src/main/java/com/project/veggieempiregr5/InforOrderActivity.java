@@ -2,11 +2,17 @@ package com.project.veggieempiregr5;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.core.app.NotificationCompat;
+import androidx.core.app.NotificationManagerCompat;
 
 import android.app.DatePickerDialog;
+import android.app.Notification;
+import android.app.NotificationChannel;
+import android.app.NotificationManager;
 import android.app.TimePickerDialog;
 import android.content.Intent;
 import android.graphics.drawable.Drawable;
+import android.os.Build;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
@@ -22,6 +28,8 @@ import java.util.Calendar;
 
 public class InforOrderActivity extends AppCompatActivity {
     ActivityInforOrderBinding binding;
+    NotificationManagerCompat notificationManagerCompat;
+    Notification notification;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -30,6 +38,10 @@ public class InforOrderActivity extends AppCompatActivity {
 
         binding = ActivityInforOrderBinding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());
+
+
+
+
 
         //======THANH HEADER======
         getSupportActionBar().setTitle("Thông tin đơn hàng");
@@ -41,7 +53,25 @@ public class InforOrderActivity extends AppCompatActivity {
         chooseTime();
         addEvents();
         getDataCart();
+        sendnoti();
     }
+
+    private void sendnoti() {
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O) {
+            NotificationChannel channel = new NotificationChannel("myCh", "Mychannel", NotificationManager.IMPORTANCE_DEFAULT);
+
+            NotificationManager manager = getSystemService(NotificationManager.class);
+            manager.createNotificationChannel(channel);
+        }
+        NotificationCompat.Builder builder = new NotificationCompat.Builder(this, "myCh")
+                .setSmallIcon(android.R.drawable.stat_notify_more)
+                .setContentTitle("Bạn đã đặt hàng thành công")
+                .setContentText("Shipper sẽ tới giao ngay cho bạn");
+        notification = builder.build();
+        notificationManagerCompat = NotificationManagerCompat.from(this);
+    }
+
+
 
     private void getDataCart() {
         Intent intent = getIntent();
@@ -86,6 +116,7 @@ public class InforOrderActivity extends AppCompatActivity {
                     intent.putExtras(bundle);
                     startActivity(intent);
                 }
+                notificationManagerCompat.notify(1, notification);
             }
         });
 
@@ -175,5 +206,6 @@ public class InforOrderActivity extends AppCompatActivity {
         }
         return super.onOptionsItemSelected(item);
     }
+
 
 }

@@ -386,6 +386,7 @@
             </RadioGroup>
         </LinearLayout>
         <Button
+            android:onClick="push"
             android:id="@+id/btn_OrderNow"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
