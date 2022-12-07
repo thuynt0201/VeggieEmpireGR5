@@ -7,6 +7,7 @@ import android.graphics.drawable.Drawable;
 import android.os.Bundle;
 import android.view.View;
 
+import com.project.veggieempiregr5.databinding.ActivityKhuyenMaiBinding;
 import com.project.veggieempiregr5.databinding.ActivityTrangChuBinding;
 import com.project.veggieempiregr5.databinding.ActivityUserInforBinding;
 
