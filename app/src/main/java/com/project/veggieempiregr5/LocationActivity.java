@@ -5,6 +5,7 @@ import androidx.appcompat.widget.SearchView;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
+import android.graphics.drawable.Drawable;
 import android.os.Bundle;
 import android.widget.Toast;
 
@@ -27,6 +28,13 @@ public class LocationActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_location);
+
+        //======THANH HEADER======
+        getSupportActionBar().setTitle("Chọn địa chỉ nhận hàng");
+        Drawable drawable= getResources().getDrawable(R.drawable.ic_baseline_arrow_back_ios_24);
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+        getSupportActionBar().setHomeAsUpIndicator(drawable);
+        //======THANH HEADER END======
 
         searchView = findViewById(R.id.searchView);
         searchView.clearFocus();

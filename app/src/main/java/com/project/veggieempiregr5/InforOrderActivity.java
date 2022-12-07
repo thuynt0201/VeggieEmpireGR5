@@ -89,6 +89,14 @@ public class InforOrderActivity extends AppCompatActivity {
             }
         });
 
+        binding.txtAddress.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent (InforOrderActivity.this, LocationActivity.class);
+                startActivity(intent);
+            }
+        });
+
 
 
 
