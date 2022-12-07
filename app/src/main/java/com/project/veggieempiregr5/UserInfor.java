@@ -38,5 +38,47 @@ public class UserInfor extends AppCompatActivity {
                 startActivity(intent2);
             }
         });
+        binding.txtTaiKhoanBaoMat.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent2 = new Intent(UserInfor.this, AccountSecurity.class);
+                startActivity(intent2);
+            }
+        });
+        binding.txtAddress.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent2 = new Intent(UserInfor.this, Address.class);
+                startActivity(intent2);
+            }
+        });
+        binding.txtNotiSettings.setOnClickListener((new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent2 = new Intent(UserInfor.this, NotiSettings.class);
+                startActivity(intent2);
+            }
+        }));
+        binding.txtLanguage.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent2 = new Intent(UserInfor.this, Language.class);
+                startActivity(intent2);
+            }
+        });
+        binding.txtHelpCenter.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent2 = new Intent(UserInfor.this, HelpCenter.class);
+                startActivity(intent2);
+            }
+        });
+        binding.txtContact.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent2 = new Intent(UserInfor.this, Contact.class);
+                startActivity(intent2);
+            }
+        });
     }
 }
