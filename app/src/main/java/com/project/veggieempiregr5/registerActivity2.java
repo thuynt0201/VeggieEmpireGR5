@@ -31,6 +31,8 @@ public class registerActivity2 extends AppCompatActivity {
         super.onCreate(savedInstanceState);
        // setContentView(R.layout.activity_register2);
 
+        getSupportActionBar().setTitle("VEGGIE EMPIRE");
+
         binding = ActivityRegister2Binding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());
 

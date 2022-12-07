@@ -18,6 +18,8 @@ ActivityLoginvao2Binding binding;
         super.onCreate(savedInstanceState);
         //setContentView(R.layout.activity_loginvao2);
 
+        getSupportActionBar().setTitle("VEGGIE EMPIRE");
+
         binding = ActivityLoginvao2Binding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());
 

@@ -19,6 +19,8 @@ public class logoActivity2 extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         // setContentView(R.layout.activity_logo2);
 
+        getSupportActionBar().setTitle("VEGGIE EMPIRE");
+
         binding = ActivityLogo2Binding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());
 

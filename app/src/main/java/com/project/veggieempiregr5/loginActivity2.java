@@ -1,6 +1,7 @@
 package com.project.veggieempiregr5;
 
 import android.content.Intent;
+import android.graphics.drawable.Drawable;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -32,6 +33,10 @@ public class loginActivity2 extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         //setContentView(R.layout.activity_login2);
+
+        //======THANH HEADER======
+        getSupportActionBar().setTitle("VEGGIE EMPIRE");
+        //======THANH HEADER END======
 
 
         binding = ActivityLogin2Binding.inflate(getLayoutInflater());
