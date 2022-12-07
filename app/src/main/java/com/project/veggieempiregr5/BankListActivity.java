@@ -54,7 +54,27 @@ public class BankListActivity extends AppCompatActivity {
         banks.add(new Bank(R.drawable.mbbank, "MBBank"));
         banks.add(new Bank(R.drawable.sacombank, "SacomBank"));
         banks.add(new Bank(R.drawable.vietinbank, "VietinBank"));
-        banks.add(new Bank(R.drawable.techcom, "TechcomBank"));
+        banks.add(new Bank(R.drawable.techcombank, "TechcomBank"));
+        banks.add(new Bank(R.drawable.acbbank, "ACBBank"));
+        banks.add(new Bank(R.drawable.abbank, "ABBank"));
+        banks.add(new Bank(R.drawable.bacabank, "BacABank"));
+        banks.add(new Bank(R.drawable.banvietbank, "BanVietBank"));
+        banks.add(new Bank(R.drawable.baovietbank, "BaoVietBank"));
+        banks.add(new Bank(R.drawable.bidvbank, "BIDV"));
+        banks.add(new Bank(R.drawable.tpbank, "TPBank"));
+        banks.add(new Bank(R.drawable.vpbank, "VPBank"));
+        banks.add(new Bank(R.drawable.eximbank, "EximBank"));
+        banks.add(new Bank(R.drawable.gpbank, "GPBank"));
+        banks.add(new Bank(R.drawable.msbbank, "MSBBank"));
+        banks.add(new Bank(R.drawable.indovinabank, "Indovina"));
+        banks.add(new Bank(R.drawable.kienlongbank, "KienLongBank"));
+        banks.add(new Bank(R.drawable.lienvietpostbank, "LienVietPost"));
+        banks.add(new Bank(R.drawable.ocbbank, "OCBBank"));
+        banks.add(new Bank(R.drawable.hdbank, "HDBank"));
+
+
+
+
 
         return banks;
     }

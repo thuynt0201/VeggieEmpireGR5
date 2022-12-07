@@ -104,6 +104,13 @@ public class NapTienActivity extends AppCompatActivity {
             }
         });
 
+        binding.btn100K.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                binding.edtNhapTien.setText("100000");
+            }
+        });
+
         binding.btn200K.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -111,17 +118,10 @@ public class NapTienActivity extends AppCompatActivity {
             }
         });
 
-        binding.btn500K.setOnClickListener(new View.OnClickListener() {
+        binding.btn500k.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 binding.edtNhapTien.setText("500000");
-            }
-        });
-
-        binding.btn1Tr.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                binding.edtNhapTien.setText("1000000");
             }
         });
 

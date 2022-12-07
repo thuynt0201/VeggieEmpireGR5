@@ -62,7 +62,7 @@
                 android:gravity="center">
 
                 <Button
-                    android:id="@+id/btn_200K"
+                    android:id="@+id/btn_100K"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="100.000đ"
@@ -71,7 +71,7 @@
                     android:background="@drawable/border"
                     android:layout_margin="5dp"/>
                 <Button
-                    android:id="@+id/btn_500K"
+                    android:id="@+id/btn_200K"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="200.000đ"
@@ -80,7 +80,7 @@
                     android:background="@drawable/border"
                     android:layout_margin="5dp"/>
                 <Button
-                    android:id="@+id/btn_1Tr"
+                    android:id="@+id/btn_500k"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="500.000đ"
