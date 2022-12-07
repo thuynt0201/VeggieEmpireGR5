@@ -8,5 +8,13 @@
     <string name="action_cart">Cart</string>
     <string name="action_coupon">Coupon</string>
     <string name="action_account">Account</string>
+    <string name="phone">Số điện thoại</string>
+    <string name="send">Gửi</string>
+    <string name="sendagian">Gửi lại</string>
+    <string name="noma">Bạn không nhận được mã ?</string>
+    <string name="sendemail">Gửi</string>
+    <string name="email">Email</string>
+    <string name="sms_tin_nh_n">SMS (Tin nhắn)</string>
+    <string name="t_i_kho_n_email">Tài khoản Email</string>
 
 </resources>
