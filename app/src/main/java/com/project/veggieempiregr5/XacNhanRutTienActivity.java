@@ -17,6 +17,8 @@ public class XacNhanRutTienActivity extends AppCompatActivity {
     ActivityXacNhanRutTienBinding binding;
     private  TextView txtNguonTienRut, txtSoTienRut;
 
+    String txtLoaiGiaoDich = "Rút tiền";
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -50,7 +52,6 @@ public class XacNhanRutTienActivity extends AppCompatActivity {
                         RutTienDatabase rutTienDatabase = new RutTienDatabase(XacNhanRutTienActivity.this);
                         rutTienDatabase.addRutTienList(txtNguonTienRut.getText().toString().trim(),
                                 Integer.valueOf(txtSoTienRut.getText().toString().trim()));
-
 
                         Intent intent = new Intent(XacNhanRutTienActivity.this, KetQuaRutActivity.class);
                         startActivity(intent);

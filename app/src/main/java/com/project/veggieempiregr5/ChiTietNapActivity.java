@@ -35,7 +35,7 @@ public class ChiTietNapActivity extends AppCompatActivity {
             chitiettiennap = getIntent().getStringExtra("chitiettiennap");
 
             txtChiTietNguonNap.setText(chitietnguontien);
-            txtChiTietTienNap.setText("+" + chitiettiennap);
+            txtChiTietTienNap.setText("+ " + chitiettiennap);
 
         }else {
             Toast.makeText(this, "No data", Toast.LENGTH_SHORT).show();

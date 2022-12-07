@@ -8,7 +8,6 @@ import android.os.Bundle;
 import android.view.View;
 
 import com.project.veggieempiregr5.databinding.ActivityLichSuGdactivityBinding;
-import com.project.veggieempiregr5.databinding.ActivityXacNhanNapTienBinding;
 
 public class LichSuGDActivity extends AppCompatActivity {
 
@@ -26,9 +25,12 @@ public class LichSuGDActivity extends AppCompatActivity {
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
         getSupportActionBar().setHomeAsUpIndicator(drawable);
 
+
         addEvents();
 
+
     }
+
 
     private void addEvents() {
         binding.btnNap.setOnClickListener(new View.OnClickListener() {
@@ -42,6 +44,13 @@ public class LichSuGDActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(LichSuGDActivity.this, LichSuRutActivity.class);
+                startActivity(intent);
+            }
+        });
+        binding.btnThanhToan.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(LichSuGDActivity.this, LichSuThanhToanActivity.class);
                 startActivity(intent);
             }
         });

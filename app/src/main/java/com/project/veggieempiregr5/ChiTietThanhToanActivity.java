@@ -7,15 +7,15 @@ import android.os.Bundle;
 import android.widget.TextView;
 import android.widget.Toast;
 
-public class ChiTietRutActivity extends AppCompatActivity {
+public class ChiTietThanhToanActivity extends AppCompatActivity {
 
-    TextView txtChiTietTienRut, txtChiTietNguonRut;
-    String chitiettienrut, chitietnguontienrut;
+    TextView txtChiTietTienThanhToan;
+    String chitiettienthanhtoan;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_chi_tiet_rut);
+        setContentView(R.layout.activity_chi_tiet_thanh_toan);
 
         getSupportActionBar().setTitle("Chi tiết giao dịch");
         Drawable drawable= getResources().getDrawable(R.drawable.ic_baseline_arrow_back_ios_24);
@@ -23,21 +23,17 @@ public class ChiTietRutActivity extends AppCompatActivity {
         getSupportActionBar().setHomeAsUpIndicator(drawable);
 
 
-        txtChiTietTienRut = findViewById(R.id.txt_ChiTietTienRut);
-        txtChiTietNguonRut = findViewById(R.id.txt_ChiTietNguonTienRut);
+        txtChiTietTienThanhToan = findViewById(R.id.txt_ChiTietTienThanhToan);
 
         GetAndSetIntentData();
 
     }
 
     private void GetAndSetIntentData() {
-        if (getIntent().hasExtra("chitietnguontienrut") && getIntent().hasExtra("chitiettienrut")){
-            chitietnguontienrut = getIntent().getStringExtra("chitietnguontienrut");
-            chitiettienrut = getIntent().getStringExtra("chitiettienrut");
+        if (getIntent().hasExtra("chitiettienthanhtoan")){
+            chitiettienthanhtoan = getIntent().getStringExtra("chitiettienthanhtoan");
 
-            txtChiTietNguonRut.setText(chitietnguontienrut);
-            txtChiTietTienRut.setText("- " + chitiettienrut);
-
+            txtChiTietTienThanhToan.setText("- " + chitiettienthanhtoan);
         }else {
             Toast.makeText(this, "No data", Toast.LENGTH_SHORT).show();
         }

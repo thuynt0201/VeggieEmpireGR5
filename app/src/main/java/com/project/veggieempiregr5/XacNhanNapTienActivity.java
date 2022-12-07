@@ -7,19 +7,17 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
-import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.project.database.NapTienDatabase;
-import com.project.models.Bank;
-import com.project.models.BankConnected;
-import com.project.veggieempiregr5.databinding.ActivityWalletBinding;
 import com.project.veggieempiregr5.databinding.ActivityXacNhanNapTienBinding;
 
 public class XacNhanNapTienActivity extends AppCompatActivity {
 
     ActivityXacNhanNapTienBinding binding;
     TextView txtNguonTienNap, txtSoTienNap;
+
+    String txtLoaiGiaoDich = "Nạp tiền";
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -54,7 +52,6 @@ public class XacNhanNapTienActivity extends AppCompatActivity {
                         NapTienDatabase napTienDatabase = new NapTienDatabase(XacNhanNapTienActivity.this);
                         napTienDatabase.addNapTienList(txtNguonTienNap.getText().toString().trim(),
                                 Integer.valueOf(txtSoTienNap.getText().toString().trim()));
-
 
                         Intent intent = new Intent(XacNhanNapTienActivity.this, KetQuaGD.class);
                         startActivity(intent);

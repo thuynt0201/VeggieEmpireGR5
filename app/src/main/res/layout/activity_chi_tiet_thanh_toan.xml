@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ChiTietRutActivity"
+    tools:context=".ChiTietThanhToanActivity"
     android:orientation="vertical">
 
     <LinearLayout
@@ -23,7 +23,7 @@
                 <ImageView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:src="@drawable/rutdetail"
+                    android:src="@drawable/thanhtoandetail"
                     android:layout_gravity="center"/>
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -33,10 +33,10 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="RÚT TIỀN"
+                        android:text="THANH TOÁN HÓA ĐƠN"
                         android:textSize="16sp"/>
                     <TextView
-                        android:id="@+id/txt_ChiTietTienRut"
+                        android:id="@+id/txt_ChiTietTienThanhToan"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text=" - 50000"
@@ -81,10 +81,9 @@
                     android:text="Nguồn tiền"
                     android:textSize="18sp"/>
                 <TextView
-                    android:id="@+id/txt_ChiTietNguonTienRut"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="TPBank"
+                    android:text="Ví VeggiePay"
                     android:textSize="18sp"
                     android:gravity="end"
                     android:textColor="#000000"/>

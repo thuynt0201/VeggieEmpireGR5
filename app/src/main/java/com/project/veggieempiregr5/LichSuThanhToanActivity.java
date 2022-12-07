@@ -1,8 +1,5 @@
 package com.project.veggieempiregr5;
 
-import static com.project.veggieempiregr5.R.id.btn_NapList;
-import static com.project.veggieempiregr5.R.id.btn_RutList;
-
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
@@ -12,31 +9,30 @@ import android.database.Cursor;
 import android.graphics.drawable.Drawable;
 import android.os.Bundle;
 import android.view.View;
-import android.widget.Button;
 import android.widget.Toast;
 
-import com.project.adapters.RutTienAdapter;
-import com.project.database.RutTienDatabase;
-import com.project.veggieempiregr5.databinding.ActivityLichSuRutBinding;
-import com.project.veggieempiregr5.databinding.ActivityTrangChuBinding;
+import com.project.adapters.ThanhToanAdapter;
+import com.project.database.DatabasePaymentOrder;
+import com.project.veggieempiregr5.databinding.ActivityLichSuThanhToanBinding;
 
 import java.util.ArrayList;
 
-public class LichSuRutActivity extends AppCompatActivity {
+public class LichSuThanhToanActivity extends AppCompatActivity {
 
     RecyclerView recyclerView;
 
-    RutTienDatabase rutTienDatabase;
-    ArrayList<String> id, sotienrut, nguontienrut;
+    DatabasePaymentOrder databasePaymentOrder;
+    ArrayList<String> id, sotienthanhtoan;
 
-    RutTienAdapter rutTienAdapter;
+    ThanhToanAdapter thanhToanAdapter;
 
-    ActivityLichSuRutBinding binding;
+    ActivityLichSuThanhToanBinding binding;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         //setContentView(R.layout.activity_trang_chu);
-        binding = ActivityLichSuRutBinding.inflate(getLayoutInflater());
+        binding = ActivityLichSuThanhToanBinding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());
 
         getSupportActionBar().setTitle("Chi tiết giao dịch");
@@ -45,28 +41,26 @@ public class LichSuRutActivity extends AppCompatActivity {
         getSupportActionBar().setHomeAsUpIndicator(drawable);
 
 
-        recyclerView = findViewById(R.id.rcv_RutList);
+        recyclerView = findViewById(R.id.rcv_ThanhToanList);
 
         addEvents();
 
-        rutTienDatabase = new RutTienDatabase(LichSuRutActivity.this);
+        databasePaymentOrder = new DatabasePaymentOrder(LichSuThanhToanActivity.this);
         id = new ArrayList<>();
-        sotienrut = new ArrayList<>();
-        nguontienrut = new ArrayList<>();
+        sotienthanhtoan = new ArrayList<>();
 
         displayData();
 
-        rutTienAdapter = new RutTienAdapter(LichSuRutActivity.this, id, sotienrut, nguontienrut);
-        recyclerView.setAdapter(rutTienAdapter);
-        recyclerView.setLayoutManager(new LinearLayoutManager(LichSuRutActivity.this));
-
+        thanhToanAdapter = new ThanhToanAdapter(LichSuThanhToanActivity.this, id, sotienthanhtoan);
+        recyclerView.setAdapter(thanhToanAdapter);
+        recyclerView.setLayoutManager(new LinearLayoutManager(LichSuThanhToanActivity.this));
     }
 
     private void addEvents() {
         binding.btnNapList.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(LichSuRutActivity.this, LichSuNapActivity.class);
+                Intent intent = new Intent(LichSuThanhToanActivity.this, LichSuNapActivity.class);
                 startActivity(intent);
             }
         });
@@ -74,29 +68,26 @@ public class LichSuRutActivity extends AppCompatActivity {
         binding.btnTatCa.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(LichSuRutActivity.this, LichSuGDActivity.class);
+                Intent intent = new Intent(LichSuThanhToanActivity.this, LichSuGDActivity.class);
                 startActivity(intent);
             }
         });
-        binding.btnThanhToan.setOnClickListener(new View.OnClickListener() {
+        binding.btnRut.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(LichSuRutActivity.this, LichSuThanhToanActivity.class);
+                Intent intent = new Intent(LichSuThanhToanActivity.this, LichSuRutActivity.class);
                 startActivity(intent);
             }
         });
     }
-
-    void displayData(){
-        Cursor cursor = rutTienDatabase.readAllData();
+    private void displayData(){
+        Cursor cursor = databasePaymentOrder.readAllData();
         if (cursor.getCount() == 0){
             Toast.makeText(this, "No data", Toast.LENGTH_SHORT).show();
         }else {
             while (cursor.moveToNext()){
                 id.add(cursor.getString(0));
-                sotienrut.add(cursor.getString(1));
-                nguontienrut.add(cursor.getString(2));
-
+                sotienthanhtoan.add(cursor.getString(1));
             }
         }
     }
