@@ -76,8 +76,7 @@ trong 24h tiếp theo."
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:fontFamily="@font/nunitosans_regular"
-                    android:textSize="15sp"
-                    android:inputType="text"/> //??????
+                    android:textSize="15sp"/>
             </LinearLayout>
 
             <TextView
@@ -122,8 +121,7 @@ trong 24h tiếp theo."
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:fontFamily="@font/nunitosans_regular"
-                    android:textSize="15sp"
-                    android:inputType="number"/>
+                    android:textSize="15sp"/>
             </LinearLayout>
 
             <TextView
@@ -145,8 +143,7 @@ trong 24h tiếp theo."
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:fontFamily="@font/nunitosans_regular"
-                    android:textSize="15sp"
-                    android:inputType="number"/>
+                    android:textSize="15sp"/>
             </LinearLayout>
 
             <TextView

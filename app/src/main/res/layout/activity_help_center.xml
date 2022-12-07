@@ -15,7 +15,7 @@
             <EditText
                 android:layout_width="380dp"
                 android:layout_height="30dp"
-                android:text="Nhập từ khoá hoặc nội dung cần tìm"
+                android:hint="Nhập từ khoá hoặc nội dung cần tìm"
                 android:fontFamily="@font/nunitosans_light"
                 android:textSize="18sp"
                 android:background="#FFFFFF"
@@ -45,7 +45,7 @@
 
                 <LinearLayout
                     android:layout_width="wrap_content"
-                    android:layout_height="78dp"
+                    android:layout_height="wrap_content"
                     android:background="@drawable/bg_hepcenter"
                     android:orientation="vertical"
                     android:layout_weight="1">
@@ -63,12 +63,12 @@
                         android:text="Tài khoản"
                         android:textColor="@color/black"
                         android:layout_gravity="center"
-                        android:textSize="15sp" />
+                        android:textSize="10sp" />
                 </LinearLayout>
 
                 <LinearLayout
                     android:layout_width="wrap_content"
-                    android:layout_height="78dp"
+                    android:layout_height="wrap_content"
                     android:background="@drawable/bg_hepcenter"
                     android:orientation="vertical"
                     android:layout_marginLeft="60dp"
@@ -87,12 +87,12 @@
                         android:text="Đơn hàng"
                         android:textColor="@color/black"
                         android:layout_gravity="center"
-                        android:textSize="15sp" />
+                        android:textSize="10sp" />
                 </LinearLayout>
 
                 <LinearLayout
                     android:layout_width="wrap_content"
-                    android:layout_height="78dp"
+                    android:layout_height="wrap_content"
                     android:background="@drawable/bg_hepcenter"
                     android:orientation="vertical"
                     android:layout_marginLeft="60dp"
@@ -111,22 +111,22 @@
                         android:text="Bảo hiểm"
                         android:textColor="@color/black"
                         android:layout_gravity="center"
-                        android:textSize="15sp" />
+                        android:textSize="10sp" />
                 </LinearLayout>
 
             </LinearLayout>
 
             <LinearLayout
-                android:layout_width="243dp"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="10dp">
 
                 <LinearLayout
                     android:layout_width="wrap_content"
-                    android:layout_height="78dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
                     android:background="@drawable/bg_hepcenter"
-                    android:orientation="vertical"
-                    android:layout_weight="0.8">
+                    android:orientation="vertical">
 
                     <ImageView
                         android:layout_width="47dp"
@@ -137,21 +137,44 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
+                        android:layout_gravity="center"
                         android:fontFamily="@font/nunitosans_light"
                         android:text="Vận chuyển"
                         android:textColor="@color/black"
-                        android:layout_gravity="center"
-                        android:textSize="12sp" />
+                        android:textSize="10sp" />
                 </LinearLayout>
 
                 <LinearLayout
                     android:layout_width="wrap_content"
-                    android:layout_height="78dp"
+                    android:layout_height="wrap_content"
                     android:background="@drawable/bg_hepcenter"
                     android:orientation="vertical"
                     android:layout_marginLeft="60dp"
-                    android:layout_weight="2.5">
+                    android:layout_weight="1">
 
+                    <ImageView
+                        android:layout_width="47dp"
+                        android:layout_height="29dp"
+                        android:src="@drawable/ic_baseline_work_24"
+                        android:layout_gravity="center"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/nunitosans_light"
+                        android:text="Bảo mật"
+                        android:textColor="@color/black"
+                        android:layout_gravity="center"
+                        android:textSize="10sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/bg_hepcenter"
+                    android:orientation="vertical"
+                    android:layout_marginLeft="60dp"
+                    android:layout_weight="1">
                     <ImageView
                         android:layout_width="47dp"
                         android:layout_height="29dp"
@@ -165,7 +188,7 @@
                         android:text="Khác"
                         android:textColor="@color/black"
                         android:layout_gravity="center"
-                        android:textSize="15sp" />
+                        android:textSize="10sp" />
                 </LinearLayout>
 
             </LinearLayout>
