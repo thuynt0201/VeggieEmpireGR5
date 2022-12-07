@@ -15,7 +15,6 @@ import android.widget.Toast;
 
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 import com.project.adapters.PhotoAdapter;
-import com.project.models.Item;
 import com.project.models.Photo;
 import com.project.veggieempiregr5.databinding.ActivityTrangChuBinding;
 
@@ -53,9 +52,9 @@ public class TrangChu extends AppCompatActivity {
 
         //======THANH HEADER======
         getSupportActionBar().setTitle("VEGGIE EMPIRE");
-        Drawable drawable= getResources().getDrawable(R.drawable.ic_baseline_notifications_24);
+      //  Drawable drawable= getResources().getDrawable(R.drawable.ic_baseline_notifications_24);
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
-        getSupportActionBar().setHomeAsUpIndicator(drawable);
+     //   getSupportActionBar().setHomeAsUpIndicator(drawable);
         //======THANH HEADER END======
 
 
@@ -86,14 +85,16 @@ public class TrangChu extends AppCompatActivity {
                         Toast.makeText(TrangChu.this, "Home", Toast.LENGTH_SHORT).show();
                         break;
                     case R.id.action_chat:
-                        Toast.makeText(TrangChu.this, "Chat", Toast.LENGTH_SHORT).show();
+                        Intent chat = new Intent(TrangChu.this, HomeChatActivity.class);
+                        startActivity(chat);
                         break;
                     case R.id.action_cart:
                         Intent intent = new Intent(TrangChu.this, MenuActivity.class);
                         startActivity(intent);
                         break;
                     case R.id.action_coupom:
-                        Toast.makeText(TrangChu.this, "Coupon", Toast.LENGTH_SHORT).show();
+                        Intent intent1 = new Intent (TrangChu.this, VoucherActivity.class);
+                        startActivity(intent1);
                         break;
                     case R.id.action_account:
                         Intent intent2 = new Intent(TrangChu.this, UserInfor.class);
@@ -104,10 +105,12 @@ public class TrangChu extends AppCompatActivity {
             }
         });
 
-
         addEvent();
 
     }
+
+
+
 
     private void addEvent() {
 
@@ -119,6 +122,7 @@ public class TrangChu extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+        // tam thoi set cho no vao cai tinh trang don de het loi moi chay dc
         binding.imvStatusOrder.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -131,11 +135,10 @@ public class TrangChu extends AppCompatActivity {
     private List<Photo> getListPhoto(){
         List<Photo> list = new ArrayList<>();
         list.add(new Photo(R.drawable.rice));
-        list.add(new Photo(R.drawable.tofu));
+       // list.add(new Photo(R.drawable.tofu));
         list.add(new Photo(R.drawable.noodle));
-        list.add(new Photo(R.drawable.tofumushroom));
-        list.add(new Photo(R.drawable.veganfood));
-
+       // list.add(new Photo(R.drawable.tofumushroom));
+      //  list.add(new Photo(R.drawable.veganfood));
         return list;
     }
 
@@ -149,6 +152,10 @@ public class TrangChu extends AppCompatActivity {
 
     @Override
     public boolean onOptionsItemSelected(@NonNull MenuItem item) {
+        if (item.getItemId() == R.id.mn_noti){
+            Intent intent = new Intent(TrangChu.this, ThongBaoActivity.class);
+            startActivity(intent);
+        }
         if (item.getItemId() == R.id.mn_Search){
             Intent intent = new Intent(TrangChu.this, TimKiemMonActivity.class);
             startActivity(intent);

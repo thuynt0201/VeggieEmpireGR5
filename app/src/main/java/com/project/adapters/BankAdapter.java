@@ -83,8 +83,8 @@ public class BankAdapter extends RecyclerView.Adapter<BankAdapter.BankViewHolder
         public BankViewHolder(@NonNull View itemView) {
             super(itemView);
             linearLayout = itemView.findViewById(R.id.bank_item);
-            imvBankLogo = itemView.findViewById(R.id.imv_Logo);
-            txtBankName = itemView.findViewById(R.id.txt_Bank);
+            imvBankLogo = itemView.findViewById(R.id.imv_ChooseBank);
+            txtBankName = itemView.findViewById(R.id.txt_BankName);
         }
     }
 

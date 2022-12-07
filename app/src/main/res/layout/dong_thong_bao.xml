@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <ImageView
+        android:src="@drawable/logo"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:id="@+id/imagethongbao"
+        android:padding="10dp"/>
+    <TextView
+        android:layout_marginLeft="10dp"
+        android:textColor="@color/yellow"
+        android:textStyle="bold"
+        android:layout_marginTop="5dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/txttenthongbao"
+        android:textSize="17sp"
+        android:text="Tên"
+        android:layout_toRightOf="@id/imagethongbao"/>
+    <TextView
+        android:layout_marginLeft="10dp"
+        android:textSize="14sp"
+        android:layout_marginTop="6dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtmathongbao"
+        android:layout_toRightOf="@id/imagethongbao"
+        android:layout_below="@id/txttenthongbao"
+        android:text="Mã đơn hàng"
+        android:textColor="#8E8686"/>
+    <TextView
+        android:layout_marginLeft="10dp"
+        android:textSize="14sp"
+        android:layout_marginTop="6dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtmotathongbao"
+        android:layout_toRightOf="@id/imagethongbao"
+        android:layout_below="@id/txtmathongbao"
+        android:text="Mo ta"
+        android:textColor="#8E8686"/>
+    <TextView
+        android:layout_marginLeft="20dp"
+        android:textSize="12sp"
+        android:layout_marginTop="5dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtthoigianthongbao"
+        android:layout_toRightOf="@id/imagethongbao"
+        android:layout_below="@id/txtmotathongbao"
+        android:text="Thời gian"
+        android:textColor="#8E8686"
+        android:layout_marginBottom="10dp"/>
+
+    <TextView
+        android:id="@+id/txttngaythongbao"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txtmotathongbao"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="5dp"
+        android:layout_toRightOf="@id/txtthoigianthongbao"
+        android:text="Thời gian"
+        android:textColor="#8E8686"
+        android:textSize="12sp"
+        android:layout_marginBottom="10dp"
+        />
+
+</RelativeLayout>

@@ -1,78 +1,33 @@
 {
   "project_info": {
-    "project_number": "715782812728",
-    "project_id": "otp-verification-b06ee",
-    "storage_bucket": "otp-verification-b06ee.appspot.com"
+    "project_number": "635023123411",
+    "project_id": "veggieempire-e6ee2",
+    "storage_bucket": "veggieempire-e6ee2.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:715782812728:android:84df394ba34f88e20ba2cd",
+        "mobilesdk_app_id": "1:635023123411:android:670ea69675c25c1fef0526",
         "android_client_info": {
           "package_name": "com.project.veggieempiregr5"
         }
       },
       "oauth_client": [
         {
-          "client_id": "715782812728-naeq2p0v4bkifhgj2f6dk7lo5oierdqj.apps.googleusercontent.com",
-          "client_type": 1,
-          "android_info": {
-            "package_name": "com.project.veggieempiregr5",
-            "certificate_hash": "448c9397649e4a69548226c4ef623ee3fb0fd331"
-          }
-        },
-        {
-          "client_id": "715782812728-o1hdbal1lmpmdvc5u7ok0j7lppjm4103.apps.googleusercontent.com",
+          "client_id": "635023123411-mt9vtasadps54clbief6cmmi85rk4b0d.apps.googleusercontent.com",
           "client_type": 3
         }
       ],
       "api_key": [
         {
-          "current_key": "AIzaSyCoMqBj0bzdSclStuBbZD1_ITS_BzpZkBc"
+          "current_key": "AIzaSyDo03G_gDJBSd9PRN3cswRPue1iGtEhkac"
         }
       ],
       "services": {
         "appinvite_service": {
           "other_platform_oauth_client": [
             {
-              "client_id": "715782812728-o1hdbal1lmpmdvc5u7ok0j7lppjm4103.apps.googleusercontent.com",
-              "client_type": 3
-            }
-          ]
-        }
-      }
-    },
-    {
-      "client_info": {
-        "mobilesdk_app_id": "1:715782812728:android:6082c844c50c08e20ba2cd",
-        "android_client_info": {
-          "package_name": "com.vothianhthu.doan"
-        }
-      },
-      "oauth_client": [
-        {
-          "client_id": "715782812728-1dbd8qpdvh1p0l9vkhbvsdq9np6t98cg.apps.googleusercontent.com",
-          "client_type": 1,
-          "android_info": {
-            "package_name": "com.vothianhthu.doan",
-            "certificate_hash": "448c9397649e4a69548226c4ef623ee3fb0fd331"
-          }
-        },
-        {
-          "client_id": "715782812728-o1hdbal1lmpmdvc5u7ok0j7lppjm4103.apps.googleusercontent.com",
-          "client_type": 3
-        }
-      ],
-      "api_key": [
-        {
-          "current_key": "AIzaSyCoMqBj0bzdSclStuBbZD1_ITS_BzpZkBc"
-        }
-      ],
-      "services": {
-        "appinvite_service": {
-          "other_platform_oauth_client": [
-            {
-              "client_id": "715782812728-o1hdbal1lmpmdvc5u7ok0j7lppjm4103.apps.googleusercontent.com",
+              "client_id": "635023123411-mt9vtasadps54clbief6cmmi85rk4b0d.apps.googleusercontent.com",
               "client_type": 3
             }
           ]
