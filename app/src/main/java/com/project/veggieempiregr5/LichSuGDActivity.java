@@ -38,5 +38,12 @@ public class LichSuGDActivity extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+        binding.btnRut.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(LichSuGDActivity.this, LichSuRutActivity.class);
+                startActivity(intent);
+            }
+        });
     }
 }

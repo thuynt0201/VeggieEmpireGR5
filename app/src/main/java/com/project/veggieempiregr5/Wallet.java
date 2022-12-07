@@ -46,7 +46,8 @@ public class Wallet extends AppCompatActivity {
         binding.btnRut.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-
+                Intent intent = new Intent(Wallet.this, RutTienActivity.class);
+                startActivity(intent);
             }
         });
         binding.txtXemLichSu.setOnClickListener(new View.OnClickListener() {

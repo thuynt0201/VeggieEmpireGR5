@@ -1,6 +1,7 @@
 package com.project.veggieempiregr5;
 
 import static com.project.veggieempiregr5.R.id.btn_NapList;
+import static com.project.veggieempiregr5.R.id.btn_RutList;
 import static com.project.veggieempiregr5.R.id.rcv_NapList;
 
 import androidx.appcompat.app.AppCompatActivity;
@@ -23,7 +24,7 @@ import java.util.ArrayList;
 public class LichSuNapActivity extends AppCompatActivity {
 
     RecyclerView recyclerView;
-    Button btn_nap;
+    Button btn_nap, btn_rut;
 
     NapTienDatabase napTienDatabase;
     ArrayList<String> id, sotiennap, nguontien;
@@ -51,6 +52,17 @@ public class LichSuNapActivity extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+
+        btn_rut = findViewById(btn_RutList);
+        btn_rut.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(LichSuNapActivity.this, LichSuRutActivity.class);
+                startActivity(intent);
+            }
+        });
+
+
 
         napTienDatabase = new NapTienDatabase(LichSuNapActivity.this);
         id = new ArrayList<>();

@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".XacNhanRutTienActivity"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="10dp"
+        android:background="@drawable/border"
+        android:layout_margin="10dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Nguồn tiền"
+                android:textSize="18sp"/>
+            <TextView
+                android:id="@+id/txt_NguonTienRut"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="TPBank"
+                android:textSize="18sp"
+                android:gravity="end"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Số tiền"
+                android:textSize="18sp"/>
+            <TextView
+                android:id="@+id/txt_SoTienRut"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="100.000đ"
+                android:textSize="18sp"
+                android:gravity="end"/>
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="5dp"
+            android:src="@drawable/duongngang"
+            android:layerType="software" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Phí giao dịch"
+                android:textSize="18sp"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Miễn phí"
+                android:textSize="18sp"
+                android:gravity="end"/>
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="10dp">
+        <Button
+            android:id="@+id/btn_XacNhanRut"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="XÁC NHẬN"
+            android:layout_gravity="bottom"
+            android:backgroundTint="#FFD705"
+            android:textColor="#000000"
+            android:textSize="25sp"
+            android:drawableLeft="@drawable/ic_baseline_lock_24"/>
+    </LinearLayout>
+
+</LinearLayout>
