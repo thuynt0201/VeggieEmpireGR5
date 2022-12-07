@@ -35,7 +35,6 @@ public class MenuDetailActivity extends AppCompatActivity {
         //======THANH HEADER END======
 
 
-
         getData();
         addEvent();
     }

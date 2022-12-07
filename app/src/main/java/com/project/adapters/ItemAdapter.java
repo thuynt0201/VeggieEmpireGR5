@@ -1,9 +1,6 @@
 package com.project.adapters;
 
 import android.app.Activity;
-import android.content.Context;
-import android.content.Intent;
-import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -15,6 +12,7 @@ import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.project.models.Item;
+import com.project.my_interface.IClickItemTimkiemListener;
 import com.project.veggieempiregr5.MenuDetailActivity;
 import com.project.veggieempiregr5.R;
 
@@ -23,11 +21,14 @@ import java.util.List;
 public class ItemAdapter extends RecyclerView.Adapter<ItemAdapter.ItemViewHolder> {
 
     private List<Item> itemList;
-    private Context mContext;
+    private IClickItemTimkiemListener iClickItemTimkiemListener;
+    //private Context mContext;
 
-    public ItemAdapter(Context context,List<Item> itemList){
-        this.mContext = context;
+    public ItemAdapter(List<Item> itemList, IClickItemTimkiemListener listener){
+        //Context context,
+        //this.mContext = context;
         this.itemList = itemList;
+        this.iClickItemTimkiemListener = listener;
     }
 
     public void setFilteredList(List<Item> filteredList){
@@ -50,25 +51,28 @@ public class ItemAdapter extends RecyclerView.Adapter<ItemAdapter.ItemViewHolder
         }
         holder.imgItem.setImageResource(item.getImage());
         holder.tvName.setText(item.getName());
+
         holder.layoutItem.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View view) {
-                onClickGoToDetailMenu(item);
+
+                iClickItemTimkiemListener.onClickItemTimkiem(item);
+                //onClickGoToDetailMenu(item);
             }
         });
     }
 
-    private void onClickGoToDetailMenu(Item item) {
-        Intent intent = new Intent(mContext, MenuDetailActivity.class);
-        Bundle bundle = new Bundle();
-        bundle.putSerializable("object_item", item);
-        intent.putExtras(bundle);
-        mContext.startActivity(intent);
-    }
+//    private void onClickGoToDetailMenu(Item item) {
+//        Intent intent = new Intent(mContext, MenuDetailActivity.class);
+//        Bundle bundle = new Bundle();
+//        bundle.putSerializable("object_item", item);
+//        intent.putExtras(bundle);
+//        mContext.startActivity(intent);
+//    }
 
-    public void release(){
-        mContext = null;
-    }
+//    public void release(){
+//        mContext = null;
+//    }
     
     @Override
     public int getItemCount() {

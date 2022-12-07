@@ -18,6 +18,7 @@ import android.widget.Toast;
 import com.project.adapters.ItemAdapter;
 import com.project.models.Item;
 import com.project.models.MenuList;
+import com.project.my_interface.IClickItemTimkiemListener;
 import com.project.veggieempiregr5.databinding.ActivityTimKiemMonBinding;
 
 import java.util.ArrayList;
@@ -37,10 +38,12 @@ public class TimKiemMonActivity extends AppCompatActivity {
         setContentView(R.layout.activity_tim_kiem_mon);
 
         //======THANH HEADER======
+
         getSupportActionBar().setTitle("Tìm món ăn");
         Drawable drawable= getResources().getDrawable(R.drawable.ic_baseline_arrow_back_ios_24);
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
         getSupportActionBar().setHomeAsUpIndicator(drawable);
+
         //======THANH HEADER END======
 
         searchView = findViewById(R.id.searchView);
@@ -93,16 +96,31 @@ public class TimKiemMonActivity extends AppCompatActivity {
         itemList.add(new Item(R.drawable.nuoc_mia, "Nước mía"));
         itemList.add(new Item(R.drawable.nuoc_sam, "Nước sâm"));
 
-        itemAdapter = new ItemAdapter(this, itemList);
+        itemAdapter = new ItemAdapter(itemList, new IClickItemTimkiemListener(){
+            @Override
+            public void onClickItemTimkiem(Item item) {
+                onClickGoToDetailMenu(item);
+            }
+        });
+        //(this, itemList);
         rcvItem.setAdapter(itemAdapter);
     }
 
     @Override
     protected void onDestroy() {
         super.onDestroy();
-        if (itemAdapter != null ){
-            itemAdapter.release();
-        }
+//        if (itemAdapter != null ){
+//            itemAdapter.release();
+//        }
+    }
+
+    private void onClickGoToDetailMenu(Item item) {
+        Intent intent = new Intent(this, MenuDetailActivity.class);
+        Bundle bundle = new Bundle();
+        bundle.putSerializable("object_item", item);
+        intent.putExtras(bundle);
+        startActivity(intent);
+//        mContext.startActivity(intent);
     }
 
     private void filterList(String text) {

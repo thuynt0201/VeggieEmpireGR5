@@ -5,18 +5,16 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".logoActivity2"
-    android:background="#FFD705">
-
+    android:background="#FFD705"
+    android:gravity="center">
 
 
     <ImageView
-
         android:id="@+id/imvlogo"
         android:layout_width="250dp"
         android:layout_height="250dp"
-       android:layout_gravity="center"
-        android:layout_marginLeft="80dp"
-        android:src="@drawable/logo"/>
+        android:src="@drawable/logo"
+        android:layout_weight="1"/>
 
 
 </LinearLayout>
