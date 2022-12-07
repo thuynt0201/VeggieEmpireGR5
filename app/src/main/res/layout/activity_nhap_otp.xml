@@ -81,6 +81,7 @@
             android:layout_height="match_parent"
             android:padding="10dp">
             <Button
+                android:onClick="push"
                 android:id="@+id/btn_Continue"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
