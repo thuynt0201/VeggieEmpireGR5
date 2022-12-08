@@ -116,42 +116,48 @@
         </activity>
         <activity
             android:name=".Contact"
-            android:exported="false">
+            android:exported="false"
+            android:parentActivityName=".UserInfor">
             <meta-data
                 android:name="android.app.lib_name"
                 android:value="" />
         </activity>
         <activity
             android:name=".HelpCenter"
-            android:exported="false">
+            android:exported="false"
+            android:parentActivityName=".UserInfor">
             <meta-data
                 android:name="android.app.lib_name"
                 android:value="" />
         </activity>
         <activity
             android:name=".Language"
-            android:exported="false">
+            android:exported="false"
+            android:parentActivityName=".UserInfor">
             <meta-data
                 android:name="android.app.lib_name"
                 android:value="" />
         </activity>
         <activity
             android:name=".NotiSettings"
-            android:exported="false">
+            android:exported="false"
+            android:parentActivityName=".UserInfor">
             <meta-data
                 android:name="android.app.lib_name"
                 android:value="" />
         </activity>
         <activity
             android:name=".Address"
-            android:exported="false">
+            android:exported="false"
+            android:parentActivityName=".UserInfor">
             <meta-data
                 android:name="android.app.lib_name"
                 android:value="" />
         </activity>
         <activity
             android:name=".AccountSecurity"
-            android:exported="false">
+            android:exported="false"
+            android:parentActivityName=".UserInfor">
             <meta-data
                 android:name="android.app.lib_name"
                 android:value="" />
@@ -423,6 +429,13 @@
             <meta-data
                 android:name="android.app.lib_name"
                 android:value="" />
+        </activity>
+        <activity android:name=".ReserveTable"
+            android:exported="false"
+            android:parentActivityName=".TrangChu">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value=""/>
         </activity>
 
 
