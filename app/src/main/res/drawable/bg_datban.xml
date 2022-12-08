@@ -5,7 +5,7 @@
 
     <!-- Set màu nền-->
     <solid
-        android:color="#D9D9D9" >
+        android:color="#E6ECECEC" >
     </solid>
 
     <!-- các thuộc tính căn chỉnh-->

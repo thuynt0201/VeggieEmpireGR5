@@ -145,14 +145,24 @@ public class TrangChu extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+        binding.txtXemThucDon.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(TrangChu.this, MenuActivity.class);
+                startActivity(intent);
+            }
+        });
     }
 
     private List<Photo> getListPhoto(){
         List<Photo> list = new ArrayList<>();
-        list.add(new Photo(R.drawable.rice));
-        list.add(new Photo(R.drawable.tofu));
+        list.add(new Photo(R.drawable.slide1));
+        list.add(new Photo(R.drawable.slide2));
+        list.add(new Photo(R.drawable.slide3));
         list.add(new Photo(R.drawable.mixed));
+        list.add(new Photo(R.drawable.slide4));
         list.add(new Photo(R.drawable.tofu_trangchu));
+        list.add(new Photo(R.drawable.slide5));
         list.add(new Photo(R.drawable.veganfood));
         return list;
     }

@@ -10,12 +10,16 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Toast;
 
+import com.project.database.DatabaseCart;
+import com.project.database.DatabaseTable;
 import com.project.veggieempiregr5.databinding.ActivityHelpCenterBinding;
 import com.project.veggieempiregr5.databinding.ActivityReserveTableBinding;
 
 public class ReserveTable extends AppCompatActivity {
 
     ActivityReserveTableBinding binding;
+    public static DatabaseTable databaseTable;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -31,11 +35,20 @@ public class ReserveTable extends AppCompatActivity {
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
         getSupportActionBar().setHomeAsUpIndicator(drawable);
         //======THANH HEADER END======
-
+        
 
     }
 
     public void datban_click(View view) {
+
+        DatabaseTable myDB = new DatabaseTable(ReserveTable.this);
+        myDB.addTable(binding.txtNameTable.getText().toString().trim(),
+                Double.parseDouble(binding.txtPhoneTable.getText().toString().trim()),
+               Double.parseDouble(binding.txtNumberTable.getText().toString().trim()),
+                binding.txtDateTable.getText().toString().trim(),
+                binding.txtTimeTable.getText().toString().trim(),
+                binding.txtNoteTable.getText().toString().trim());
+        Toast.makeText(ReserveTable.this, "Đã lưu thông tin thành công", Toast.LENGTH_SHORT).show();
         AlertDialog.Builder alertDialogBuilder = new AlertDialog.Builder(this);
         alertDialogBuilder.setTitle("Đặt bàn thành công !!!");
         alertDialogBuilder.setIcon(R.drawable.ic_baseline_check_circle_24);

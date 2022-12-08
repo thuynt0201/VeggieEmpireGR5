@@ -100,6 +100,13 @@ public class UserInfor extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+        binding.txtOrder.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(UserInfor.this, OrderActivity.class);
+                startActivity(intent);
+            }
+        });
 
         imguser = (ImageView)findViewById(R.id.imguser);
         binding.imguser.setOnClickListener(new View.OnClickListener() {

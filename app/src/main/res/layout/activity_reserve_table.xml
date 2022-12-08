@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".ReserveTable"
-    android:background="@drawable/nendatban">
+    android:background="@drawable/dat_ban">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -27,96 +27,113 @@
                 android:src="@drawable/logo"
                 android:layout_gravity="center"/>
 
-            <LinearLayout
+            <androidx.cardview.widget.CardView
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:padding="10dp"
-                android:background="@drawable/border"
-                android:layout_marginTop="5dp">
+                android:layout_height="50dp"
+                app:cardCornerRadius="10dp"
+                android:layout_margin="8dp">
                 <EditText
+                    android:id="@+id/txt_NameTable"
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
+                    android:layout_height="match_parent"
                     android:hint="Họ và tên"
-                    android:fontFamily="@font/nunitosans_regular"
-                    android:textSize="15sp"
-                    android:inputType="text"/> //??????
-            </LinearLayout>
+                    android:layout_margin="10dp"
+                    android:background="@null"
+                    android:textSize="14sp"
+                    android:textColor="#000000"
+                    android:inputType="text"
+                    android:fontFamily="@font/nunitosans_semibold"/>
+            </androidx.cardview.widget.CardView>
 
-            <LinearLayout
+            <androidx.cardview.widget.CardView
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:padding="10dp"
-                android:background="@drawable/border"
-                android:layout_marginTop="5dp">
+                android:layout_height="50dp"
+                app:cardCornerRadius="10dp"
+                android:layout_margin="8dp">
                 <EditText
+                    android:id="@+id/txt_PhoneTable"
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
+                    android:layout_height="match_parent"
                     android:hint="Số điện thoại"
-                    android:textSize="15sp"
-                    android:fontFamily="@font/nunitosans_regular"
-                    android:inputType="number"/>
-            </LinearLayout>
+                    android:layout_margin="10dp"
+                    android:background="@null"
+                    android:textSize="14sp"
+                    android:textColor="#000000"
+                    android:inputType="number"
+                    android:fontFamily="@font/nunitosans_semibold"/>
+            </androidx.cardview.widget.CardView>
 
-            <LinearLayout
+            <androidx.cardview.widget.CardView
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:padding="10dp"
-                android:background="@drawable/border"
-                android:layout_marginTop="5dp">
+                android:layout_height="50dp"
+                app:cardCornerRadius="10dp"
+                android:layout_margin="8dp">
                 <EditText
+                    android:id="@+id/txt_NumberTable"
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
+                    android:layout_height="match_parent"
                     android:hint="Số người"
-                    android:fontFamily="@font/nunitosans_regular"
-                    android:textSize="15sp"
-                    android:inputType="number"/>
-            </LinearLayout>
+                    android:layout_margin="10dp"
+                    android:background="@null"
+                    android:textSize="14sp"
+                    android:textColor="#000000"
+                    android:inputType="number"
+                    android:fontFamily="@font/nunitosans_semibold"/>
+            </androidx.cardview.widget.CardView>
 
-            <LinearLayout
+            <androidx.cardview.widget.CardView
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:padding="10dp"
-                android:background="@drawable/border"
-                android:layout_marginTop="5dp">
+                android:layout_height="50dp"
+                app:cardCornerRadius="10dp"
+                android:layout_margin="8dp">
                 <EditText
+                    android:id="@+id/txt_DateTable"
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
+                    android:layout_height="match_parent"
                     android:hint="Ngày, tháng, năm sinh"
-                    android:fontFamily="@font/nunitosans_regular"
-                    android:textSize="15sp"
-                    android:inputType="number"/>
-            </LinearLayout>
+                    android:layout_margin="10dp"
+                    android:background="@null"
+                    android:textSize="14sp"
+                    android:textColor="#000000"
+                    android:inputType="date"
+                    android:fontFamily="@font/nunitosans_semibold"/>
+            </androidx.cardview.widget.CardView>
 
-            <LinearLayout
+            <androidx.cardview.widget.CardView
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:padding="10dp"
-                android:background="@drawable/border"
-                android:layout_marginTop="5dp">
+                android:layout_height="50dp"
+                app:cardCornerRadius="10dp"
+                android:layout_margin="8dp">
                 <EditText
+                    android:id="@+id/txt_TimeTable"
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
+                    android:layout_height="match_parent"
                     android:hint="Chọn khung giờ"
-                    android:fontFamily="@font/nunitosans_regular"
-                    android:textSize="15sp"
-                    android:inputType="number"/> \\\??????
-            </LinearLayout>
+                    android:layout_margin="10dp"
+                    android:background="@null"
+                    android:textSize="14sp"
+                    android:textColor="#000000"
+                    android:inputType="time"
+                    android:fontFamily="@font/nunitosans_semibold"/>
+            </androidx.cardview.widget.CardView>
 
-
-            <LinearLayout
+            <androidx.cardview.widget.CardView
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:padding="10dp"
-                android:background="@drawable/border"
-                android:layout_marginTop="5dp">
+                android:layout_height="100dp"
+                app:cardCornerRadius="10dp"
+                android:layout_margin="8dp">
                 <EditText
+                    android:id="@+id/txt_NoteTable"
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
+                    android:layout_height="match_parent"
                     android:hint="Nhập yêu cầu của bạn"
-                    android:fontFamily="@font/nunitosans_regular"
-                    android:textSize="15sp"
-                    android:inputType="number"/> \\\??????
-            </LinearLayout>
+                    android:layout_margin="10dp"
+                    android:background="@null"
+                    android:textSize="14sp"
+                    android:textColor="#000000"
+                    android:gravity="top"
+                    android:fontFamily="@font/nunitosans_semibold"/>
+            </androidx.cardview.widget.CardView>
 
             <Button
                 android:onClick="datban_click"
@@ -133,6 +150,5 @@
                 android:layout_marginTop="10dp"/>
         </LinearLayout>
 
-    </LinearLayout>
-
+        </LinearLayout>
 </ScrollView>
