@@ -93,6 +93,14 @@ public class UserInfor extends AppCompatActivity {
             }
         });
 
+        binding.txtChangePassword.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(UserInfor.this, SMSActivity2.class);
+                startActivity(intent);
+            }
+        });
+
         imguser = (ImageView)findViewById(R.id.imguser);
         binding.imguser.setOnClickListener(new View.OnClickListener() {
             @Override
