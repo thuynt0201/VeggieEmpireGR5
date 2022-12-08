@@ -1,57 +1,39 @@
 package com.project.veggieempiregr5;
 
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.appcompat.widget.Toolbar;
-import androidx.drawerlayout.widget.DrawerLayout;
 import androidx.lifecycle.Observer;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
-import androidx.core.view.GravityCompat;
 
 import android.content.Intent;
 import android.graphics.drawable.Drawable;
 import android.os.Bundle;
 import android.text.Editable;
-import android.text.TextUtils;
 import android.text.TextWatcher;
-import android.util.Log;
-import android.widget.EditText;
-import android.widget.ListView;
 import android.view.View;
-import android.widget.ViewFlipper;
+import android.widget.Button;
+import android.widget.EditText;
 
-import com.google.android.gms.tasks.OnSuccessListener;
-import com.google.android.material.navigation.NavigationView;
-import com.google.firebase.messaging.FirebaseMessaging;
-import com.google.firebase.messaging.FirebaseMessagingService;
 import com.project.BaseActivity;
-import com.project.Constants;
 import com.project.RoomMessActivity;
-import com.project.Utils.Utils;
 import com.project.adapters.AllUserAdapter;
 import com.project.adapters.MessengerAdapter;
 import com.project.models.Conversation;
 import com.project.models.User;
-import com.project.retrofit.ApiBanHang;
-
-import io.reactivex.rxjava3.android.schedulers.AndroidSchedulers;
-import io.reactivex.rxjava3.disposables.CompositeDisposable;
-import io.reactivex.rxjava3.schedulers.Schedulers;
-import com.project.retrofit.RetrofitClient;
 import com.project.viewmodel.HomeMessViewModel;
 
 import java.util.ArrayList;
 
-public class HomeChatActivity extends BaseActivity<HomeMessViewModel> implements AllUserAdapter.OnItemClick, MessengerAdapter.OnMessClick {
+public class HomeChatActivity2 extends BaseActivity<HomeMessViewModel> implements AllUserAdapter.OnItemClick, MessengerAdapter.OnMessClick {
 
     private AllUserAdapter allUsersAdapter;
     private MessengerAdapter messageAdapter;
     private EditText edtSearchUser;
     private RecyclerView rvAllUser,rvListMess;
+    private Button btnchat;
 
-    public HomeChatActivity() {
-        // Required empty public constructor
-    }
+
+
 
 
     @Override
@@ -128,15 +110,26 @@ public class HomeChatActivity extends BaseActivity<HomeMessViewModel> implements
     @Override
     public void onResume() {
         super.onResume();
-      //  mModel.setStatus(Constants.ONLINE);
+        //  mModel.setStatus(Constants.ONLINE);
     }
 
     @Override
     public void onPause() {
         super.onPause();
-       // mModel.setStatus(Constants.OFFLINE);
+        // mModel.setStatus(Constants.OFFLINE);
     }
 
+    //  @Override
+//    public void onClick(View v) {
+//        btnchat=(Button) findViewById(R.id.btnchat);
+//        btnchat.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View view) {
+//                Intent intent2 = new Intent(HomeChatActivity.this,ChatActivity.class);
+//                startActivity(intent2);
+//            }
+//        });
+//    }
 
     @Override
     protected Class<HomeMessViewModel> getClassViewModel() {
@@ -145,16 +138,21 @@ public class HomeChatActivity extends BaseActivity<HomeMessViewModel> implements
 
     @Override
     protected int getLayoutID() {
-        return R.layout.activity_chat;
+        return R.layout.activity_home_chat2;
     }
 
     @Override
     public void onItemClick(User data) {
-       gotoChatFragment(data);
+        gotoChatFragment(data);
     }
 
     @Override
     public void onMessClick(User data) {
         gotoChatFragment(data);
+    }
+
+    public void push_click(View view) {
+        Intent intent2 = new Intent(HomeChatActivity2.this,ChatActivity.class);
+        startActivity(intent2);
     }
 }

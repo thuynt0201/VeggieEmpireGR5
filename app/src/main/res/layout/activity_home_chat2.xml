@@ -42,7 +42,7 @@
         <LinearLayout
             android:layout_marginHorizontal="10dp"
             android:padding="10dp"
-           android:background="#FFD705"
+            android:background="#FFD705"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="horizontal">
@@ -59,21 +59,21 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="Admin"
-                   android:fontFamily="sans-serif"
+                    android:fontFamily="sans-serif"
                     android:textColor="#000"/>
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="Trạng thái: Online"
                     android:layout_marginTop="10dp"
-                   android:fontFamily="sans-serif"
+                    android:fontFamily="sans-serif"
                     android:textColor="@color/colorPrimaryDark"/>
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="10dp"
                     android:text="Vui lòng chờ tôi chờ tôi một chút!..."
-                   android:fontFamily="sans-serif"/>
+                    android:fontFamily="sans-serif"/>
 
             </LinearLayout>
         </LinearLayout>
@@ -110,7 +110,13 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="16dp"
             android:id="@+id/rcv_mess_list"/>
-
+        <Button
+            android:onClick="push_click"
+            android:id="@+id/btnchat"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Chat"
+            android:layout_gravity="center"
+            android:background="@color/yellow"/>
     </LinearLayout>
-
 </ScrollView>

@@ -87,7 +87,7 @@ public class TrangChu extends AppCompatActivity {
                         Toast.makeText(TrangChu.this, "Home", Toast.LENGTH_SHORT).show();
                         break;
                     case R.id.action_chat:
-                        Intent chat = new Intent(TrangChu.this, HomeChatActivity.class);
+                        Intent chat = new Intent(TrangChu.this, HomeChatActivity2.class);
                         startActivity(chat);
                         break;
                     case R.id.action_cart:

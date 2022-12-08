@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+android:orientation="vertical">
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/sendmess">
+    <TextView
+        android:id="@+id/txtmess"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="4dp"
+        android:background="@drawable/back_sendmess"
+        android:padding="10dp"
+        android:text="Shop oi, do an toi chua a?? "
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintWidth_percent="0.7" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/thoigian"
+        app:layout_constraintTop_toBottomOf="@id/txtmess"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:text="20:40"
+        android:layout_marginRight="25dp"
+        android:layout_marginTop="10dp"/>
+</androidx.constraintlayout.widget.ConstraintLayout>
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_constraintTop_toBottomOf="@+id/sendmess">
+    <TextView
+        android:id="@+id/txtrcmess"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="92dp"
+        android:background="@drawable/back_recieved"
+        android:padding="10dp"
+        android:text="Chào bạn, bạn vui lòng chờ 20phut nhé!"
+        android:textColor="@color/black"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintWidth_percent="0.7" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/rcthoigian"
+        app:layout_constraintTop_toBottomOf="@id/txtrcmess"
+        app:layout_constraintStart_toStartOf="parent"
+        android:text="20:42"
+        android:layout_marginLeft="25dp"
+        android:layout_marginTop="10dp"/>
+
+    <TextView
+        m
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="20:50"
+        tools:layout_editor_absoluteX="362dp"
+        tools:layout_editor_absoluteY="214dp" />
+</androidx.constraintlayout.widget.ConstraintLayout>
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:id="@+id/rcv2mess">
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/back_recieved"
+        android:padding="10dp"
+        android:text="OK bạn. Shop sẽ giao hàng tới ngay!!"
+        android:textColor="@color/black"
+        app:layout_constraintWidth_percent="0.7"
+        tools:layout_editor_absoluteX="26dp"
+        tools:layout_editor_absoluteY="253dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="20:55"
+        tools:layout_editor_absoluteX="33dp"
+        tools:layout_editor_absoluteY="303dp" />
+</androidx.constraintlayout.widget.ConstraintLayout>
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:id="@+id/send2mess"
+    >
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/back_sendmess"
+        android:padding="10dp"
+        android:text="Shop nhớ làm nhanh dùm em nhé :("
+        android:textColor="@color/black"
+        app:layout_constraintWidth_percent="0.7"
+        tools:layout_editor_absoluteX="121dp"
+        tools:layout_editor_absoluteY="172dp"
+        android:id="@+id/txtsend2mess"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+<ImageView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:layout_constraintTop_toBottomOf="@+id/rcv2mess"
+    android:src="@drawable/banphim"></ImageView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
