@@ -21,7 +21,7 @@ public class Language extends AppCompatActivity {
         setContentView(binding.getRoot());
 
         //======THANH HEADER======
-        getSupportActionBar().setTitle("Cài đặt chat");
+        getSupportActionBar().setTitle("Cài đặt ngôn ngữ");
         Drawable drawable= getResources().getDrawable(R.drawable.ic_baseline_arrow_back_ios_24);
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
         getSupportActionBar().setHomeAsUpIndicator(drawable);
