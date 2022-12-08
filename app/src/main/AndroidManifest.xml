@@ -16,6 +16,13 @@
         android:theme="@style/MyAppTheme"
         tools:targetApi="31">
         <activity
+            android:name=".EditInfAcountActivity"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
             android:name=".ThongBaoActivity"
             android:exported="false">
             <meta-data
@@ -334,7 +341,7 @@
         <activity
             android:name=".OrderCanceledActivity"
             android:exported="true"
-            android:parentActivityName=".CartActivity">
+            android:parentActivityName=".OrderActivity">
             <meta-data
                 android:name="android.app.lib_name"
                 android:value="" />
@@ -342,7 +349,7 @@
         <activity
             android:name=".OrderDeliveredActivity"
             android:exported="true"
-            android:parentActivityName=".CartActivity">
+            android:parentActivityName=".OrderActivity">
             <meta-data
                 android:name="android.app.lib_name"
                 android:value="" />
@@ -350,13 +357,11 @@
         <activity
             android:name=".OrderDeliveringActivity"
             android:exported="true"
-            android:parentActivityName=".CartActivity">
+            android:parentActivityName=".OrderActivity">
             <meta-data
                 android:name="android.app.lib_name"
                 android:value="" />
         </activity>
-
-
         <activity
             android:name=".EmailActivity2"
             android:exported="false">
@@ -423,7 +428,6 @@
                 android:name="android.app.lib_name"
                 android:value="" />
         </activity>
-
         <activity
             android:name=".loginActivity2"
             android:exported="false">
@@ -438,17 +442,14 @@
                 android:name="android.app.lib_name"
                 android:value="" />
         </activity>
-        <activity android:name=".ReserveTable"
+        <activity
+            android:name=".ReserveTable"
             android:exported="false"
             android:parentActivityName=".TrangChu">
             <meta-data
                 android:name="android.app.lib_name"
-                android:value=""/>
+                android:value="" />
         </activity>
-
-
-
-
     </application>
 
 </manifest>

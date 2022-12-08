@@ -15,18 +15,6 @@
         <TextView
             android:layout_width="match_parent"
             android:layout_height="35dp"
-            android:text="Hồ sơ của tôi"
-            android:textColor="#000000"
-            android:textSize="15sp"
-            android:fontFamily="@font/nunitosans_regular"
-            android:background="#FFFFFF"
-            android:layout_marginTop="7dp"
-            android:paddingLeft="10dp"
-            android:paddingTop="7dp"/>
-
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="35dp"
             android:text="Tên người dùng"
             android:textColor="#000000"
             android:textSize="15sp"
@@ -75,7 +63,7 @@
         <TextView
             android:layout_width="match_parent"
             android:layout_height="35dp"
-            android:text="Đổi mật khẩu"
+            android:text="Ngày sinh"
             android:textColor="#000000"
             android:textSize="15sp"
             android:fontFamily="@font/nunitosans_regular"
@@ -83,6 +71,20 @@
             android:layout_marginTop="2dp"
             android:paddingLeft="10dp"
             android:paddingTop="7dp"/>
+
+        <Button
+            android:onClick="push"
+            android:id="@+id/btn_Editthongtin"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:text="Chỉnh sửa thông tin"
+            android:fontFamily="@font/nunitosans_bold"
+            android:textSize="18sp"
+            android:textColor="#000000"
+            android:textAlignment="center"
+            android:gravity="center"
+            android:layout_margin="15dp"
+            android:background="#FFD705"/>
 
     </LinearLayout>
 
