@@ -106,31 +106,16 @@ public class HomeChatActivity2 extends BaseActivity<HomeMessViewModel> implement
         i.putExtra("user",user);
         startActivity(i);
     }
-
     @Override
     public void onResume() {
         super.onResume();
         //  mModel.setStatus(Constants.ONLINE);
     }
-
     @Override
     public void onPause() {
         super.onPause();
         // mModel.setStatus(Constants.OFFLINE);
     }
-
-    //  @Override
-//    public void onClick(View v) {
-//        btnchat=(Button) findViewById(R.id.btnchat);
-//        btnchat.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View view) {
-//                Intent intent2 = new Intent(HomeChatActivity.this,ChatActivity.class);
-//                startActivity(intent2);
-//            }
-//        });
-//    }
-
     @Override
     protected Class<HomeMessViewModel> getClassViewModel() {
         return HomeMessViewModel.class;
