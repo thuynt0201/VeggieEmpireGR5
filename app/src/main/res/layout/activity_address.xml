@@ -21,12 +21,13 @@
             android:fontFamily="@font/nunitosans_light"
             android:textColor="#000000"
             android:textSize="14sp"
-            android:layout_marginTop="10dp"/>
+            android:layout_marginTop="10dp"
+            android:paddingLeft="10dp"/>
 
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Thêm địa chỉ nhà"
+            android:text=" Thêm địa chỉ nhà"
             android:drawableLeft="@drawable/ic_baseline_home_24"
             android:textColor="#000000"
             android:fontFamily="@font/nunitosans_bold"
@@ -37,7 +38,7 @@
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Thêm địa chỉ công ty"
+            android:text=" Thêm địa chỉ công ty"
             android:drawableLeft="@drawable/ic_baseline_work_24"
             android:textColor="@color/black"
             android:fontFamily="@font/nunitosans_bold"
@@ -48,7 +49,7 @@
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="2 Hẻm 26 Đường số 17"
+            android:text=" 2 Hẻm 26 Đường số 17"
             android:textColor="#000000"
             android:fontFamily="@font/nunitosans_bold"
             android:textSize="15sp"
@@ -75,7 +76,7 @@
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="9 Đường Hòa Bình"
+            android:text=" 9 Đường Hòa Bình"
             android:textColor="#000000"
             android:fontFamily="@font/nunitosans_bold"
             android:textSize="15sp"
@@ -102,7 +103,7 @@
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="12 Đường Hồng Đức"
+            android:text=" 12 Đường Hồng Đức"
             android:textColor="#000000"
             android:fontFamily="@font/nunitosans_bold"
             android:textSize="15sp"

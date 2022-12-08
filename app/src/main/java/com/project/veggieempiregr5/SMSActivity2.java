@@ -24,6 +24,9 @@ public class SMSActivity2 extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_smsactivity2);
+        //======THANH HEADER======
+        getSupportActionBar().setTitle("VEGGIE EMPIRE");
+        //======THANH HEADER END======
 
         final EditText inputMobile = findViewById(R.id.inputMobile);
         ImageView imvnext = findViewById(R.id.imvnext);

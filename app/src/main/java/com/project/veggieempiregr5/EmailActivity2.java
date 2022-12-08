@@ -26,6 +26,9 @@ public class EmailActivity2 extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_email2);
+        //======THANH HEADER======
+        getSupportActionBar().setTitle("VEGGIE EMPIRE");
+        //======THANH HEADER END======
 
         ImageView imvback = findViewById(R.id.imvback);
         final ProgressBar progressBar = findViewById(R.id.progressBar);
