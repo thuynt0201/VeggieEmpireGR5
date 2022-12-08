@@ -29,17 +29,13 @@ public class MenuActivity extends AppCompatActivity {
         //setContentView(R.layout.activity_menu);
         binding = ActivityMenuBinding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());
-
         loadData();
-
-
         //======THANH HEADER======
         getSupportActionBar().setTitle("Thực đơn");
         Drawable drawable= getResources().getDrawable(R.drawable.ic_baseline_arrow_back_ios_24);
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
         getSupportActionBar().setHomeAsUpIndicator(drawable);
         //======THANH HEADER END======
-
         getData();
     }
 
@@ -90,8 +86,6 @@ public class MenuActivity extends AppCompatActivity {
         adapter = new MenuAdapter(MenuActivity.this, R.layout.item_menu, menuList);
         binding.lvMenuDish.setAdapter(adapter);
     }
-
-
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         getMenuInflater().inflate(R.menu.option_menu_menu, menu);

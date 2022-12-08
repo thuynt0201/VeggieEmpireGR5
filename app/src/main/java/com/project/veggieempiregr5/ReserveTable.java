@@ -20,7 +20,6 @@ public class ReserveTable extends AppCompatActivity {
     ActivityReserveTableBinding binding;
     public static DatabaseTable databaseTable;
 
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

@@ -47,16 +47,10 @@ public class CartActivity extends AppCompatActivity {
         //======THANH HEADER END======
 
         getData();
-
         getDataCoupon();
         totalPrice();
         addEvent();
-
-
     }
-
-
-
     private void totalPrice(){
         Intent intent = getIntent();
         Bundle bundle = intent.getExtras();
@@ -79,7 +73,6 @@ public class CartActivity extends AppCompatActivity {
         binding.txtTotalCart.setText(String.valueOf(totalOrder)+"đ");
     }
 
-
     private void addEvent() {
         binding.chooseCoupon.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -99,24 +92,10 @@ public class CartActivity extends AppCompatActivity {
                 intent.putExtras(bundle);
                 startActivity(intent);
                 DeleteAllCart();
-
-
             }
         });
-
-
     }
-
-
-
-
-
-    private void getDataCoupon() {
-
-
-    }
-
-
+    private void getDataCoupon() {}
 
     private void getData() {
         // get all data from sqlite
@@ -135,7 +114,6 @@ public class CartActivity extends AppCompatActivity {
         adapter.notifyDataSetChanged();
     }
 
-
     public void DeleteAllCart()
     {
         DatabaseCart myDB = new DatabaseCart(CartActivity.this);
@@ -143,7 +121,6 @@ public class CartActivity extends AppCompatActivity {
         updateCartList();
         totalPrice();
     }
-
 
     //Xóa từng item được chọn trong cart
     public void DialogDeleteCart(String tenCV, int Id){

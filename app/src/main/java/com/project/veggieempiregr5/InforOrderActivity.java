@@ -116,10 +116,11 @@ public class InforOrderActivity extends AppCompatActivity {
                     intent.putExtras(bundle);
                     startActivity(intent);
                 }
+                else Toast.makeText(InforOrderActivity.this, "Bạn hãy chọn phương thức thanh toán", Toast.LENGTH_SHORT).show();
+
                 notificationManagerCompat.notify(1, notification);
             }
         });
-
         binding.txtAddress.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -127,10 +128,6 @@ public class InforOrderActivity extends AppCompatActivity {
                 startActivity(intent);
             }
         });
-
-
-
-
     }
 
     private void chooseTime() {

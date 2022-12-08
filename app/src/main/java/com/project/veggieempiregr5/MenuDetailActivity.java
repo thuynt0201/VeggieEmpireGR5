@@ -29,15 +29,12 @@ public class MenuDetailActivity extends AppCompatActivity {
         binding = ActivityMenuDetailBinding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());
 
-
         //======THANH HEADER======
         getSupportActionBar().setTitle("Chi tiết món ăn");
         Drawable drawable= getResources().getDrawable(R.drawable.ic_baseline_arrow_back_ios_24);
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
         getSupportActionBar().setHomeAsUpIndicator(drawable);
         //======THANH HEADER END======
-
-
         getData();
         addEvent();
     }
@@ -58,7 +55,6 @@ public class MenuDetailActivity extends AppCompatActivity {
                 startActivity(intent);
             }
         });
-
 
         binding.imgbtnMinustocart.setOnClickListener(new View.OnClickListener() {
             @Override
