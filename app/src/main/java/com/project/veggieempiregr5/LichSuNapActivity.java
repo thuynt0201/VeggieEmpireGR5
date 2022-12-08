@@ -18,6 +18,8 @@ import android.widget.Toast;
 
 import com.project.adapters.NapTienAdapter;
 import com.project.database.NapTienDatabase;
+import com.project.veggieempiregr5.databinding.ActivityLichSuNapBinding;
+import com.project.veggieempiregr5.databinding.ActivityLienKetBinding;
 
 import java.util.ArrayList;
 
@@ -31,10 +33,13 @@ public class LichSuNapActivity extends AppCompatActivity {
 
     NapTienAdapter napTienAdapter;
 
+    ActivityLichSuNapBinding binding;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_lich_su_nap);
+        //setContentView(R.layout.activity_lich_su_nap);
+        binding = ActivityLichSuNapBinding.inflate(getLayoutInflater());
+        setContentView(binding.getRoot());
 
         getSupportActionBar().setTitle("Chi tiết giao dịch");
         Drawable drawable= getResources().getDrawable(R.drawable.ic_baseline_arrow_back_ios_24);
@@ -43,25 +48,8 @@ public class LichSuNapActivity extends AppCompatActivity {
 
 
         recyclerView = findViewById(R.id.rcv_NapList);
-        btn_nap = findViewById(btn_NapList);
 
-        btn_nap.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent intent = new Intent(LichSuNapActivity.this, XacNhanNapTienActivity.class);
-                startActivity(intent);
-            }
-        });
-
-        btn_rut = findViewById(btn_RutList);
-        btn_rut.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent intent = new Intent(LichSuNapActivity.this, LichSuRutActivity.class);
-                startActivity(intent);
-            }
-        });
-
+        addEvents();
 
 
         napTienDatabase = new NapTienDatabase(LichSuNapActivity.this);
@@ -75,6 +63,23 @@ public class LichSuNapActivity extends AppCompatActivity {
         recyclerView.setAdapter(napTienAdapter);
         recyclerView.setLayoutManager(new LinearLayoutManager(LichSuNapActivity.this));
 
+    }
+
+    private void addEvents() {
+        binding.btnRutList.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(LichSuNapActivity.this, LichSuRutActivity.class);
+                startActivity(intent);
+            }
+        });
+        binding.btnThanhToan.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(LichSuNapActivity.this, LichSuThanhToanActivity.class);
+                startActivity(intent);
+            }
+        });
     }
 
     void displayData(){

@@ -84,7 +84,8 @@
         </activity>
         <activity
             android:name=".RutTienActivity"
-            android:exported="false">
+            android:exported="false"
+            android:parentActivityName=".Wallet">
             <meta-data
                 android:name="android.app.lib_name"
                 android:value="" />
@@ -107,14 +108,6 @@
         </activity>
         <activity
             android:name=".LichSuNapActivity"
-            android:exported="false"
-            android:parentActivityName=".Wallet">
-            <meta-data
-                android:name="android.app.lib_name"
-                android:value="" />
-        </activity>
-        <activity
-            android:name=".LichSuGDActivity"
             android:exported="false"
             android:parentActivityName=".Wallet">
             <meta-data
@@ -213,7 +206,7 @@
         <activity
             android:name=".XacNhanNapTienActivity"
             android:exported="false"
-            android:parentActivityName=".LichSuNapActivity">
+            android:parentActivityName=".NapTienActivity">
             <meta-data
                 android:name="android.app.lib_name"
                 android:value="" />
@@ -228,7 +221,8 @@
         </activity>
         <activity
             android:name=".NapTienActivity"
-            android:exported="false">
+            android:exported="false"
+            android:parentActivityName=".Wallet">
             <meta-data
                 android:name="android.app.lib_name"
                 android:value="" />

@@ -4,6 +4,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.app.Dialog;
 import android.content.Intent;
+import android.graphics.drawable.Drawable;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -26,6 +27,10 @@ public class XacNhanNapTienActivity extends AppCompatActivity {
         binding = ActivityXacNhanNapTienBinding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());
 
+        getSupportActionBar().setTitle("Nạp tiền vào ví");
+        Drawable drawable= getResources().getDrawable(R.drawable.ic_baseline_arrow_back_ios_24);
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+        getSupportActionBar().setHomeAsUpIndicator(drawable);
 
         txtNguonTienNap = findViewById(R.id.txt_NguonTienNap);
         txtSoTienNap = findViewById(R.id.txt_SoTienNap);

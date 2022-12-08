@@ -66,7 +66,7 @@ public class BankConnectedAdapter extends RecyclerView.Adapter<BankConnectedAdap
         public MyViewHolder(@NonNull View itemView) {
             super(itemView);
             txtBankName = itemView.findViewById(R.id.txt_BankName);
-            linearLayout = itemView.findViewById(R.id.bank_item);
+            linearLayout = itemView.findViewById(R.id.banklist_item);
         }
     }
 }

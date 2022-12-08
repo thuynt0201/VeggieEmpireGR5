@@ -65,13 +65,6 @@ public class LichSuThanhToanActivity extends AppCompatActivity {
             }
         });
 
-        binding.btnTatCa.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent intent = new Intent(LichSuThanhToanActivity.this, LichSuGDActivity.class);
-                startActivity(intent);
-            }
-        });
         binding.btnRut.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {

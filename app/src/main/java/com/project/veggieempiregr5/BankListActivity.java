@@ -72,10 +72,6 @@ public class BankListActivity extends AppCompatActivity {
         banks.add(new Bank(R.drawable.ocbbank, "OCBBank"));
         banks.add(new Bank(R.drawable.hdbank, "HDBank"));
 
-
-
-
-
         return banks;
     }
 
