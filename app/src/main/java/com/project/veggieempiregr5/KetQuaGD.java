@@ -27,7 +27,7 @@ public class KetQuaGD extends AppCompatActivity {
         txtNapSuccess2 = findViewById(R.id.txt_NapSuccess2);
 
         txtNapSuccess1.setText(BankUtil.soTienNap.toString());
-        txtNapSuccess2.setText("Bạn đã nạp thành công " + BankUtil.soTienNap.toString() + " vào ví VeggiePay bằng tài khoản ngân hànng");
+        txtNapSuccess2.setText("Bạn đã nạp thành công " + BankUtil.soTienNap.toString() + " vào ví VeggiePay bằng tài khoản ngân hàng");
 
     }
 }

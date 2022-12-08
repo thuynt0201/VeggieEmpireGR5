@@ -25,6 +25,7 @@ import me.relex.circleindicator.CircleIndicator3;
 
 public class TrangChu extends AppCompatActivity {
 
+
     ActivityTrangChuBinding binding;
     private ViewPager2 viewPager2;
     private CircleIndicator3 circleIndicator3;
@@ -142,10 +143,10 @@ public class TrangChu extends AppCompatActivity {
     private List<Photo> getListPhoto(){
         List<Photo> list = new ArrayList<>();
         list.add(new Photo(R.drawable.rice));
-       // list.add(new Photo(R.drawable.tofu));
+        list.add(new Photo(R.drawable.tofu));
         list.add(new Photo(R.drawable.noodle));
-       // list.add(new Photo(R.drawable.tofumushroom));
-      //  list.add(new Photo(R.drawable.veganfood));
+        list.add(new Photo(R.drawable.tofumushroom));
+        list.add(new Photo(R.drawable.veganfood));
         return list;
     }
 

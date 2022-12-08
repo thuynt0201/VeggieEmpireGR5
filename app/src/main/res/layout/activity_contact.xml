@@ -9,173 +9,179 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:orientation="vertical"
-        android:background="#F6F4E9">
+        android:background="#F6F4E9"
+        android:orientation="vertical">
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:background="@color/white"
+            android:baselineAligned="false"
             android:orientation="vertical"
             android:padding="15dp">
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:fontFamily="@font/nunitosans_bold"
                 android:text="Đội chăm sóc khách hàng"
-                android:textStyle="bold"
                 android:textColor="@color/black"
                 android:textSize="18sp"
-                android:fontFamily="@font/nunitosans_bold"/>
+                android:textStyle="bold" />
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Veggie Empire"
-                android:textStyle="bold"
-                android:textColor="#000000"
                 android:fontFamily="@font/nunitosans_bold"
-                android:textSize="18sp"/>
+                android:text="Veggie Empire"
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:textStyle="bold" />
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/nunitosans_light"
                 android:text="Chúng tôi muốn lắng nghe câu hỏi và ý kiến đóng góp từ bạn.
 Hãy phản hồi cho Veggie Empire biết vấn đề của bạn nhé! Chúng tôi sẽ liên hệ lại bạn
 trong 24h tiếp theo."
-                android:textSize="15sp"
                 android:textColor="#000000"
-                android:layout_marginTop="10dp"
-                android:fontFamily="@font/nunitosans_regular"/>
+                android:textSize="15sp" />
         </LinearLayout>
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="vertical"
-            android:padding="15dp"
             android:layout_marginTop="10dp"
-            android:background="@color/white">
+            android:background="@color/white"
+            android:orientation="vertical"
+            android:padding="15dp">
 
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/nunitosans_light"
                 android:text="Họ và tên"
-                android:fontFamily="@font/nunitosans_light"
                 android:textColor="@color/black"
-                android:layout_marginTop="10dp"
-                android:textSize="14dp"/>
+                android:textSize="14dp" />
 
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:padding="10dp"
+                android:layout_marginTop="10dp"
                 android:background="@drawable/border"
-                android:layout_marginTop="10dp">
+                android:padding="10dp">
+
                 <EditText
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:fontFamily="@font/nunitosans_regular"
-                    android:textSize="15sp"/>
+                    android:textSize="15sp" />
             </LinearLayout>
 
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/nunitosans_light"
                 android:text="* Số điện thoại"
-                android:fontFamily="@font/nunitosans_light"
                 android:textColor="@color/black"
-                android:textSize="14sp"
-                android:layout_marginTop="10dp"/>
+                android:textSize="14sp" />
 
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:padding="10dp"
+                android:layout_marginTop="10dp"
                 android:background="@drawable/border"
-                android:layout_marginTop="10dp">
+                android:padding="10dp">
+
                 <EditText
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:fontFamily="@font/nunitosans_regular"
-                    android:textSize="15sp"
-                    android:inputType="number"/>
+                    android:inputType="number"
+                    android:textSize="15sp" />
             </LinearLayout>
 
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/nunitosans_light"
                 android:text="* Email"
-                android:fontFamily="@font/nunitosans_light"
                 android:textColor="@color/black"
-                android:layout_marginTop="10dp"
-                android:textSize="14dp"/>
+                android:textSize="14dp" />
 
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:padding="10dp"
+                android:layout_marginTop="10dp"
                 android:background="@drawable/border"
-                android:layout_marginTop="10dp">
+                android:padding="10dp">
+
                 <EditText
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:fontFamily="@font/nunitosans_regular"
-                    android:textSize="15sp"/>
+                    android:textSize="15sp" />
             </LinearLayout>
 
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/nunitosans_light"
                 android:text="Địa chỉ"
-                android:fontFamily="@font/nunitosans_light"
                 android:textColor="@color/black"
-                android:layout_marginTop="10dp"
-                android:textSize="14sp"/>
+                android:textSize="14sp" />
 
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:padding="10dp"
+                android:layout_marginTop="10dp"
                 android:background="@drawable/border"
-                android:layout_marginTop="10dp">
+                android:padding="10dp">
+
                 <EditText
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:fontFamily="@font/nunitosans_regular"
-                    android:textSize="15sp"/>
+                    android:textSize="15sp" />
             </LinearLayout>
 
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:text="* Nội dung phản hồi"
-                android:fontFamily="@font/nunitosans_light"
-                android:textColor="@color/black"
                 android:layout_marginTop="10dp"
-                android:textSize="14sp"/>
+                android:fontFamily="@font/nunitosans_light"
+                android:text="* Nội dung phản hồi"
+                android:textColor="@color/black"
+                android:textSize="14sp" />
 
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:text="Điền thêm thông tin chi tiết về thắc mắc/ vấn đề của bạn"
-                android:fontFamily="@font/nunitosans_light"
-                android:textColor="@color/black"
                 android:layout_marginTop="10dp"
-                android:textSize="14sp"/>
+                android:fontFamily="@font/nunitosans_light"
+                android:text="Điền thêm thông tin chi tiết về thắc mắc/ vấn đề của bạn"
+                android:textColor="@color/black"
+                android:textSize="14sp" />
 
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="100dp"
-                android:padding="10dp"
+                android:layout_marginTop="10dp"
                 android:background="@drawable/border"
-                android:layout_marginTop="10dp">
+                android:padding="10dp">
+
                 <EditText
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:fontFamily="@font/nunitosans_regular"
-                    android:textSize="15sp"
-                    android:inputType="number"/>
+                    android:inputType="number"
+                    android:textSize="15sp" />
             </LinearLayout>
 
         </LinearLayout>
@@ -184,13 +190,13 @@ trong 24h tiếp theo."
             android:id="@+id/btn_ReserveTable"
             android:layout_width="380dp"
             android:layout_height="wrap_content"
-            android:text="Gửi"
-            android:fontFamily="@font/nunitosans_bold"
-            android:textSize="18sp"
-            android:textStyle="bold"
-            android:textColor="@color/white"
             android:layout_gravity="center"
-            android:backgroundTint="#FEA905"/>
+            android:backgroundTint="#FEA905"
+            android:fontFamily="@font/nunitosans_bold"
+            android:text="Gửi"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            android:textStyle="bold" />
 
     </LinearLayout>
 
