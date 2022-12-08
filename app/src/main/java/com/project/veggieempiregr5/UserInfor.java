@@ -1,17 +1,28 @@
 package com.project.veggieempiregr5;
 
+import androidx.annotation.NonNull;
+import androidx.annotation.Nullable;
+import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.DialogInterface;
 import android.content.Intent;
+import android.graphics.Bitmap;
 import android.graphics.drawable.Drawable;
 import android.os.Bundle;
+import android.view.LayoutInflater;
+import android.view.Menu;
 import android.view.View;
+import android.widget.ImageView;
+import android.widget.Toast;
 
 import com.project.veggieempiregr5.databinding.ActivityKhuyenMaiBinding;
 import com.project.veggieempiregr5.databinding.ActivityTrangChuBinding;
 import com.project.veggieempiregr5.databinding.ActivityUserInforBinding;
 
 public class UserInfor extends AppCompatActivity {
+
+    ImageView imguser;
 
     ActivityUserInforBinding binding;
     @Override
@@ -82,11 +93,62 @@ public class UserInfor extends AppCompatActivity {
             }
         });
 
-        binding.txtKhuyenMai.setOnClickListener(new View.OnClickListener() {
+        imguser = (ImageView)findViewById(R.id.imguser);
+        binding.imguser.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-
+                open();
             }
         });
     }
+        public void open(){
+            Intent intent = new Intent(android.provider.MediaStore.ACTION_IMAGE_CAPTURE);
+            startActivityForResult(intent, 0);
+        }
+
+    @Override
+    protected void onActivityResult(int requestCode, int resultCode, @Nullable Intent data) {
+        super.onActivityResult(requestCode, resultCode, data);
+
+        Bitmap bp = (Bitmap) data.getExtras().get("data");
+        imguser.setImageBitmap(bp);
+    }
+
+    @Override
+    public boolean onCreateOptionsMenu(@NonNull Menu menu) {
+        return true;
+
+
+    }
+
+    public void logout_click(View view) {
+        AlertDialog.Builder alertDialogBuilder = new AlertDialog.Builder(this);
+        alertDialogBuilder.setTitle("Xác nhận để thoát..!!!");
+        alertDialogBuilder.setIcon(R.drawable.question);
+        alertDialogBuilder.setMessage("Bạn có chắc chắn muốn thoát?");
+        alertDialogBuilder.setCancelable(false);
+        alertDialogBuilder.setPositiveButton("Đồng ý", new DialogInterface.OnClickListener() {
+            @Override
+            public void onClick(DialogInterface dialogInterface, int i) {
+                Intent intent = new Intent(UserInfor.this, loginActivity2.class);
+                startActivity(intent);
+            }
+        });
+        alertDialogBuilder.setNegativeButton("Không đồng ý", new DialogInterface.OnClickListener() {
+            @Override
+            public void onClick(DialogInterface dialogInterface, int i) {
+                Toast.makeText(UserInfor.this, "Bạn đã chọn vào nút không đồng ý", Toast.LENGTH_SHORT).show();
+            }
+        });
+        alertDialogBuilder.setNeutralButton("Hủy", new DialogInterface.OnClickListener() {
+            @Override
+            public void onClick(DialogInterface dialogInterface, int i) {
+                Toast.makeText(UserInfor.this, "Bạn đã chọn nút hủy", Toast.LENGTH_SHORT).show();
+            }
+        });
+        AlertDialog alertDialog = alertDialogBuilder.create();
+        alertDialog.show();
+
+    }
+
 }
