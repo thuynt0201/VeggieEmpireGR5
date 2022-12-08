@@ -25,6 +25,6 @@ public class KetQuaRutActivity extends AppCompatActivity {
         txtRutSuccess2 = findViewById(R.id.txt_RutSuccess2);
 
         txtRutSuccess1.setText(BankUtil.soTienRut.toString());
-        txtRutSuccess2.setText("Bạn đã rút thành công " + BankUtil.soTienRut.toString() + " từ ví VeggiePay về tài khoản ngân hànng");
+        txtRutSuccess2.setText("Bạn đã rút thành công " + BankUtil.soTienRut.toString() + " từ ví VeggiePay về tài khoản ngân hàng");
     }
 }

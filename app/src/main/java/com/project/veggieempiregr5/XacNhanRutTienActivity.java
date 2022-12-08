@@ -29,7 +29,7 @@ public class XacNhanRutTienActivity extends AppCompatActivity {
         binding = ActivityXacNhanRutTienBinding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());
 
-        getSupportActionBar().setTitle("Nạp tiền vào ví");
+        getSupportActionBar().setTitle("Rút tiền về tài khoản");
         Drawable drawable= getResources().getDrawable(R.drawable.ic_baseline_arrow_back_ios_24);
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
         getSupportActionBar().setHomeAsUpIndicator(drawable);
