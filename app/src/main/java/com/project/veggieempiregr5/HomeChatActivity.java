@@ -9,6 +9,7 @@ import androidx.recyclerview.widget.RecyclerView;
 import androidx.core.view.GravityCompat;
 
 import android.content.Intent;
+import android.graphics.drawable.Drawable;
 import android.os.Bundle;
 import android.text.Editable;
 import android.text.TextUtils;
@@ -55,6 +56,13 @@ public class HomeChatActivity extends BaseActivity<HomeMessViewModel> implements
 
     @Override
     protected void initViews() {
+
+        //======THANH HEADER======
+        getSupportActionBar().setTitle("Chat");
+        Drawable drawable= getResources().getDrawable(R.drawable.ic_baseline_arrow_back_ios_24);
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+        getSupportActionBar().setHomeAsUpIndicator(drawable);
+        //======THANH HEADER END======
 
         mModel.loadUser();
         rvAllUser = findViewById(R.id.rcv_all_user);
