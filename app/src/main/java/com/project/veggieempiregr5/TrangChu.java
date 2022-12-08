@@ -123,6 +123,13 @@ public class TrangChu extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+        binding.txtXemThucDon.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent (TrangChu.this, MenuActivity.class);
+                startActivity(intent);
+            }
+        });
         // tam thoi set cho no vao cai tinh trang don de het loi moi chay dc
         binding.imvStatusOrder.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -144,8 +151,8 @@ public class TrangChu extends AppCompatActivity {
         List<Photo> list = new ArrayList<>();
         list.add(new Photo(R.drawable.rice));
         list.add(new Photo(R.drawable.tofu));
-        list.add(new Photo(R.drawable.noodle));
-        list.add(new Photo(R.drawable.tofumushroom));
+        list.add(new Photo(R.drawable.mixed));
+        list.add(new Photo(R.drawable.tofu_trangchu));
         list.add(new Photo(R.drawable.veganfood));
         return list;
     }
