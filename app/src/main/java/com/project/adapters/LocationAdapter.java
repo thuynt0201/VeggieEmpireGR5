@@ -23,6 +23,7 @@ public class LocationAdapter extends RecyclerView.Adapter<LocationAdapter.Locati
 
     public void setFilteredList(List<Location> filteredList){
         this.locationList = filteredList;
+
         notifyDataSetChanged();
     }
 
@@ -47,6 +48,11 @@ public class LocationAdapter extends RecyclerView.Adapter<LocationAdapter.Locati
             return locationList.size();
         }
         return 0;
+    }
+
+    public Location getItemCount(int position) {
+        locationList.size();
+        return null;
     }
 
 

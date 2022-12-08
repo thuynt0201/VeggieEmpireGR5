@@ -91,6 +91,13 @@
                 android:value="" />
         </activity>
         <activity
+            android:name=".ResultCancelOrderActivity"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
             android:name=".ChiTietNapActivity"
             android:exported="false"
             android:parentActivityName=".LichSuNapActivity">

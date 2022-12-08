@@ -5,6 +5,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.BaseAdapter;
+import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
 
@@ -45,6 +46,7 @@ public class CartAdapter extends BaseAdapter {
         //ImageView imageDishDetail;
         TextView txtNamedetail, txtPriceDetail,txtNumberInCart,txtTotal;
         ImageView imageMinus, imagePlus,imageDelete;
+        Button btnStartOrder;
 
 
     }
@@ -64,12 +66,15 @@ public class CartAdapter extends BaseAdapter {
             holder.imageMinus = row.findViewById(R.id.imgbtn_minus);
             holder.imagePlus = row.findViewById(R.id.imgbtn_plus);
             holder.imageDelete = row.findViewById(R.id.imv_DeteleCart);
+
+
             //holder.imageDishDetail= (ImageView) row.findViewById(R.id.imv_DishesCart);
             row.setTag(holder);
         }
         else {
             holder = (ViewHolder) row.getTag();
         }
+
 
         Cart cart = cartArrayList.get(position);
         holder.txtNamedetail.setText(cart.getNameDishCart());
@@ -94,6 +99,8 @@ public class CartAdapter extends BaseAdapter {
                 context.DialogDeleteCart(cart.getNameDishCart(),cart.getId());
             }
         });
+
+
 //        byte[] productImage = cart.getImagedetail();
 //        Bitmap bitmap = BitmapFactory.decodeByteArray(productImage, 0, productImage.length);
 //        holder.imageDishDetail.setImageBitmap(bitmap);

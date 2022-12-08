@@ -98,11 +98,17 @@ public class CartActivity extends AppCompatActivity {
                 bundle.putInt("discountcart", Integer.parseInt((binding.txtDiscountCart.getText().toString().trim())));
                 intent.putExtras(bundle);
                 startActivity(intent);
+                DeleteAllCart();
+
+
             }
         });
 
 
     }
+
+
+
 
 
     private void getDataCoupon() {
@@ -130,11 +136,19 @@ public class CartActivity extends AppCompatActivity {
     }
 
 
-    public void DialogDeleteCart(String tenCV, int Id){
+    public void DeleteAllCart()
+    {
+        DatabaseCart myDB = new DatabaseCart(CartActivity.this);
+        myDB.deleteAllData();
+        updateCartList();
+        totalPrice();
+    }
 
+
+    //Xóa từng item được chọn trong cart
+    public void DialogDeleteCart(String tenCV, int Id){
         AlertDialog.Builder dialogXoa=new AlertDialog.Builder(CartActivity.this);
         dialogXoa.setMessage("Bạn có muốn xóa "+ tenCV +" hay không?");
-
         dialogXoa.setPositiveButton("Có", new DialogInterface.OnClickListener() {
             @Override
             public void onClick(DialogInterface dialog, int which) {
@@ -144,10 +158,8 @@ public class CartActivity extends AppCompatActivity {
                 myDB.deleteOneRow(Id);
                 updateCartList();
                 totalPrice();
-
             }
         });
-
         dialogXoa.setNegativeButton("Không", new DialogInterface.OnClickListener() {
             @Override
             public void onClick(DialogInterface dialog, int which) {
@@ -155,6 +167,8 @@ public class CartActivity extends AppCompatActivity {
         });
         dialogXoa.show();
     }
+
+
     private void updateCartList(){
         // get all data from sqlite
         //Cursor cursor = MenuDetailActivity.databaseCart.getData("SELECT * FROM CART");

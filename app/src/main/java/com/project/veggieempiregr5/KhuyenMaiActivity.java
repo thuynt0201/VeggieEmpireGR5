@@ -1,5 +1,5 @@
 //package com.project.veggieempiregr5;
-//
+////
 //import androidx.appcompat.app.AppCompatActivity;
 //
 //import android.os.Bundle;
@@ -11,8 +11,8 @@
 //import java.util.ArrayList;
 //
 //public class KhuyenMaiActivity extends AppCompatActivity {
-
-    //phan nay chi phuong
+//
+//    phan nay chi phuong
 //    ListView lvKhuyenMai;
 //    ArrayList<KhuyenMai> arrayKhuyenMai;
 //    KhuyenMaiAdapter adapterkhuyenmai;

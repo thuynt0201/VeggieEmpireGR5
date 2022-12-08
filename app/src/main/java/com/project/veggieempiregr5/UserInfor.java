@@ -81,5 +81,12 @@ public class UserInfor extends AppCompatActivity {
                 startActivity(intent2);
             }
         });
+
+        binding.txtKhuyenMai.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+
+            }
+        });
     }
 }
