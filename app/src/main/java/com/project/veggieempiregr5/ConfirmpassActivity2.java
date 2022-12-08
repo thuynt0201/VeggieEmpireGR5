@@ -23,6 +23,10 @@ public class ConfirmpassActivity2 extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_confirmpass2);
 
+        //======THANH HEADER======
+        getSupportActionBar().setTitle("VEGGIE EMPIRE");
+        //======THANH HEADER END======
+
         DB = new Database(this);
 
         password = (EditText) findViewById(R.id.pass);

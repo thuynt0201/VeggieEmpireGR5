@@ -15,12 +15,14 @@
             <EditText
                 android:layout_width="380dp"
                 android:layout_height="30dp"
-                android:hint="Nhập từ khoá hoặc nội dung cần tìm"
+                android:hint=" Nhập từ khoá hoặc nội dung cần tìm"
                 android:fontFamily="@font/nunitosans_light"
                 android:textSize="18sp"
                 android:background="#FFFFFF"
                 android:layout_marginTop="20dp"
-                android:layout_gravity="center"/>
+                android:layout_gravity="center"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"/>
 
         <LinearLayout
             android:layout_width="match_parent"

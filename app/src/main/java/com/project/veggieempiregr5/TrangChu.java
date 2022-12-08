@@ -130,6 +130,13 @@ public class TrangChu extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+        binding.imvDatBan.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(TrangChu.this, ReserveTable.class);
+                startActivity(intent);
+            }
+        });
     }
 
     private List<Photo> getListPhoto(){

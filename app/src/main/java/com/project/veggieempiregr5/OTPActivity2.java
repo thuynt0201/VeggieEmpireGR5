@@ -37,6 +37,9 @@ public class OTPActivity2 extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_otpactivity2);
+        //======THANH HEADER======
+        getSupportActionBar().setTitle("VEGGIE EMPIRE");
+        //======THANH HEADER END======
 
         TextView textMobile = findViewById(R.id.textMobile);
         textMobile.setText(String.format(
