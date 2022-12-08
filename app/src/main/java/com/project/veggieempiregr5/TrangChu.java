@@ -25,6 +25,7 @@ import me.relex.circleindicator.CircleIndicator3;
 
 public class TrangChu extends AppCompatActivity {
 
+
     ActivityTrangChuBinding binding;
     private ViewPager2 viewPager2;
     private CircleIndicator3 circleIndicator3;
