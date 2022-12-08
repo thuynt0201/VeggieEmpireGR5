@@ -6,6 +6,7 @@ import androidx.viewpager2.widget.ViewPager2;
 
 import android.content.Intent;
 import android.graphics.drawable.Drawable;
+import android.net.Uri;
 import android.os.Bundle;
 import android.os.Handler;
 import android.view.Menu;
@@ -152,6 +153,18 @@ public class TrangChu extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+        binding.txtcall.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(Intent.ACTION_CALL);
+                intent.setData(Uri.parse("tel:" + 01215467));
+                intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+                intent.addFlags(Intent.FLAG_FROM_BACKGROUND);
+                startActivity(intent);
+
+            }
+        });
+
     }
 
     private List<Photo> getListPhoto(){
